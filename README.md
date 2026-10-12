@@ -19,7 +19,7 @@ The firmware compiles and 1,330 host assertions pass. An approved clean installa
 
 Two cosmetic protagonists are approved: **Nova (Female)** with long indigo-purple hair, and **Nova (Male)** with short, tousled indigo-purple hair. Equipment, abilities, and progression are shared. [Character specifications](docs/CHARACTERS.md) are included; production sprites and character selection are **not implemented**.
 
-The annotated `v0.1.0` Git tag marks this source baseline. No GitHub Release or firmware-binary distribution is published for this milestone.
+The annotated `v0.1.0` Git tag marks this source baseline. No GitHub Release is published for this milestone. Development firmware downloads are delivered directly in Codex for owner-managed ESP Launchpad testing; see the [delivery workflow](docs/FIRMWARE_DELIVERY.md). Factory binaries use **flash address 0x0000**. Builds never automatically flash the device.
 
 ## Build and host tests
 
