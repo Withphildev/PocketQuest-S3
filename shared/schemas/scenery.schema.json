@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PocketQuest provisional scenery authoring v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "id", "family", "biome", "worldSize", "groundPixels", "projection", "ground", "roadMask", "edges", "corners", "navigation", "objects", "spawnAnchors", "buildPads", "assetVersion"],
+  "properties": {
+    "schemaVersion": {"const": 1},
+    "id": {"type": "string", "pattern": "^F00[1-4]-[a-zA-Z0-9_-]+$"},
+    "family": {"enum": ["F001", "F002", "F003", "F004"]},
+    "biome": {"const": "forest"},
+    "worldSize": {"const": [512, 512]},
+    "groundPixels": {"const": [512, 288]},
+    "projection": {"const": {"xScale": 1, "yNumerator": 9, "yDenominator": 16}},
+    "ground": {"type": "string", "pattern": "^[a-zA-Z0-9_-]+\\.png$"},
+    "roadMask": {"enum": [0, 5, 10, 15]},
+    "edges": {
+      "type": "object", "additionalProperties": false,
+      "required": ["north", "east", "south", "west"],
+      "properties": {"north": {"$ref": "#/$defs/socket"}, "east": {"$ref": "#/$defs/socket"}, "south": {"$ref": "#/$defs/socket"}, "west": {"$ref": "#/$defs/socket"}}
+    },
+    "corners": {"type": "array", "minItems": 4, "maxItems": 4, "items": {"type": "string", "minLength": 1}},
+    "navigation": {"type": "object", "additionalProperties": false, "required": ["cellWorldSize", "width", "height", "source"],
+      "properties": {"cellWorldSize": {"const": 16}, "width": {"const": 32}, "height": {"const": 32}, "source": {"type": "string", "pattern": "^[a-zA-Z0-9_-]+\\.json$"}}},
+    "objects": {"type": "array", "items": {"type": "object", "additionalProperties": false,
+      "required": ["id", "asset", "anchor", "pivot", "collision", "renderBounds", "depthRule"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1}, "asset": {"type": "string", "pattern": "^[a-zA-Z0-9_-]+\\.png$"},
+        "anchor": {"$ref": "#/$defs/worldPoint"}, "pivot": {"$ref": "#/$defs/point"},
+        "collision": {"type": "array", "minItems": 3, "items": {"$ref": "#/$defs/worldPoint"}},
+        "renderBounds": {"type": "array", "minItems": 4, "maxItems": 4, "items": {"type": "number"}},
+        "depthRule": {"enum": ["ground-anchor", "split-front-back"]}
+      }}},
+    "spawnAnchors": {"type": "array", "items": {"type": "object", "additionalProperties": false,
+      "required": ["id", "u", "v"], "properties": {"id": {"type": "string", "minLength": 1}, "u": {"type": "number", "minimum": 0, "exclusiveMaximum": 512}, "v": {"type": "number", "minimum": 0, "exclusiveMaximum": 512}}}},
+    "buildPads": {"type": "array", "items": {"type": "object", "additionalProperties": false,
+      "required": ["id", "rect", "tags"], "properties": {"id": {"type": "string", "minLength": 1}, "rect": {"type": "array", "minItems": 4, "maxItems": 4, "items": {"type": "number", "minimum": 0, "maximum": 512}}, "tags": {"type": "array", "items": {"type": "string", "minLength": 1}}}}},
+    "assetVersion": {"type": "integer", "minimum": 1}
+  },
+  "$defs": {
+    "socket": {"enum": ["meadow-open-v1", "meadow-road-v1"]},
+    "point": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"type": "number"}},
+    "worldPoint": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"type": "number", "minimum": 0, "maximum": 512}}
+  }
+}
