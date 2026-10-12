@@ -1,5 +1,7 @@
 # Scenery validation and preview tool specification
 
+Historical Phase 1 specification below. Phase 2A implements a bounded browser scenery lab; see `web/README.md` and `PHASE2A_REPORT.md` for supported contracts/tests and remaining production-tool work. Dynamic settlement overlays, split layers, contact sheets, and production export are still deferred.
+
 Phase 1 preparation only. No browser RPG, preview tool, template artwork, or production scenery has been implemented. Dimensions remain provisional pending visual prototype review.
 
 The smallest useful tool has a batch validator and one offline browser preview page. It loads a local folder selected by the owner, reads the block manifests, uses native Canvas 2D, and makes no external network requests. A minimal package needs two adjacent compatible scenes for a seam check; four scenes permit corner validation. The tool never needs the StickS3 to inspect art.

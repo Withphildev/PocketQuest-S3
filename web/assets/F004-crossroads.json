@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 1,
+  "id": "F004-crossroads",
+  "family": "F004",
+  "biome": "forest",
+  "worldSize": [
+    512,
+    512
+  ],
+  "groundPixels": [
+    512,
+    288
+  ],
+  "projection": {
+    "xScale": 1,
+    "yNumerator": 9,
+    "yDenominator": 16
+  },
+  "ground": "F004-crossroads.png",
+  "roadMask": 15,
+  "edges": {
+    "north": "meadow-road-v1",
+    "east": "meadow-road-v1",
+    "south": "meadow-road-v1",
+    "west": "meadow-road-v1"
+  },
+  "corners": [
+    "meadow-corner-v1",
+    "meadow-corner-v1",
+    "meadow-corner-v1",
+    "meadow-corner-v1"
+  ],
+  "navigation": {
+    "cellWorldSize": 16,
+    "width": 32,
+    "height": 32,
+    "source": "F004-crossroads-nav.json"
+  },
+  "objects": [
+    {
+      "id": "tree",
+      "asset": "tree.png",
+      "anchor": [
+        128,
+        160
+      ],
+      "pivot": [
+        48,
+        100
+      ],
+      "collision": [
+        [
+          114,
+          146
+        ],
+        [
+          142,
+          146
+        ],
+        [
+          142,
+          174
+        ],
+        [
+          114,
+          174
+        ]
+      ],
+      "renderBounds": [
+        -48,
+        -100,
+        96,
+        112
+      ],
+      "depthRule": "ground-anchor"
+    },
+    {
+      "id": "cabin",
+      "asset": "cabin.png",
+      "anchor": [
+        392,
+        392
+      ],
+      "pivot": [
+        64,
+        108
+      ],
+      "collision": [
+        [
+          342,
+          344
+        ],
+        [
+          438,
+          344
+        ],
+        [
+          438,
+          392
+        ],
+        [
+          342,
+          392
+        ]
+      ],
+      "renderBounds": [
+        -64,
+        -108,
+        128,
+        120
+      ],
+      "depthRule": "ground-anchor"
+    },
+    {
+      "id": "rock",
+      "asset": "rock.png",
+      "anchor": [
+        390,
+        140
+      ],
+      "pivot": [
+        24,
+        25
+      ],
+      "collision": [
+        [
+          372,
+          126
+        ],
+        [
+          406,
+          126
+        ],
+        [
+          408,
+          144
+        ],
+        [
+          374,
+          152
+        ]
+      ],
+      "renderBounds": [
+        -24,
+        -25,
+        48,
+        32
+      ],
+      "depthRule": "ground-anchor"
+    },
+    {
+      "id": "fence",
+      "asset": "fence.png",
+      "anchor": [
+        112,
+        380
+      ],
+      "pivot": [
+        40,
+        26
+      ],
+      "collision": [
+        [
+          74,
+          374
+        ],
+        [
+          150,
+          374
+        ],
+        [
+          150,
+          382
+        ],
+        [
+          74,
+          382
+        ]
+      ],
+      "renderBounds": [
+        -40,
+        -26,
+        80,
+        32
+      ],
+      "depthRule": "ground-anchor"
+    }
+  ],
+  "spawnAnchors": [
+    {
+      "id": "arrival",
+      "u": 256,
+      "v": 440
+    }
+  ],
+  "buildPads": [],
+  "assetVersion": 1
+}

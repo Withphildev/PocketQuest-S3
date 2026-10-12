@@ -1,0 +1,13 @@
+{
+  "name": "pocketquest-s3-renderer-prototype",
+  "private": true,
+  "version": "0.2.0",
+  "type": "module",
+  "scripts": {
+    "assets": "node tools/generate-placeholders.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "build": "node tools/build.mjs",
+    "dev": "node tools/serve.mjs"
+  },
+  "engines": {"node": ">=20"}
+}

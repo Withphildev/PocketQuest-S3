@@ -11,13 +11,15 @@ A pocket-sized fantasy RPG for the M5Stack StickS3, featuring motion combat, pro
 
 M5Stack StickS3: ESP32-S3-PICO-1-N8R8, 8 MiB flash, 8 MiB octal PSRAM, 135 × 240 LCD (240 × 135 landscape), BMI270 IMU, and Face/M5 buttons. Phase 1 runtime diagnostics confirmed flash/PSRAM capacity, landscape dimensions, BMI270 detection, and the separate save filesystem. See the [hardware report](docs/HARDWARE_INSTALLATION_REPORT.md).
 
-## Current status — v0.1.0
+## Current status — Phase 1 firmware v0.1.0 + Phase 2A renderer study
 
 First standalone prototype, v0.1.0. Runs without Wi-Fi or a phone. Includes a splash, geometric player/slime placeholders, idle animation, motion and button attacks, HP, XP, levels, and two CRC-checked save snapshots.
 
 The firmware compiles and 1,330 host assertions pass. An approved clean installation on the owner's dedicated StickS3 succeeded. The owner confirmed the splash/player display, button attacks, gentle motion attacks, progression to Level 2 / 24 XP, and that progression surviving restart. This is an **owner-verified hardware smoke-test baseline**, not a production-ready release. Detailed timing, false-positive rates, endurance, and physical power-cut recovery remain unverified.
 
-Two cosmetic protagonists are approved: **Nova (Female)** with long indigo-purple hair, and **Nova (Male)** with short, tousled indigo-purple hair. Equipment, abilities, and progression are shared. [Character specifications](docs/CHARACTERS.md) are included; production sprites and character selection are **not implemented**.
+Two cosmetic protagonists are approved: **Nova (Female)** with long indigo-purple hair, and **Nova (Male)** with short, tousled indigo-purple hair. Equipment, abilities, and progression are shared. [Character specifications](docs/CHARACTERS.md) are included. The browser study offers both temporary geometric appearances; production sprites and firmware/persistent character selection are **not implemented**.
+
+The [Phase 2A browser prototype](web/README.md) demonstrates Canvas 2D scrolling, seeded scenery, independent collision, foreground occlusion, and a local scenery validator. Build/run details and limitations are in the [Phase 2A report](docs/PHASE2A_REPORT.md). Owner visual review is required before Phase 2B; this is not the full browser RPG.
 
 The annotated `v0.1.0` Git tag marks this source baseline. No GitHub Release is published for this milestone. Development firmware downloads are delivered directly in Codex for owner-managed ESP Launchpad testing; see the [delivery workflow](docs/FIRMWARE_DELIVERY.md). Factory binaries use **flash address 0x0000**. Builds never automatically flash the device.
 
@@ -63,7 +65,7 @@ The browser RPG, procedural world, Oakwood, settlements, caravans, and offline p
 
 See [development report](docs/PHASE1_REPORT.md), [save format](docs/SAVE_FORMAT.md), [scenery tool specification](docs/SCENERY_VALIDATOR.md), and [world requirements](docs/WORLD_GENERATION.md).
 
-Phase 0 baseline documents: [architecture](docs/ARCHITECTURE_PHASE0.md) and [scenery standard](docs/SCENERY_STANDARD.md). These and the Phase 1 development/installation notes preserve historical decisions; the hardware report records subsequent testing. Phase 2 has not started.
+Phase 0 baseline documents: [architecture](docs/ARCHITECTURE_PHASE0.md) and [scenery standard](docs/SCENERY_STANDARD.md). These and the Phase 1 development/installation notes preserve historical decisions; the hardware report records subsequent testing. Phase 2A is a renderer study; Phase 2B has not started.
 
 ## Layout
 

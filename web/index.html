@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PocketQuest · World Workshop</title><link rel="stylesheet" href="./style.css"></head>
+<body>
+<header><a class="brand" href="#">✦ PocketQuest <span>WORLD WORKSHOP</span></a><span class="phase">PHASE 2A · PLACEHOLDER STUDY</span></header>
+<main>
+  <section class="stage" aria-label="World explorer">
+    <div class="stage-heading"><div><span class="eyebrow">A LITTLE WORLD. A BIG QUEST.</span><h1>Beyond the clearing</h1><p>Explore the seams before we paint the world.</p></div><span class="live">● LOCAL PROTOTYPE</span></div>
+    <div class="viewport"><canvas id="world" tabindex="0" aria-label="PocketQuest world. Move with arrow keys or W A S D."></canvas><div class="map-tag" id="map-tag">Preparing the forest…</div><div class="controls-tip">W A S D / ARROWS <span>Move Nova</span></div></div>
+    <div class="stage-footer"><span id="location">Loading assets…</span><span>Parallel projection · 512 × 288 artwork</span></div>
+    <div class="touch" aria-label="Movement buttons"><button data-move="north" aria-label="Move north">↑</button><div><button data-move="west" aria-label="Move west">←</button><button data-move="south" aria-label="Move south">↓</button><button data-move="east" aria-label="Move east">→</button></div></div>
+  </section>
+  <aside>
+    <section class="panel"><span class="eyebrow">EXPLORER SETTINGS</span><h2>A seed, a new wilderness</h2>
+      <form id="seed-form"><label for="seed">World seed</label><div class="row"><input id="seed" value="323" inputmode="numeric" maxlength="10"><button type="submit">Explore ↗</button></div></form>
+      <label for="mode">View</label><select id="mode"><option value="world">Seeded wilderness</option><option value="preview">2 × 2 scenery validation</option></select>
+      <div class="row"><div><label for="nova">Nova placeholder</label><select id="nova"><option value="female">Female · long indigo hair</option><option value="male">Male · short indigo hair</option></select></div><div><label for="zoom">Zoom</label><select id="zoom"><option value="1">1×</option><option value="1.5" selected>1.5×</option><option value="2">2×</option></select></div></div>
+      <label class="check"><input type="checkbox" id="seams" checked> Block seams & protected collars</label><label class="check"><input type="checkbox" id="grid"> Collision cells & object footprints</label>
+      <button id="home" class="secondary">Return to starting clearing</button>
+    </section>
+    <section class="panel"><span class="eyebrow">SCENERY LAB</span><h2>Make every edge belong</h2><p class="muted">Select ground/foreground PNGs, manifests, and navigation JSON together. Files stay in your browser.</p>
+      <label class="file-button" for="files">Load local scenery files ＋</label><input type="file" id="files" accept=".png,.json" multiple hidden>
+      <div id="slots" class="slots"></div><button id="builtin" class="secondary">Restore built-in placeholders</button>
+      <div id="validation" role="status" aria-live="polite">Loading and validating…</div><button id="report" class="secondary">Download validation report</button>
+    </section>
+    <p class="scope">Renderer study only. No device connection, quests, settlements, persistent progression, or production sprites. The origin reserves future Oakwood; it is not the village.</p>
+  </aside>
+</main>
+<footer>POCKETQUEST-S3 <span>Ground art ≠ navigation · Dimensions provisional until visual approval</span></footer>
+<script type="module" src="./src/app.js"></script>
+</body></html>
