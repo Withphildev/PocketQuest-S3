@@ -1,4 +1,6 @@
 import {validateAsset} from './validation.js';
+import {loadCharacters} from './characters.js';
+import {MASTER, HALVES, splitMaster, inspectRoadMask} from './sunlit.js';
 export async function inspectImage(blob) {
   const image = await createImageBitmap(blob), canvas = document.createElement('canvas');
   if (image.width > 512 || image.height > 512) { image.close(); throw new Error('Image exceeds 512×512 asset limit'); }
@@ -76,6 +78,17 @@ export async function loadFiles(files) {
     map.set(file.name, file);
   }
   const names = [];
+  let generated = new Map();
+  if (map.has(MASTER)) {
+    if (HALVES.some(name => map.has(name))) throw new Error('Select master OR split halves, not both');
+    generated = await splitMaster(map.get(MASTER));
+    for (const [name, blob] of generated) map.set(name, blob);
+  }
+  const sunlit = HALVES.some(name => map.has(name));
+  if (sunlit) {
+    if (!map.has('templates.json') || !map.has('F002-Sunlit-Forest-RoadMask.png')) throw new Error('Sunlit requires templates.json and F002-Sunlit-Forest-RoadMask.png');
+    await inspectRoadMask(map.get('F002-Sunlit-Forest-RoadMask.png'));
+  }
   for (const [name, file] of map) if (name.endsWith('.json') && name !== 'catalog.json') {
     try { const data = JSON.parse(await file.text()); if ('family' in data || 'roadMask' in data) names.push(name); }
     catch { throw new Error(`Invalid JSON in ${name}`); }
@@ -83,5 +96,13 @@ export async function loadFiles(files) {
   if (!names.length) throw new Error('Select manifests, navigation JSON, and their PNGs together.');
   const read = async name => { if (!map.has(name)) throw new Error(`Missing ${name}`); return map.get(name); };
   const templates = map.has('templates.json') ? await loadTemplates(read, JSON.parse(await map.get('templates.json').text())) : null;
-  return loadRegistry(read, names, templates);
+  const result = await loadRegistry(read, names, templates);
+  if (sunlit && (result.registry.size !== 2 || HALVES.some(name => ![...result.registry.values()].some(a => a.manifest.ground === name && a.manifest.family === 'F002' && a.manifest.roadMask === 10)))) {
+    result.issues.push({category:'sunlit', message:'Sunlit requires exactly two distinct F002 mask-10 manifests referencing Left and Right PNGs'});
+  }
+  result.generated = generated;
+  result.characters = map.has('nova.json') ? await loadCharacters(read, JSON.parse(await map.get('nova.json').text()), inspectImage) : null;
+  const engineering = map.has('art-status.json') && JSON.parse(await map.get('art-status.json').text()).status === 'engineering-fixture';
+  result.artStatus = sunlit && !engineering ? 'Imported Sunlit candidate · visual approval pending' : 'Engineering fixtures · NOT illustrated Sunlit artwork';
+  return result;
 }

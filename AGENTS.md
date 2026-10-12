@@ -2,6 +2,8 @@
 
 Preserve the approved architecture, Phase 1 gameplay, and both Nova designs. Do not treat planned browser/settlement systems or production sprites as implemented.
 
+Phase 2A.2 delivered the authorized functional-integration fallback, not a playable illustrated Sunlit environment. See `docs/PHASE2A_2_REPORT.md` and `docs/SUNLIT_ASSET_REQUEST.md`. Option A locks the existing calibration dimensions and 36-pixel connector for this milestone. The generated ground candidate failed dimensions; engineering fixtures must never be represented as illustrated/approved scenery. Master splitting and optional static Nova imports must preserve exact geometry; do not weaken validation. Stop before Phase 2B.
+
 ## Approved exploration style and Phase 2A.1 gate
 
 The owner approved **Option C: Hybrid Zelda Exploration + HD-2D Fantasy Presentation**. Follow `docs/VISUAL_DESIGN.md`: classic Zelda-style four-direction exploration, smooth camera following, intuitive navigation; elevated three-quarter fantasy pixel art with selective HD-2D-inspired lighting/depth/atmosphere; chibi Nova protagonists with readable silhouettes and consistent world scale.

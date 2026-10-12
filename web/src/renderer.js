@@ -58,6 +58,8 @@ export class Renderer {
     this.lastPlayerScreen = screen;
   }
   nova(x, y, player, time) {
+    const frame = this.characters?.[player.protagonist]?.[player.direction];
+    if (frame) { this.ctx.drawImage(frame.image, x - 16, y - 44); return; }
     const c = this.ctx, step = player.walking ? Math.floor(time / 140) % 2 : 0;
     c.fillStyle = '#20302866'; c.beginPath(); c.ellipse(x, y, 10, 4, 0, 0, Math.PI * 2); c.fill();
     c.fillStyle = '#503579'; c.fillRect(x - 8, y - 36 - step, 16, player.protagonist === 'female' ? 27 : 12);

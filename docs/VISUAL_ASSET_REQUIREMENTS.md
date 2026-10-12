@@ -1,5 +1,7 @@
 # Phase 2A.1 artwork handoff — two-block forest path
 
+Phase 2A.2 retains these values under approved Option A. For the current master import, required semantic road mask and optional static Nova frames, see [Sunlit asset request](SUNLIT_ASSET_REQUEST.md). Ground artwork remains pending; no production approval is implied.
+
 This is a reference-art calibration gate, not production-library authorization. Target remains elevated three-quarter fantasy, parallel projection, **not strict isometric**. The calibration rig retains engineering placeholders until owner/ChatGPT artwork is supplied. No new production art has been generated.
 
 The owner approved **Option C: Hybrid Zelda Exploration + HD-2D Fantasy Presentation**; see [official visual-design decision](VISUAL_DESIGN.md). Use classic four-direction exploration with smooth camera following, chibi/readable Nova proportions, and selectively atmospheric elevated three-quarter fantasy pixel art—not a completely overhead finished view. Retain Canvas 2D, illustrated ground, and separate anchored foregrounds; no 3D engine. The 512×288 dimensions below are the **provisional test contract**, not final visual approval. Do not generate production scenery until the owner approves the visual prototype.

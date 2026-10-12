@@ -15,5 +15,6 @@ const html = (await readFile(`${root}/index.html`, 'utf8'))
     `<script type="application/json" id="embedded-assets">${JSON.stringify(assets)}</script>\n<script type="importmap">${JSON.stringify({imports})}</script>\n<script type="module">import 'pocketquest/app.js';</script>`);
 await writeFile(`${root}/dist/PocketQuest-S3-Phase2A.html`, html);
 await writeFile(`${root}/dist/PocketQuest-S3-Phase2A.1.html`, html);
+await writeFile(`${root}/dist/PocketQuest-S3-Phase2A.2.html`, html);
 console.log(`Static build complete: web/dist (${(await readdir(`${root}/assets`)).length} placeholder asset files).`);
 console.log('Offline single-file prototype: web/dist/PocketQuest-S3-Phase2A.html');

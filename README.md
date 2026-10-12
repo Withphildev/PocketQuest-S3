@@ -89,3 +89,7 @@ release/                   local review binaries only; ignored by Git
 ## License
 
 PocketQuest original source and documentation are licensed under the [MIT License](LICENSE), selected by the owner. Third-party dependencies retain their own licenses and are fetched by PlatformIO rather than vendored here. No production artwork is distributed in this baseline.
+
+## Phase 2A.2 integration status
+
+The browser asset pipeline now accepts a strict Sunlit master and optional static Nova frames. Illustrated Sunlit artwork is still pending; built-in imagery remains explicitly labeled engineering fixtures. See [Phase 2A.2 report](docs/PHASE2A_2_REPORT.md) and [exact art request](docs/SUNLIT_ASSET_REQUEST.md). This is the authorized fallback integration milestone, not production-art approval or Phase 2B.

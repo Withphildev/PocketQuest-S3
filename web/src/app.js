@@ -8,6 +8,7 @@ import {calibrationBlocks, calibrationView, characterScale} from './calibration.
 const $ = id => document.getElementById(id), renderer = new Renderer($('world'));
 const player = {u: 256, v: 440, direction: 'south', protagonist: 'female', walking: false};
 let registry, world, importIssues = [], report = [], mode = 'calibration', seed = 323, previous = 0, frame = 0;
+let artStatus = 'Engineering fixtures · NOT illustrated Sunlit artwork';
 const keys = new Set(), slots = [];
 const solid = {manifest: {objects: []}, navigation: {cells: Array.from({length: 32}, () => Array(32).fill(0))}};
 function previewBlocks() {
@@ -56,6 +57,14 @@ function syncCalibrationControls() {
 async function install(result, custom = false) {
   if (!result.registry.size) { importIssues = result.issues; setReport([]); return; }
   registry = result.registry; importIssues = result.issues; world = new World(seed, registry); createSlots();
+  renderer.characters = result.characters || null;
+  artStatus = result.artStatus || 'Engineering fixtures · NOT illustrated Sunlit artwork';
+  $('art-status').textContent = `${artStatus}. ${renderer.characters ? 'Imported static Nova frames; animation not supplied.' : 'Geometric Nova placeholders; approved sprite files unavailable.'}`;
+  $('generated').replaceChildren();
+  for (const [name, blob] of result.generated || []) {
+    const button = document.createElement('button'); button.textContent = `Download ${name}`;
+    button.addEventListener('click', () => { const url = URL.createObjectURL(blob), a = document.createElement('a'); a.href = url; a.download = name; a.click(); setTimeout(() => URL.revokeObjectURL(url), 1000); }); $('generated').append(button);
+  }
   mode = 'calibration'; $('mode').value = mode; $('mode').querySelector('option[value="world"]').disabled = custom;
   syncCalibrationControls();
   resetPlayer(); setReport(validateLayout(previewBlocks()));
@@ -88,7 +97,7 @@ $('files').addEventListener('change', async () => {
 });
 $('builtin').addEventListener('click', async () => { try { await install(await loadBuiltins()); } catch (e) { setReport([{category: 'load', message: e.message}]); } });
 $('report').addEventListener('click', () => {
-  const blob = new Blob([JSON.stringify({prototype: 'Phase 2A.1', seed, mode, characterRenderScale: characterScale($('character-scale').value), collisionRadius: 6, failures: report,
+  const blob = new Blob([JSON.stringify({prototype: 'Phase 2A.2', artStatus, characters: renderer.characters ? 'imported-static' : 'geometric-placeholders', semanticRoadMask: 'Authored mask checked; visual road agreement requires review', seed, mode, characterRenderScale: characterScale($('character-scale').value), collisionRadius: 6, failures: report,
     assets: [...registry.values()].map(a => ({id: a.manifest.id, groundBytes: a.groundInfo.bytes,
       decodedGroundBytes: a.groundInfo.width * a.groundInfo.height * 4}))}, null, 2)], {type: 'application/json'});
   const a = document.createElement('a'), url = URL.createObjectURL(blob); a.href = url; a.download = 'PocketQuest-scenery-validation.json'; a.click(); setTimeout(() => URL.revokeObjectURL(url), 1000);
@@ -108,6 +117,7 @@ function tick(time) {
   const dt = Math.min((time - (previous || time)) / 1000, .05); previous = time;
   if (registry) {
     let dx = Number(keys.has('east')) - Number(keys.has('west')), dy = Number(keys.has('south')) - Number(keys.has('north'));
+    if (dx) dy = 0; // Approved classic four-direction exploration, not diagonal input.
     const norm = Math.hypot(dx, dy); player.walking = norm > 0 && report.length === 0;
     if (player.walking) {
       player.direction = Math.abs(dx) ? dx > 0 ? 'east' : 'west' : dy > 0 ? 'south' : 'north';
