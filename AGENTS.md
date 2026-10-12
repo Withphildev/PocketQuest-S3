@@ -2,6 +2,14 @@
 
 Preserve the approved architecture, Phase 1 gameplay, and both Nova designs. Do not treat planned browser/settlement systems or production sprites as implemented.
 
+## Approved exploration style and Phase 2A.1 gate
+
+The owner approved **Option C: Hybrid Zelda Exploration + HD-2D Fantasy Presentation**. Follow `docs/VISUAL_DESIGN.md`: classic Zelda-style four-direction exploration, smooth camera following, intuitive navigation; elevated three-quarter fantasy pixel art with selective HD-2D-inspired lighting/depth/atmosphere; chibi Nova protagonists with readable silhouettes and consistent world scale.
+
+Retain Canvas 2D and prerendered scenery blocks, detailed illustrated ground, and separately anchored foreground objects. Do not introduce a 3D engine, switch to strict isometric projection, or make the finished world look completely overhead. Preserve the existing Phase 1 firmware and Phase 2A systems.
+
+Use the representative two-block forest prototype to review movement, character scale, depth ordering, and seamless connections. 512×288 scenery dimensions remain provisional pending visual calibration. Production scenery generation requires explicit owner approval of the visual prototype; the accepted technical foundation and style decision are not that approval. Stop for review before Phase 2B.
+
 After each successful firmware build intended for owner testing:
 
 1. Run `sh tools/test-host.sh` and `python3 tools/check-build.py`. Do not deliver a failed or untested candidate.

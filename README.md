@@ -23,6 +23,8 @@ The [Phase 2A browser prototype](web/README.md) demonstrates Canvas 2D scrolling
 
 [Phase 2A.1 calibration](docs/PHASE2A_1_REPORT.md) adds a two-block path view, independent character-render scaling, combined debug overlays, and external collar/corner templates. [Artwork handoff requirements](docs/VISUAL_ASSET_REQUIREMENTS.md) define the representative reference pack; intended fantasy artwork and final projection/scale approval remain pending.
 
+Approved style: [Option C — Hybrid Zelda Exploration + HD-2D Fantasy Presentation](docs/VISUAL_DESIGN.md). Four-direction exploration and smooth camera following meet elevated three-quarter fantasy pixel art, chibi Nova characters, and selective lighting/depth/atmosphere, within Canvas 2D. Production scenery awaits owner visual-prototype approval.
+
 The annotated `v0.1.0` Git tag marks this source baseline. No GitHub Release is published for this milestone. Development firmware downloads are delivered directly in Codex for owner-managed ESP Launchpad testing; see the [delivery workflow](docs/FIRMWARE_DELIVERY.md). Factory binaries use **flash address 0x0000**. Builds never automatically flash the device.
 
 ## Build and host tests

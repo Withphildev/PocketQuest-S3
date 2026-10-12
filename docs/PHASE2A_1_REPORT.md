@@ -1,5 +1,7 @@
 # Phase 2A.1 — visual-calibration rig
 
+Instruction supplement: the owner has approved [Option C — Hybrid Zelda Exploration + HD-2D Fantasy Presentation](VISUAL_DESIGN.md). This fixes the intended exploration/presentation direction while retaining provisional 512×288 dimensions and the owner-approval gate for production scenery. Recording the decision does not change prototype code or constitute visual-prototype approval.
+
 Completed for owner review, not visual-direction approval. Browser package 0.2.1; firmware v0.1.0 unchanged. No physical device access, firmware build/flash, production artwork generation, full scenery library, RPG systems, hosted deployment, or Phase 2B work.
 
 ## Changes
