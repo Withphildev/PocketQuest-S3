@@ -1,5 +1,7 @@
 # Phase 2A — browser world workshop
 
+Phase 2A.1 adds a two-block forest-path calibration view, independent 0.5×–2× character rendering, a combined debug toggle, safe behind/front tree/building checkpoints, and externally supplied `templates.json` collar/corner references. World generation and logical navigation are unchanged. Start with both blocks in view; enable Follow Nova for scrolling/zoom. Only the first two asset slots are used in calibration mode. See `docs/VISUAL_ASSET_REQUIREMENTS.md` for the exact artwork handoff; no intended visual style is approved merely by the placeholder rig.
+
 Dependency-free Canvas 2D prototype, not the full RPG. No connection to the StickS3. Targets modern Chrome with Canvas, ES modules/import maps, and `createImageBitmap`. PNGs are original code-drawn engineering placeholders, not production art.
 
 ## Build and run
@@ -14,7 +16,7 @@ npm run dev
 
 Open `http://127.0.0.1:4173`; stop the loopback-only server with Ctrl-C. No npm install is needed: there are no dependencies. Static hosting can serve `dist/`, but these commands do not publish a site.
 
-The build also emits `dist/PocketQuest-S3-Phase2A.html`, a self-contained download with all modules/images embedded, intended for opening in Chrome without a server. It was browser-tested over HTTP; direct file-URL opening is blocked by Codex browser policy and remains an owner check. No external services or network asset requests are needed in that file. `npm run assets` regenerates tracked PNG/JSON placeholders.
+The build emits `dist/PocketQuest-S3-Phase2A.1.html` (plus the older-name alias), a self-contained download with all modules/images embedded, intended for opening in Chrome without a server. It was browser-tested over HTTP; direct file-URL opening is blocked by Codex browser policy and remains an owner check. No external services or network asset requests are needed in that file. `npm run assets` regenerates tracked PNG/JSON placeholders. `node tools/export-calibration-kit.mjs` exports a placeholder-based format kit into `build/calibration-kit`; select all its files in the lab to test external templates.
 
 ## Explorer and scenery lab
 

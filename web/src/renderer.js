@@ -1,5 +1,6 @@
 import {project} from './world.js';
 import {depthOrder, screenPosition} from './scene.js';
+import {characterScale} from './calibration.js';
 export class Renderer {
   constructor(canvas) { this.canvas = canvas; this.ctx = canvas.getContext('2d'); }
   draw(blocks, player, options, time) {
@@ -10,7 +11,7 @@ export class Renderer {
     }
     ctx.setTransform(ratio, 0, 0, ratio, 0, 0); ctx.imageSmoothingEnabled = false;
     ctx.fillStyle = '#14261e'; ctx.fillRect(0, 0, width, height);
-    const camera = project(player.u, player.v), zoom = options.zoom;
+    const camera = options.camera || project(player.u, player.v), zoom = options.zoom;
     // One rounded camera translation for all ground/object geometry avoids independent tile-rounding gaps.
     const offsetX = Math.round(width / 2 - camera.x * zoom), offsetY = Math.round(height / 2 - camera.y * zoom);
     ctx.save(); ctx.translate(offsetX, offsetY); ctx.scale(zoom, zoom);
@@ -46,7 +47,11 @@ export class Renderer {
           ctx.closePath(); ctx.strokeStyle = '#ffbd91'; ctx.lineWidth = 1; ctx.stroke();
           ctx.fillStyle = '#ffbd91'; ctx.fillRect(p.x - 2, p.y - 2, 4, 4);
         }
-      } else this.nova(p.x, p.y, player, time);
+      } else {
+        ctx.save(); ctx.translate(p.x, p.y); const scale = characterScale(options.characterScale ?? 1);
+        ctx.scale(scale, scale); this.nova(0, 0, player, time); ctx.restore();
+        if (options.grid) { ctx.beginPath(); ctx.ellipse(p.x, p.y, 6, 6 * 9 / 16, 0, 0, Math.PI * 2); ctx.strokeStyle = '#ffffff'; ctx.lineWidth = 1; ctx.stroke(); }
+      }
     }
     ctx.restore();
     const screen = screenPosition(player.u, player.v, camera, width, height, zoom);

@@ -1,5 +1,6 @@
 import {DIRECTIONS, SUPPORTED_MASKS} from './world.js';
 import {canStand} from './navigation.js';
+import {templatePixel} from './calibration.js';
 const DIRECTIONS_LIST = Object.keys(DIRECTIONS), CORNER = 'meadow-corner-v1';
 export function canonicalPixel(mask, x, y) {
   const road = ((mask & 5) && x >= 224 && x < 288) || ((mask & 10) && y >= 126 && y < 162);
@@ -91,10 +92,11 @@ export function validateAsset(asset) {
     if (width !== 512 || height !== 288) add('image', 'Ground image must be 512×288');
     else if (pixels) {
       let mismatch = null, alpha = false;
+      const signatureValid = !issues.some(i => ['edge', 'corner', 'mask'].includes(i.category));
       for (let y = 0; y < 288; y++) for (let x = 0; x < 512; x++) {
         const i = (y * 512 + x) * 4; if (pixels[i + 3] !== 255) alpha = true;
-        if ((x < 32 || x >= 480 || y < 18 || y >= 270) &&
-            canonicalPixel(m.roadMask, x, y).some((n, k) => pixels[i + k] !== n)) mismatch ||= `${x},${y}`;
+        if (signatureValid && (x < 32 || x >= 480 || y < 18 || y >= 270) &&
+            (asset.templates ? templatePixel(asset.templates, m, x, y) : canonicalPixel(m.roadMask, x, y)).some((n, k) => pixels[i + k] !== n)) mismatch ||= `${x},${y}`;
       }
       if (alpha) add('image', 'Ground must be opaque');
       if (mismatch) add('seam-pixels', `Canonical collar/corner pixel mismatch at ${mismatch}`);

@@ -3,7 +3,7 @@
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>PocketQuest · World Workshop</title><link rel="stylesheet" href="./style.css"></head>
 <body>
-<header><a class="brand" href="#">✦ PocketQuest <span>WORLD WORKSHOP</span></a><span class="phase">PHASE 2A · PLACEHOLDER STUDY</span></header>
+<header><a class="brand" href="#">✦ PocketQuest <span>WORLD WORKSHOP</span></a><span class="phase">PHASE 2A.1 · VISUAL CALIBRATION</span></header>
 <main>
   <section class="stage" aria-label="World explorer">
     <div class="stage-heading"><div><span class="eyebrow">A LITTLE WORLD. A BIG QUEST.</span><h1>Beyond the clearing</h1><p>Explore the seams before we paint the world.</p></div><span class="live">● LOCAL PROTOTYPE</span></div>
@@ -14,9 +14,14 @@
   <aside>
     <section class="panel"><span class="eyebrow">EXPLORER SETTINGS</span><h2>A seed, a new wilderness</h2>
       <form id="seed-form"><label for="seed">World seed</label><div class="row"><input id="seed" value="323" inputmode="numeric" maxlength="10"><button type="submit">Explore ↗</button></div></form>
-      <label for="mode">View</label><select id="mode"><option value="world">Seeded wilderness</option><option value="preview">2 × 2 scenery validation</option></select>
+      <label for="mode">View</label><select id="mode"><option value="calibration" selected>Two-block forest path</option><option value="world">Seeded wilderness</option><option value="preview">2 × 2 scenery validation</option></select>
       <div class="row"><div><label for="nova">Nova placeholder</label><select id="nova"><option value="female">Female · long indigo hair</option><option value="male">Male · short indigo hair</option></select></div><div><label for="zoom">Zoom</label><select id="zoom"><option value="1">1×</option><option value="1.5" selected>1.5×</option><option value="2">2×</option></select></div></div>
-      <label class="check"><input type="checkbox" id="seams" checked> Block seams & protected collars</label><label class="check"><input type="checkbox" id="grid"> Collision cells & object footprints</label>
+      <label for="character-scale">Character render scale <output id="scale-value">1.00× · 36 px</output></label><input id="character-scale" type="range" min="0.5" max="2" step="0.25" value="1">
+      <p class="muted">Visual size only. Feet collision stays radius 6 world units.</p>
+      <label class="check"><input type="checkbox" id="follow"> Follow Nova (otherwise fit two-block test)</label>
+      <label class="check"><input type="checkbox" id="debug"> Show debug overlays (seams + collision)</label>
+      <label class="check"><input type="checkbox" id="seams"> Block seams & protected collars</label><label class="check"><input type="checkbox" id="grid"> Collision cells & object footprints</label>
+      <button id="tree-check" class="secondary">Tree checkpoint: behind / in front</button><button id="building-check" class="secondary">Building checkpoint: behind / in front</button>
       <button id="home" class="secondary">Return to starting clearing</button>
     </section>
     <section class="panel"><span class="eyebrow">SCENERY LAB</span><h2>Make every edge belong</h2><p class="muted">Select ground/foreground PNGs, manifests, and navigation JSON together. Files stay in your browser.</p>

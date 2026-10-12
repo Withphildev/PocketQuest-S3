@@ -9,7 +9,27 @@ export async function inspectImage(blob) {
     transparent: pixels.some((n, i) => i % 4 === 3 && n === 0),
     hasVisiblePixels: pixels.some((n, i) => i % 4 === 3 && n > 0), bytes: blob.size};
 }
-async function loadRegistry(read, names) {
+export async function loadTemplates(read, manifest) {
+  if (manifest?.schemaVersion !== 1 || !/^[A-Za-z0-9_-]+$/.test(manifest.id || '')) throw new Error('Invalid templates.json version/id');
+  const result = {id: manifest.id, edges: {}, corners: {}};
+  const image = async (name, width, height) => {
+    if (!/^[A-Za-z0-9_-]+\.png$/.test(name || '')) throw new Error('Template image requires a flat PNG filename');
+    const info = await inspectImage(await read(name));
+    if (info.width !== width || info.height !== height || info.pixels.some((n, i) => i % 4 === 3 && n !== 255)) {
+      info.image.close(); throw new Error(`Template ${name} must be opaque ${width}×${height}`);
+    }
+    return info;
+  };
+  for (const socket of ['meadow-open-v1', 'meadow-road-v1']) {
+    result.edges[socket] = {};
+    for (const direction of ['north', 'east', 'south', 'west']) result.edges[socket][direction] =
+      await image(manifest.edges?.[socket]?.[direction], ['north', 'south'].includes(direction) ? 512 : 32, ['north', 'south'].includes(direction) ? 18 : 288);
+  }
+  result.corners['meadow-corner-v1'] = {};
+  for (const direction of ['nw', 'ne', 'se', 'sw']) result.corners['meadow-corner-v1'][direction] = await image(manifest.corners?.['meadow-corner-v1']?.[direction], 32, 18);
+  return result;
+}
+async function loadRegistry(read, names, templates = null) {
   const registry = new Map(), images = new Map(), issues = [];
   for (const name of names) {
     let asset;
@@ -24,7 +44,7 @@ async function loadRegistry(read, names) {
         if (!images.has(object.asset)) images.set(object.asset, await inspectImage(await read(object.asset)));
         objectImages.set(object.asset, images.get(object.asset));
       }
-      asset = {manifest, navigation, groundInfo, objectImages};
+      asset = {manifest, navigation, groundInfo, objectImages, templates};
       const errors = validateAsset(asset);
       if (registry.has(manifest.id)) errors.push({asset: manifest.id, category: 'identity', message: 'Duplicate asset ID'});
       if (errors.length) issues.push(...errors); else registry.set(manifest.id, asset);
@@ -61,5 +81,7 @@ export async function loadFiles(files) {
     catch { throw new Error(`Invalid JSON in ${name}`); }
   }
   if (!names.length) throw new Error('Select manifests, navigation JSON, and their PNGs together.');
-  return loadRegistry(async name => { if (!map.has(name)) throw new Error(`Missing ${name}`); return map.get(name); }, names);
+  const read = async name => { if (!map.has(name)) throw new Error(`Missing ${name}`); return map.get(name); };
+  const templates = map.has('templates.json') ? await loadTemplates(read, JSON.parse(await map.get('templates.json').text())) : null;
+  return loadRegistry(read, names, templates);
 }
