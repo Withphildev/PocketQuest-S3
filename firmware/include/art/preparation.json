@@ -1,0 +1,21 @@
+{
+  "sourceDimensions": [
+    1672,
+    941
+  ],
+  "fittedDimensions": [
+    240,
+    135
+  ],
+  "canvas": [
+    240,
+    135
+  ],
+  "sourceSHA256": "a453ae14da4aa6bd43b1cd477df08f71ae9513ee97ee272829a0af9a164e2eef",
+  "encodedBytes": {
+    "splash": 68850,
+    "attack": 43520,
+    "idle": 3264
+  },
+  "note": "RGB565 plus binary alpha >=128; uniform fit and padding, original preserved."
+}

@@ -1,0 +1,14 @@
+{
+  "status": "unapproved-calibration-candidate",
+  "sources": {
+    "ground": {"file":"ground-reference.png","sha256":"858e5c680d6f549cd2ec1c4f2b2b4e7ef863fe85734d51a08b97e44cccca28fa"},
+    "tree": {"file":"tree-reference.png","sha256":"d96364117e338f897479b0e812217b4679cafe60377ceefc528aec0720305f35"}
+  },
+  "padding": [53,103,43,255],
+  "layers": [
+    {"source":"ground","crop":[200,50,232,86],"cropReason":"Explicit grass texture sampling from the ground-only reference; remaining composition is not preserved. No original Sunlit foreground is cropped.","scale":"1/2","tile":true,"destination":[0,0,1024,288]},
+    {"source":"ground","crop":[200,354,232,390],"cropReason":"Explicit dirt texture sampling, composed as a 36-pixel road band. This is not the original path geometry.","scale":"1/2","tile":true,"destination":[0,126,1024,162]}
+  ],
+  "foreground": {"source":"tree","file":"Sunlit-Tree.png","canvas":[128,160],"fit":[112,140],"pivot":[64,148],"anchor":[128,160],"collision":[[114,146],[142,146],[142,174],[114,174]]},
+  "manifest": "../assets/F002-east-west.json"
+}

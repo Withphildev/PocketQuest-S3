@@ -1,0 +1,84 @@
+{
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "sourceSHA256": "d7d67b66500eb84513a732c8714463dda9955da405c705caed3081e213cb567f",
+  "inverseScale": 5.25,
+  "anchorBaselineFromPaintBottom": true,
+  "anchors": [
+    [
+      [
+        186,
+        287
+      ],
+      [
+        468,
+        287
+      ],
+      [
+        775,
+        287
+      ],
+      [
+        1078,
+        287
+      ]
+    ],
+    [
+      [
+        178,
+        576
+      ],
+      [
+        479,
+        576
+      ],
+      [
+        766,
+        576
+      ],
+      [
+        1063,
+        576
+      ]
+    ],
+    [
+      [
+        165,
+        860
+      ],
+      [
+        480,
+        860
+      ],
+      [
+        764,
+        860
+      ],
+      [
+        1068,
+        860
+      ]
+    ],
+    [
+      [
+        188,
+        1142
+      ],
+      [
+        484,
+        1142
+      ],
+      [
+        779,
+        1142
+      ],
+      [
+        1086,
+        1142
+      ]
+    ]
+  ],
+  "note": "Provisional manually authored planted-foot centers from spaced source. Same uniform scale for all poses; body height approximately40px. Owner animation review required."
+}

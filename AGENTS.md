@@ -23,3 +23,19 @@ After each successful firmware build intended for owner testing:
 The normal merged image does not include filesystem initialization and stops before the saves partition. Do not add blank saves to routine-update images. A full erase or incompatible partition change requires a separate initialization plan and warning: the current firmware never autoformats save storage. Merged-image padding covers NVS, so do not promise preservation of all settings.
 
 Verify hardware claims from telemetry or owner observations; report unverified behavior explicitly. Never modify the PocketLab, PocketPal, or PocketBoy reference projects.
+
+## Owner-approved device Wi-Fi convention — v0.1.4
+
+Derive credentials at runtime from ESP.getEfuseMac(), matching the reference projects' integer formatting: SSID PocketQuest- plus the low 16 bits as four uppercase hex digits; password Quest plus the low 32 bits as eight uppercase hex digits. Do not switch back to random/NVS-stored credentials without owner approval. This keeps credentials repeatable after reflashing/erasing but is predictable, not a strong security secret, and truncated identifiers are not globally collision-free. Never bake the actual owner's chip identifier or password into source. Preserve the enlarged 123px Wi-Fi QR with its four-module quiet zone; battery stays top-right on information/game screens and moves left on QR to avoid overlap.
+
+## Owner-approved storage policy — 2026-10-12
+
+The owner approved the calibration storage-budget report and keeping the current partition layout unchanged. This approval does not authorize Phase 2B, production artwork, firmware installation, or partition changes.
+
+At each major milestone, report these four measurements separately: application binary size, asset payload bytes, modeled filesystem allocation, and complete factory BIN size including padding. Identify unbuilt/unmeasured items explicitly; do not substitute partition capacity or estimates for measured usage. Use `web/tools/asset-storage-budget.py` for the current asset inventory/model and report its assumptions separately from device telemetry.
+
+Alert the owner when modeled asset filesystem allocation exceeds 75% of the 2 MiB partition (1,572,864 bytes). This is a review warning, not an automatic quality reduction or partition change. Include remaining space and whether engineering fixtures are retained.
+
+Investigate lossless PNG optimization in a later authorized milestone. Verify identical decoded dimensions, RGBA pixels and transparency before adopting any optimized file; preserve originals and never reduce artwork quality to meet a budget silently.
+
+Continue the owner-downloads/archives/flashes workflow with descriptive versioned factory binaries at 0x0000 when firmware delivery is authorized. Verify partition layout, constituent offsets and included asset filesystem before delivery. Label every package clean-install or save-preserving-update, with verified save/NVS overwrite boundaries. A contiguous merged image containing assets at 0x5F0000 spans the intervening saves partition; never label such an image save-preserving merely because no explicit saves input was supplied. Explain padding and warn about data loss before delivery; use a separate verified strategy if save preservation is required.

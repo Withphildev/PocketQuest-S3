@@ -1,0 +1,15 @@
+# PocketQuest-S3 v0.1.5 — Friendly URL
+
+The Wi-Fi information screen now displays http://PocketQuest. Connect to the PocketQuest hotspot first, then enter the full HTTP address in the browser. DNS hostname matching is case-insensitive. Installed Arduino DNSServer source inspected: wildcard mode answers local IPv4 name queries with the AP address; the existing firmware services DNS and HTTP on all screens. No external/public DNS registration or home-network service is introduced.
+
+http://192.168.4.1 remains a numeric fallback and is documented in the landing page. Private/secure DNS, VPNs, HTTPS-only browser behavior or device DNS caching can interfere with the friendly hostname; use the numeric HTTP address if necessary. This is still the connection-only page, not browser RPG integration. The QR remains a Wi-Fi joining QR, not a URL QR. Chip-derived credentials, battery layout, buttons, splash, Nova combat, pause policy and save format unchanged.
+
+Verification: target build PASS; source-contract checks for friendly URL, wildcard DNS/service wiring, numeric fallback and text bounds PASS; credential, screen-flow, animation, battery geometry and QR capacity regression executables PASS. Core host regression: 1,330 assertions PASS. Build budget, compiled partition agreement, merged offset/content/padding and copy hash verification PASS. This is not an actual phone DNS/HTTP test; no hardware accessed/flashed.
+
+Delivery: PocketQuest-S3-v0.1.5-PocketQuest-URL.factory.bin, **flash at 0x0000 without full erase**. Routine save-preserving update for existing PocketQuest layout. Stops before saves at 0x4F0000; save and asset filesystems not included/overwritten. NVS padding may reset other settings; Wi-Fi credentials are chip-derived and unchanged. Existing save filesystem required; no autoformat. Verified offsets: bootloader 0x0000, partitions 0x8000, boot_app0 0xE000, application 0x10000. SHA-256 f2279e4d75747bb0b4e0ab2768a18e93cdc1d9509828e4ce9c355fa4948fdc54.
+
+Application BIN: 1,405,248 bytes (1.34 MiB), 3,706,560 bytes partition headroom. Factory BIN: 1,470,784 bytes (1.40 MiB) including padding. Embedded art remains 115,634 bytes, already within application. Browser payload unchanged at 1,067,058 bytes, not included in BIN. Last unchanged filesystem model: 1,282,048 bytes / 2 MiB (61.13%, 815,104 free), or 1,359,872 bytes with engineering fixtures (64.84%, 737,280 free), below the 75% review threshold. No partition change. Source remains a local dirty working tree; no GitHub Release/publication.
+
+Owner test: flash routine update, confirm friendly address on screen, join hotspot, open http://PocketQuest and confirm PocketQuest connection page. Try numeric fallback if needed; verify the existing QR/buttons/game/save behavior remains good. Stop for review.
+
+Reproduction: pio run -d firmware; python3 tools/test-portal-contract.py; sh tools/test-host.sh; python3 tools/check-build.py; tools/prepare-delivery.py --version 0.1.5 --feature PocketQuest-URL --boot-app0 using the pinned framework tools/partitions/boot_app0.bin.

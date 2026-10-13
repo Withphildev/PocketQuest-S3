@@ -57,9 +57,10 @@ function syncCalibrationControls() {
 async function install(result, custom = false) {
   if (!result.registry.size) { importIssues = result.issues; setReport([]); return; }
   registry = result.registry; importIssues = result.issues; world = new World(seed, registry); createSlots();
+  if (registry.has('F002-Sunlit-Forest-Left') && registry.has('F002-Sunlit-Forest-Right')) { slots[0].value = 'F002-Sunlit-Forest-Left'; slots[1].value = 'F002-Sunlit-Forest-Right'; }
   renderer.characters = result.characters || null;
   artStatus = result.artStatus || 'Engineering fixtures · NOT illustrated Sunlit artwork';
-  $('art-status').textContent = `${artStatus}. ${renderer.characters ? 'Imported static Nova frames; animation not supplied.' : 'Geometric Nova placeholders; approved sprite files unavailable.'}`;
+  $('art-status').textContent = `${artStatus}. ${renderer.characters ? 'Nova sprite candidates loaded; owner visual review required.' : 'Geometric Nova placeholders; approved sprite files unavailable.'}`;
   $('generated').replaceChildren();
   for (const [name, blob] of result.generated || []) {
     const button = document.createElement('button'); button.textContent = `Download ${name}`;
@@ -95,9 +96,9 @@ $('files').addEventListener('change', async () => {
   keys.clear(); try { await install(await loadFiles($('files').files), true); }
   catch (error) { importIssues = [{category: 'load', message: error.message}]; setReport([]); }
 });
-$('builtin').addEventListener('click', async () => { try { await install(await loadBuiltins()); } catch (e) { setReport([{category: 'load', message: e.message}]); } });
+$('builtin').addEventListener('click', async () => { try { await install(await loadBuiltins({engineering:true})); } catch (e) { setReport([{category: 'load', message: e.message}]); } });
 $('report').addEventListener('click', () => {
-  const blob = new Blob([JSON.stringify({prototype: 'Phase 2A.2', artStatus, characters: renderer.characters ? 'imported-static' : 'geometric-placeholders', semanticRoadMask: 'Authored mask checked; visual road agreement requires review', seed, mode, characterRenderScale: characterScale($('character-scale').value), collisionRadius: 6, failures: report,
+  const blob = new Blob([JSON.stringify({prototype: 'Phase 2A.3', artStatus, characters: renderer.characters ? 'imported-candidates' : 'geometric-placeholders', semanticRoadMask: 'Authored mask checked; visual road agreement requires review', seed, mode, characterRenderScale: characterScale($('character-scale').value), collisionRadius: 6, failures: report,
     assets: [...registry.values()].map(a => ({id: a.manifest.id, groundBytes: a.groundInfo.bytes,
       decodedGroundBytes: a.groundInfo.width * a.groundInfo.height * 4}))}, null, 2)], {type: 'application/json'});
   const a = document.createElement('a'), url = URL.createObjectURL(blob); a.href = url; a.download = 'PocketQuest-scenery-validation.json'; a.click(); setTimeout(() => URL.revokeObjectURL(url), 1000);

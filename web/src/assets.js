@@ -54,7 +54,7 @@ async function loadRegistry(read, names, templates = null) {
   }
   return {registry, images, issues};
 }
-export async function loadBuiltins() {
+export async function loadBuiltins({engineering = false} = {}) {
   const embedded = document.getElementById('embedded-assets');
   const embeddedFiles = embedded ? JSON.parse(embedded.textContent) : null;
   const read = async name => {
@@ -68,7 +68,20 @@ export async function loadBuiltins() {
     if (!response.ok) throw new Error(`Missing ${name}`);
     return response.blob();
   };
-  return loadRegistry(read, JSON.parse(await (await read('catalog.json')).text()));
+  const catalog = JSON.parse(await (await read('catalog.json')).text()).filter(name => !engineering || !name.startsWith('F002-Sunlit-Forest-'));
+  const templates = catalog.includes('F002-Sunlit-Forest-Left.json') ? await loadTemplates(read, JSON.parse(await (await read('templates.json')).text())) : null;
+  const result = await loadRegistry(read, catalog.filter(name => !name.startsWith('F002-Sunlit-Forest-')), null);
+  if (templates) {
+    const candidate = await loadRegistry(read, catalog.filter(name => name.startsWith('F002-Sunlit-Forest-')), templates);
+    for (const [id, asset] of candidate.registry) result.registry.set(id, asset);
+    result.issues.push(...candidate.issues);
+  }
+  if (templates) {
+    await inspectRoadMask(await read('F002-Sunlit-Forest-RoadMask.png'));
+    result.artStatus = 'Illustrated pipeline candidate · NOT production-approved';
+  }
+  if (embeddedFiles?.['nova.json'] && !engineering) result.characters = await loadCharacters(read, JSON.parse(await (await read('nova.json')).text()), inspectImage);
+  return result;
 }
 export async function loadFiles(files) {
   const map = new Map();

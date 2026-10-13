@@ -11,13 +11,19 @@ A pocket-sized fantasy RPG for the M5Stack StickS3, featuring motion combat, pro
 
 M5Stack StickS3: ESP32-S3-PICO-1-N8R8, 8 MiB flash, 8 MiB octal PSRAM, 135 × 240 LCD (240 × 135 landscape), BMI270 IMU, and Face/M5 buttons. Phase 1 runtime diagnostics confirmed flash/PSRAM capacity, landscape dimensions, BMI270 detection, and the separate save filesystem. See the [hardware report](docs/HARDWARE_INSTALLATION_REPORT.md).
 
-## Current status — Phase 1 firmware v0.1.0 + Phase 2A renderer study
+## Current status — firmware v0.1.5 + Phase 2A.3 calibration
+
+Current firmware includes the owner-supplied splash, female Nova's right-facing sword animation, four-screen flow (2.5-second splash → Wi-Fi → QR → mini-game), battery display, stable chip-derived Wi-Fi credentials and `http://PocketQuest` hotspot URL. M5 cycles the three post-splash screens; Face/motion combat runs only in the mini-game, with combat paused on connection screens. The owner has reported the recent interface/buttons working well; individual checks not explicitly reported by the owner remain unverified. See [v0.1.5 delivery notes](docs/FIRMWARE_V0_1_5.md) and [checkpoint reproduction](docs/CHECKPOINT_V0_1_5.md).
+
+The browser study now includes a technically validated two-block Sunlit candidate, independent fantasy tree, and female/male Nova sprite candidates. It is still a calibration prototype, not a complete RPG or production scenery library, and is not served by this firmware. [Enemy references](docs/ENEMY_REFERENCES.md) are planned next work, not implemented encounters.
+
+### Original hardware milestone
 
 First standalone prototype, v0.1.0. Runs without Wi-Fi or a phone. Includes a splash, geometric player/slime placeholders, idle animation, motion and button attacks, HP, XP, levels, and two CRC-checked save snapshots.
 
 The firmware compiles and 1,330 host assertions pass. An approved clean installation on the owner's dedicated StickS3 succeeded. The owner confirmed the splash/player display, button attacks, gentle motion attacks, progression to Level 2 / 24 XP, and that progression surviving restart. This is an **owner-verified hardware smoke-test baseline**, not a production-ready release. Detailed timing, false-positive rates, endurance, and physical power-cut recovery remain unverified.
 
-Two cosmetic protagonists are approved: **Nova (Female)** with long indigo-purple hair, and **Nova (Male)** with short, tousled indigo-purple hair. Equipment, abilities, and progression are shared. [Character specifications](docs/CHARACTERS.md) are included. The browser study offers both temporary geometric appearances; production sprites and firmware/persistent character selection are **not implemented**.
+Two cosmetic protagonists are approved: **Nova (Female)** with long indigo-purple hair, and **Nova (Male)** with short, tousled indigo-purple hair. Equipment, abilities, and progression are shared. [Character specifications](docs/CHARACTERS.md) are included. Browser sprite candidates support both appearances; current firmware uses female Nova only. Production-art approval and firmware/persistent character selection are **not implemented**.
 
 The [Phase 2A browser prototype](web/README.md) demonstrates Canvas 2D scrolling, seeded scenery, independent collision, foreground occlusion, and a local scenery validator. Build/run details and limitations are in the [Phase 2A report](docs/PHASE2A_REPORT.md). Owner visual review is required before Phase 2B; this is not the full browser RPG.
 
@@ -47,9 +53,12 @@ Landscape orientation, blue Face button at the left:
 
 - Face, short press/release: start or retry an encounter; attack during combat.
 - Gentle deliberate swing: attack during combat after approximately 0.8 seconds of steady calibration. Return to stillness between swings.
-- M5, short press/release: toggle live motion diagnostics.
+- M5, short press/release: Wi-Fi → QR → mini-game → Wi-Fi.
 - M5, hold one second: cycle Light / Normal / Firm swing threshold, saved with the game.
 - Serial `?` at 115200 baud: print hardware, partitions, memory, and filesystem status.
+- Serial `d`: toggle live motion diagnostics.
+
+The chip-derived password is convenient and repeatable after reflashing, but predictable rather than a strong secret. Use the hotspot only for this local development connection page. Firmware updates preserve save partition boundaries but overwrite NVS padding; do not full-erase for routine updates.
 
 The slime has 18 HP. Level-1 attacks deal 7 damage, with a shared 650 ms cooldown for button and motion input. The slime deals 3 HP every 1.8 seconds. Victory gives 12 XP, and the first level-up is at 20 total XP. Starting another encounter restores player HP. Rates are prototype tuning values, not final balancing.
 

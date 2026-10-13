@@ -10,6 +10,8 @@
 #include <Save.h>
 #include "Display.h"
 #include "FlashSnapshots.h"
+#include "ScreenFlow.h"
+#include "QuestPortal.h"
 
 namespace {
 pq::Game game;
@@ -17,6 +19,10 @@ pq::MotionDetector motion;
 FlashSnapshots flash;
 pq::SaveStore saves(flash);
 QuestDisplay display;
+ScreenFlow screens;
+QuestPortal portal;
+uint32_t gameNow=0, gameWall=0;
+uint32_t batteryAt=0;
 bool storageReady=false, imuReady=false, debugVisible=false, saveError=false;
 bool milestonePending=false;
 const char *saveStatus="NO STORAGE";
@@ -51,7 +57,7 @@ void configureMotion() {
     Serial.printf("Motion threshold %.2fg; cooldown %lu ms\n",thresholds[game.state().motionPreset],static_cast<unsigned long>(pq::kAttackCooldownMs));
 }
 void diagnostics() {
-    Serial.printf("PocketQuest v0.1.0 | chip %s rev %u | physical flash %lu bytes\n", ESP.getChipModel(),ESP.getChipRevision(),static_cast<unsigned long>(ESP.getFlashChipSize()));
+    Serial.printf("PocketQuest v0.1.5 Friendly URL | chip %s rev %u | physical flash %lu bytes\n", ESP.getChipModel(),ESP.getChipRevision(),static_cast<unsigned long>(ESP.getFlashChipSize()));
     Serial.printf("App image %lu bytes, heap free %lu, internal free/largest %u/%u, PSRAM total/free %lu/%lu\n",
         static_cast<unsigned long>(ESP.getSketchSize()),static_cast<unsigned long>(ESP.getFreeHeap()),
         static_cast<unsigned>(heap_caps_get_free_size(MALLOC_CAP_INTERNAL|MALLOC_CAP_8BIT)),
@@ -90,7 +96,7 @@ void setup() {
     config.internal_mic=false; config.internal_spk=false; config.output_power=false;
     M5.begin(config); M5.Power.setExtOutput(false);
     M5.Display.setRotation(3); M5.Display.setBrightness(70);
-    face.begin(); m5Button.begin(); display.begin(); display.splash(); bootAt=millis();
+    face.begin(); m5Button.begin(); display.begin();
     imuReady=M5.Imu.isEnabled();
     if(layoutMatches()) storageReady=flash.begin();
     if(storageReady) {
@@ -109,10 +115,15 @@ void setup() {
         saveError=true; saveStatus="NO SAVE FS";
         Serial.println("Save filesystem/layout unavailable. No formatting attempted. Session is unsaved.");
     }
-    configureMotion(); diagnostics(); lastSave=millis();
+    configureMotion(); portal.begin(); diagnostics(); lastSave=millis();
+    display.updateBattery(); batteryAt=millis();
+    gameNow=gameWall=millis(); display.splash(); bootAt=millis(); screens.begin(bootAt);
 }
 void loop() {
     const uint32_t now=millis(); M5.update();
+    portal.loop();
+    if(screens.gaming()) gameNow+=now-gameWall;
+    gameWall=now;
     const int faceEvent=face.poll(now), m5Event=m5Button.poll(now);
     bool swung=false;
     if(imuReady && now-lastSample>=20) {
@@ -120,23 +131,25 @@ void loop() {
         if(M5.Imu.getAccel(&x,&y,&z)) swung=motion.sample(x,y,z,now);
         else { imuReady=false; Serial.println("IMU unavailable; use Face button."); }
     }
-    // Calibration proceeds during the splash; splash input never attacks.
-    if(now-bootAt<2000) { delay(2); return; }
-    if(m5Event==1) debugVisible=!debugVisible;
-    if(m5Event==2) { game.cycleMotionPreset(); configureMotion(); milestonePending=true; }
+    // IMU calibration continues on all screens; navigation inputs never attack.
+    const bool screenChanged=screens.update(now,m5Event==1);
+    bool batteryChanged=false;
+    if(now-batteryAt>=5000) { batteryAt=now; batteryChanged=display.updateBattery(); }
+    if((screenChanged || batteryChanged) && !screens.gaming() && screens.screen()!=ScreenFlow::Screen::Splash) display.connection(portal.ssid().c_str(),portal.password().c_str(),portal.url().c_str(),portal.qr().c_str(),portal.ready(),screens.screen()==ScreenFlow::Screen::Qr);
+    if(screens.screen()!=ScreenFlow::Screen::Splash && m5Event==2) { game.cycleMotionPreset(); configureMotion(); milestonePending=true; }
     const auto oldPhase=game.state().phase;
-    if(faceEvent==1) {
-        if(game.state().phase==pq::Phase::Battle) game.attack(now);
-        else game.encounter(now);
+    if(screens.gaming() && !screenChanged && faceEvent==1) {
+        if(game.state().phase==pq::Phase::Battle) { if(game.attack(gameNow)) display.attack(gameNow); }
+        else game.encounter(gameNow);
     }
-    if(swung) game.attack(now);
-    game.tick(now);
+    if(screens.gaming() && !screenChanged && swung && game.attack(gameNow)) display.attack(gameNow);
+    if(screens.gaming() && !screenChanged) game.tick(gameNow);
     milestonePending=milestonePending || important(oldPhase);
     const bool dirty=game.state().revision!=savedRevision;
     if(dirty && !saveError) saveStatus="UNSAVED";
     if(dirty && (milestonePending || now-lastSave>=30000) && now-lastAttempt>=1500) checkpoint(now);
-    if(now-lastFrame>=120) {
-        lastFrame=now; display.frame(game,motion.debug(),imuReady,saveStatus,saveError,saves.sequence(),debugVisible,now);
+    if(screens.gaming() && (screenChanged || now-lastFrame>=30)) {
+        lastFrame=now; display.frame(game,motion.debug(),imuReady,saveStatus,saveError,saves.sequence(),debugVisible,gameNow);
     }
     if(now-lastDebug>=1000) {
         lastDebug=now;
@@ -144,6 +157,6 @@ void loop() {
             motion.debug().energyG,motion.debug().peakG,motion.debug().calibrated,motion.debug().armed,motion.debug().rejected,
             game.state().hp,game.state().monsterHp,static_cast<unsigned long long>(game.state().revision));
     }
-    if(Serial.available()) { const char c=Serial.read(); if(c=='?') diagnostics(); }
+    if(Serial.available()) { const char c=Serial.read(); if(c=='?') diagnostics(); if(c=='d') debugVisible=!debugVisible; }
     delay(2);
 }
