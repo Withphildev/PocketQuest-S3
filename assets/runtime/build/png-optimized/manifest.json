@@ -1,0 +1,1947 @@
+{
+  "schemaVersion": 1,
+  "optimizer": "oxipng 10.2.1",
+  "optimizerSHA256": "275a2049091caf576be74b838df4675fbb179c9f2d118cec44ea1521e54fc45e",
+  "policy": "Exact dimensions, all decoded RGBA bytes including hidden RGB, alpha and ancillary metadata. Smaller only. Original files untouched. No --alpha, --scale16 or --strip.",
+  "files": {
+    "assets/F001-clearing.png": {
+      "sourceSHA256": "0a42bdd31d523d2580628ede9692c6f57305317efac4627e326a3c63423f76ab",
+      "optimizedSHA256": "ba074fa01dc6ee0b3f5c0c18e22ebbe9754bfcc7d5b8d45c5133e7246bacf476",
+      "sourceBytes": 5937,
+      "optimizedBytes": 1063,
+      "savedBytes": 4874,
+      "size": [
+        512,
+        288
+      ],
+      "rgbaSHA256": "cbcb64968a5f5eea11537722056213fb46bad97696a4d21c3727606a25685148",
+      "alphaSHA256": "4ae2e6e6e32dace013ba173d69a66ac11951b0d718d68aaf31816a8b69264794",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "assets/F002-east-west.png": {
+      "sourceSHA256": "3454af1e3ab8b6397d515fe5670743af9d907da6d05baca8ce504024c0aeef0d",
+      "optimizedSHA256": "985b1254c4700635896a41df1f5eead6f7a4f0bbfc7ba94df7983c9833572fd0",
+      "sourceBytes": 5673,
+      "optimizedBytes": 1275,
+      "savedBytes": 4398,
+      "size": [
+        512,
+        288
+      ],
+      "rgbaSHA256": "0e3f61c691334c50841c11e6189392b653fa131fc56e92c1324396e2ddc32001",
+      "alphaSHA256": "4ae2e6e6e32dace013ba173d69a66ac11951b0d718d68aaf31816a8b69264794",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "assets/F002-north-south.png": {
+      "sourceSHA256": "d7316b50135989039bd4420b5fa1fb7601c99f92f56bdd50a319459a6e1cd954",
+      "optimizedSHA256": "cdd5f53b861a7bf5eb6b58ff0402db7b653baab651e55e19bbc7dcc2b19eb3b8",
+      "sourceBytes": 7922,
+      "optimizedBytes": 1894,
+      "savedBytes": 6028,
+      "size": [
+        512,
+        288
+      ],
+      "rgbaSHA256": "df012c5e7412a8e7918a9cf49e1569346772762cd262689a42178256805cae58",
+      "alphaSHA256": "4ae2e6e6e32dace013ba173d69a66ac11951b0d718d68aaf31816a8b69264794",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "assets/F003-pond.png": {
+      "sourceSHA256": "0f121eea00ac5a1da26f5fc8d8773b26ae9965cda3f18bdff5d4a9eb02e114b8",
+      "optimizedSHA256": "fccc1c13c74bf3afd120a930f0f72a9315ea00c66bb2e3e56668992a322b8060",
+      "sourceBytes": 6537,
+      "optimizedBytes": 1439,
+      "savedBytes": 5098,
+      "size": [
+        512,
+        288
+      ],
+      "rgbaSHA256": "4dd95ea9c845c065708022b48faa018cff0b12db60f43ef5512a32ee09d530d7",
+      "alphaSHA256": "4ae2e6e6e32dace013ba173d69a66ac11951b0d718d68aaf31816a8b69264794",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "assets/F004-crossroads.png": {
+      "sourceSHA256": "2c043c5f4b8403f75292cf5075869ed2401af0dc60d95c648c761dd0cd565efc",
+      "optimizedSHA256": "6f405fd72819f06f8ec616c980575592b9b4846b38ee0fedc06f33ea43d43793",
+      "sourceBytes": 7369,
+      "optimizedBytes": 1765,
+      "savedBytes": 5604,
+      "size": [
+        512,
+        288
+      ],
+      "rgbaSHA256": "0a48e721c732c7f4e433d688604f2c23f0f5badd95e0a977d36416a0db8e4c96",
+      "alphaSHA256": "4ae2e6e6e32dace013ba173d69a66ac11951b0d718d68aaf31816a8b69264794",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "assets/cabin.png": {
+      "sourceSHA256": "e0edb18d861e485face29e014fddc6eb74342c4482698d08108e03a2148edc83",
+      "optimizedSHA256": "ca1c955ddfc488e505ef68730843789329770a85f6bf9cbb5ec45a47ccb99e1e",
+      "sourceBytes": 568,
+      "optimizedBytes": 297,
+      "savedBytes": 271,
+      "size": [
+        128,
+        120
+      ],
+      "rgbaSHA256": "37ad42c5f79f8d1e320a3bc149d33f37fe3dde2b1671f6d3ae8b09fe67716ade",
+      "alphaSHA256": "4c46dbb213718247090174de26ffb70dedd10d4807e467dab31db04ea086b83c",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "assets/fence.png": {
+      "sourceSHA256": "a34ab0e96d17e0d8380a3f383a559a545c0a174ca40c28b1a1d5f2b672648293",
+      "optimizedSHA256": "f20c9b9920ba525a936dd8033cf265c4e418ff128598c3ba5f281e7ea7930f17",
+      "sourceBytes": 195,
+      "optimizedBytes": 117,
+      "savedBytes": 78,
+      "size": [
+        80,
+        32
+      ],
+      "rgbaSHA256": "0e494a7e208b4e91191c009fdd0ca2904dec86c00981fd174b0de6aeb9c19940",
+      "alphaSHA256": "d3de1e76a573d7a5f62341457c835d1ee9c8178f9b3e17ece23de04b5733d125",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "assets/rock.png": {
+      "sourceSHA256": "0c6a2255a2ab837b8c57b345137a7ce87a7b0ce7791bdf00b39cb0ceb132841c",
+      "optimizedSHA256": "5d3281e56119fdf35a157a268c6aaaca8919a7aed2bb1d8ed4ae9bc3c8b4318e",
+      "sourceBytes": 167,
+      "optimizedBytes": 152,
+      "savedBytes": 15,
+      "size": [
+        48,
+        32
+      ],
+      "rgbaSHA256": "51a79746015663f1e66e5dabfdf0442b1c209fd9cf9e84a0589d5392973cf841",
+      "alphaSHA256": "27acb71ddd5ec6e720778941a76635ba4490e30128367f97b1778320077a0ce4",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "assets/tree.png": {
+      "sourceSHA256": "cd17d54af0a97741daa3e64f000719f3d357a3838792ad5ac450f60c9fa21c9e",
+      "optimizedSHA256": "7f2940da8ec57894d9a32d50bb02becf7ff17e3754c7a21feea49101c75ae7cc",
+      "sourceBytes": 552,
+      "optimizedBytes": 318,
+      "savedBytes": 234,
+      "size": [
+        96,
+        112
+      ],
+      "rgbaSHA256": "9ea6e7b293e688ab0c41fa46638cd188bba4da0179ad6a120d7c20730bdf7897",
+      "alphaSHA256": "c80366f3b235ab4f4ed4704b1dfbc0dc7bc0539c393426fdb323094fabadf9da",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/dire-wolf/Dire-Wolf-Atlas.png": {
+      "sourceSHA256": "6a50ee10f34d051053949913d79f7b5efb4a0e7b0b146a9362ad4b25574ea57b",
+      "optimizedSHA256": "4f212b1ce66b376bcc8669a0a826f3a2d7012d11589eeabb0d45a517f8ea545e",
+      "sourceBytes": 29229,
+      "optimizedBytes": 27572,
+      "savedBytes": 1657,
+      "size": [
+        256,
+        96
+      ],
+      "rgbaSHA256": "0d1ef660d6360ff3f77b8393c1591d235b1d739ed97c4bd77d7e03acac68f6d3",
+      "alphaSHA256": "afcc9d692d0003483bc9fc40c9f9f84a9ffd4875ed63c917f673cd5354c14efe",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/dire-wolf/Dire-Wolf-Contact-4x.png": {
+      "sourceSHA256": "da23669cb453d2528bb9fc1827df2f8791b4124eab764377f006a7f83ec293c4",
+      "optimizedSHA256": "ade853a1d87071e978efad0e481532eb31d2fdb5cf7ac1588c14b5a1aa612557",
+      "sourceBytes": 37637,
+      "optimizedBytes": 31419,
+      "savedBytes": 6218,
+      "size": [
+        1024,
+        384
+      ],
+      "rgbaSHA256": "b7f93fa3277ec4e1bb1cec8c259f856b176fef4ea300fa7f0e0a52a60f231339",
+      "alphaSHA256": "c97fce784428a2e10cd6d4ef97ccc756f2e4c1b146a9b9dc5415d4e3e245b70a",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/dire-wolf/Dire-Wolf-attack-0.png": {
+      "sourceSHA256": "192428cf39f4b7b6e63b4d10c927403929354c0fad3dd312bf86d10de29aecdc",
+      "optimizedSHA256": "5a63e7b145b8e031b09c1ec896f48c10c06062d3896baf0135a3e75a67e42aad",
+      "sourceBytes": 3957,
+      "optimizedBytes": 3838,
+      "savedBytes": 119,
+      "size": [
+        64,
+        48
+      ],
+      "rgbaSHA256": "67765289aa914ec1efccc25edb4ee984944ff51e0ebcbc1098601169a48d701d",
+      "alphaSHA256": "a07dfc36288f0fb49e3b99fa81e0ae6c296ab004d260682fb6e068a00ef3121b",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/dire-wolf/Dire-Wolf-attack-1.png": {
+      "sourceSHA256": "29b9aaf242cca8d6bb9ac8491556ceca6c132a3f479c8d9c8049a2bfb1a9f787",
+      "optimizedSHA256": "d8b1f108d743d0861985c1f47a1eb328703b2a3f5c1e6ce7f938869c2945d4d5",
+      "sourceBytes": 3788,
+      "optimizedBytes": 3625,
+      "savedBytes": 163,
+      "size": [
+        64,
+        48
+      ],
+      "rgbaSHA256": "5188a26b38f790c2a79026c5d17e3cf66e6c5e283c4ce2ea7804c40a429caf9e",
+      "alphaSHA256": "65c6e6d25c28c5c9b6f17eec43c7f98e9624d4209b4a5bfe5fcebcc13b82d8dc",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/dire-wolf/Dire-Wolf-attack-2.png": {
+      "sourceSHA256": "ee64d4cae258e8c7e14c033f40741e5ce383da76e0a61c23d005fbebdd70f798",
+      "optimizedSHA256": "78e930135ae0e22e56aef896d1a255dab30f0fa0b7971604b0a5fbcb3a9fb6c5",
+      "sourceBytes": 3991,
+      "optimizedBytes": 3891,
+      "savedBytes": 100,
+      "size": [
+        64,
+        48
+      ],
+      "rgbaSHA256": "27645e6873980f8bfdb9675c749aa7ef2562659cb1b246ace8933858443eadbd",
+      "alphaSHA256": "c0f02782fc5f7677c12007698cbf5be041fe3c6a7016a5e9666666092d91ffe6",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/dire-wolf/Dire-Wolf-block-0.png": {
+      "sourceSHA256": "216bb65fcdb47d9f6760b6bd64ab7e544bb881c7e34b661f4fc5511597a188a2",
+      "optimizedSHA256": "5ed86077c90a3f8308c1bedac110d5252a54261a6e8af05bd205e5d9612b53ea",
+      "sourceBytes": 3902,
+      "optimizedBytes": 3800,
+      "savedBytes": 102,
+      "size": [
+        64,
+        48
+      ],
+      "rgbaSHA256": "2cc8e994e6d3aee686bfe5246f7bfec9a96bd33ff40ecab6f4bb86568e7bcd7e",
+      "alphaSHA256": "d629dd4082db915f5d129ba74469df5cd29161af66332416282b407981410cd8",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/dire-wolf/Dire-Wolf-defeated-0.png": {
+      "sourceSHA256": "30aa05d22ad1d03b360b3c0f6c1b6917a7623347f3c1b325b77b6f4f5d3874d3",
+      "optimizedSHA256": "b97522f6752cde7017a0c5610b7fabbf2582922fd490c58cd3959d6eb3f76921",
+      "sourceBytes": 2887,
+      "optimizedBytes": 2791,
+      "savedBytes": 96,
+      "size": [
+        64,
+        48
+      ],
+      "rgbaSHA256": "403e57a501529da8f937a79b7d648fc65cf38f0e2a03989ab5b899c61a8fe9ff",
+      "alphaSHA256": "95200ca0a4221830a7ae38ccba2a17bda3128b1538c82f9df678819d8ea9ac24",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/dire-wolf/Dire-Wolf-hurt-0.png": {
+      "sourceSHA256": "d99407a495ae40f8c33002d0dd7b1f06050dc7e56d8d9e3c807fa73f9f7efd59",
+      "optimizedSHA256": "77296aefa27f5f8a90ed9d18c15d885b6368373487de7bfed95eaf2735eefc6b",
+      "sourceBytes": 3860,
+      "optimizedBytes": 3785,
+      "savedBytes": 75,
+      "size": [
+        64,
+        48
+      ],
+      "rgbaSHA256": "0132d365017c19b122039c45581f1c5c73a724e9f3dc747af0cff78f67c2a72c",
+      "alphaSHA256": "1efead98f4686f4da0ea2fc90b460f023ff6c2e1271d182f560d1f5dcc937251",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/dire-wolf/Dire-Wolf-idle-0.png": {
+      "sourceSHA256": "5d129819c17f3088af54527f51f0afac4180a0638d7086e431f81bcfb77fa760",
+      "optimizedSHA256": "0a4042d3d632d739c6d2fcc0aa1a6caadbe49ef0583ea008850802ff8c17ebe1",
+      "sourceBytes": 4034,
+      "optimizedBytes": 3875,
+      "savedBytes": 159,
+      "size": [
+        64,
+        48
+      ],
+      "rgbaSHA256": "8659fc1396e7092f250e5bdcba16dbdbfce2cc06298f49990e19bce59c5e2465",
+      "alphaSHA256": "7296b828d32fa2d12ddd2d8e79040546697fdce6f98a0f6b9e08faccbd3817a7",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/dire-wolf/Dire-Wolf-idle-1.png": {
+      "sourceSHA256": "ac6297a0fd6b4aefa298ecc0f94fde0bc69f1cf3849f76271e95950927d60447",
+      "optimizedSHA256": "d0c32663c13b3f43306e757d517f82acbe799c24cefabf662647571a3127b759",
+      "sourceBytes": 4144,
+      "optimizedBytes": 3938,
+      "savedBytes": 206,
+      "size": [
+        64,
+        48
+      ],
+      "rgbaSHA256": "df43588d0088b3e2f284def6a1a5769cfb80ceb2e66af91c6711fcaf3a1baa37",
+      "alphaSHA256": "2d63b759281a0e76f20e3da8b87e318cc433d4c5045ec2ea3937d3fcab34ae71",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/goblin/Goblin-Atlas.png": {
+      "sourceSHA256": "a9d3c4922669af2bab88c03587ac2c9c1bc02e8c0659ca49357880216f0f94c4",
+      "optimizedSHA256": "456f1278c07b15a5b4ef8db42b4411aaa85b01e2dbb8963ddde3972b26e34f21",
+      "sourceBytes": 15612,
+      "optimizedBytes": 14837,
+      "savedBytes": 775,
+      "size": [
+        256,
+        96
+      ],
+      "rgbaSHA256": "23157cc6d450495b487246ff7edebd887aedc7f31ff317cad9439407612d8b74",
+      "alphaSHA256": "8a21ccb4e397244772a614c0496b086c2afc30e186364178841aa3e7199c08e1",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/goblin/Goblin-Contact-4x.png": {
+      "sourceSHA256": "53a18a9f0457cf49913f673dcd5cc13c89871d70fc2471964578eefcf8ca3b72",
+      "optimizedSHA256": "af7470e9392422ebd804108ebf366e2afa6f1bbc98a7e0d75dd86e58a55975ba",
+      "sourceBytes": 21092,
+      "optimizedBytes": 17363,
+      "savedBytes": 3729,
+      "size": [
+        1024,
+        384
+      ],
+      "rgbaSHA256": "f88ac6cad1f39cfb4bd23e4d61fab6df861a1e93ab9e02e0b7ac991c840bd894",
+      "alphaSHA256": "c97fce784428a2e10cd6d4ef97ccc756f2e4c1b146a9b9dc5415d4e3e245b70a",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/goblin/Goblin-attack-0.png": {
+      "sourceSHA256": "f21479f186554c1904677b0a3b4440909af088e12484c8f2e813aca87cc5dbd2",
+      "optimizedSHA256": "2d26dede81ba58805dd566e0cf5b1b891b0d4be3aa30d1ad1fd281ea62dd388c",
+      "sourceBytes": 2328,
+      "optimizedBytes": 2223,
+      "savedBytes": 105,
+      "size": [
+        64,
+        48
+      ],
+      "rgbaSHA256": "a981a2f50596d4b3a4188520ed498946362af325aa42a02fa9e94cd5fbabf049",
+      "alphaSHA256": "b961b448d733c55a8ec40f83c7ac101ca7a495504e4b8f0be03fa38d0262e9ac",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/goblin/Goblin-attack-1.png": {
+      "sourceSHA256": "327cee3474db8c975082889c0606c580c71db487a16efa9eb773348c640f2f8c",
+      "optimizedSHA256": "4f913c7467058caed4f0c5b17fa4d4a71fcb8f41fd22d6f5116c941945d22166",
+      "sourceBytes": 2254,
+      "optimizedBytes": 2145,
+      "savedBytes": 109,
+      "size": [
+        64,
+        48
+      ],
+      "rgbaSHA256": "31a96b75d5ea3422b2c01404c23a4fd8b33a609a96c62bfa1db42caf5e3aa303",
+      "alphaSHA256": "e8d77d4c57aab967df6ac76bcd35aa8b9b1c805bd2c84ecca6db3273388619d8",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/goblin/Goblin-attack-2.png": {
+      "sourceSHA256": "a8a85c9edfb560ece7100784db50b84ee4a732387e91d43e6247906831e00fc1",
+      "optimizedSHA256": "f87a595a3dccff95647c8d931ca41571091a25eafd14974093583d21e8dc59ae",
+      "sourceBytes": 2183,
+      "optimizedBytes": 2070,
+      "savedBytes": 113,
+      "size": [
+        64,
+        48
+      ],
+      "rgbaSHA256": "d168857d2faade4cc04f18d92d5b401297c02aadf586645d548a97463208b6c8",
+      "alphaSHA256": "2eab02a1aa6a7da4551f29ac7148145518992e06972df87c0505d1d37afa82df",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/goblin/Goblin-block-0.png": {
+      "sourceSHA256": "71f4237ac31f3e086eeb5e478124e52a660d35f7767ae3aa433f5d21956f20bf",
+      "optimizedSHA256": "540b51bc67caafbbcc171b3845738d490e4a7d66247e29f191a3fe70ddcc7ff7",
+      "sourceBytes": 2026,
+      "optimizedBytes": 1941,
+      "savedBytes": 85,
+      "size": [
+        64,
+        48
+      ],
+      "rgbaSHA256": "e350278b4774709279d58093ec72fb29ce4a642f390ea60f1c1807070f13cdc7",
+      "alphaSHA256": "581f61548731e3062807a45f54006d982977f58d0e64293332681820fdd31e19",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/goblin/Goblin-defeated-0.png": {
+      "sourceSHA256": "17411ed5dd41244635b96b8a0afffe49aea5c69cd1e2226810828cf6e2143030",
+      "optimizedSHA256": "66cb1784e15f18ebef07dea088ce75d7676a4021e10638338c54618a29655d56",
+      "sourceBytes": 1676,
+      "optimizedBytes": 1615,
+      "savedBytes": 61,
+      "size": [
+        64,
+        48
+      ],
+      "rgbaSHA256": "fe05265849d34f25350986adc45ede8f2e2938c843f3bf9d8d4fc5202a4c2cae",
+      "alphaSHA256": "3001177bd007b17d0cb8382b2b3897c485560eba6849a8fa901812d0e38d8c15",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/goblin/Goblin-hurt-0.png": {
+      "sourceSHA256": "19c61df1c422ad3078eece3594cff8d78110800c043b21ae6e5fa00e82de83c8",
+      "optimizedSHA256": "32ca05c47573bc5b828cacbf85ae2e2713cfd8458e40e5c5d95aad454fcb5792",
+      "sourceBytes": 2054,
+      "optimizedBytes": 1953,
+      "savedBytes": 101,
+      "size": [
+        64,
+        48
+      ],
+      "rgbaSHA256": "862106ed230c68ac75378e7caf73d1525f4b7955119ed9bd6e7c4af3ceed8dff",
+      "alphaSHA256": "dcbe120fc11153dee14da5846b3410ee97c7148207214396c5e76b5226d5c358",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/goblin/Goblin-idle-0.png": {
+      "sourceSHA256": "57716657ded60e6b1da870f35dcea84b246987c4589e9766e48b501a140a5ae4",
+      "optimizedSHA256": "ad467d09a529b2f0f3789216bcb060c54620b5fbd1e643f8075533f38f84f116",
+      "sourceBytes": 2245,
+      "optimizedBytes": 2152,
+      "savedBytes": 93,
+      "size": [
+        64,
+        48
+      ],
+      "rgbaSHA256": "cb0ed3e876d4ccda742aedd5b80d9ff3868f78b4502ff65bb1ed451ed80e8557",
+      "alphaSHA256": "0aa762d6d3ee3ae073cc0eabc2644533d25bfce46fb40d2e2fe6c2e4bd8aa2c6",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/goblin/Goblin-idle-1.png": {
+      "sourceSHA256": "daab57d09f2378180afa5f5f03b523f410363dc619b570616545cc040f014fdc",
+      "optimizedSHA256": "ae0e2728790b8ddfacc754f54a0cfbe1f5b3a2ffbf48c6b53f9b3485e32f9c42",
+      "sourceBytes": 2101,
+      "optimizedBytes": 1996,
+      "savedBytes": 105,
+      "size": [
+        64,
+        48
+      ],
+      "rgbaSHA256": "1bef6d5e2c46a201ccbb0141c2fa1593c14a491aa328454ebfd043067c969830",
+      "alphaSHA256": "fb679ee2138661d60381066cc8480ba8462d064c7d87cbbd28b7d5f5fc7ab265",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-female-v2/Nova-female-v2-contact-review.png": {
+      "sourceSHA256": "a51073d10f3f931660f510e4ec0c0d0ca6557ad167514b6dbe27350700eeae51",
+      "optimizedSHA256": "2b2b95f70bff1dca93aa0914647e96b2e3ff38c59665f9acb950a2cccd25cca5",
+      "sourceBytes": 105866,
+      "optimizedBytes": 89469,
+      "savedBytes": 16397,
+      "size": [
+        1024,
+        768
+      ],
+      "rgbaSHA256": "90eced59adf654c705121c5aac93460edb9d4d00cb2d13fb150df46d7d8f4307",
+      "alphaSHA256": "902ab44f9b6b07c34a29958b325726ba7f6d506403335cf95a2af25e0ca1ad00",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-female-v2/Nova-female-v2-east-idle-0.png": {
+      "sourceSHA256": "8741b16a75acdeb11ca6cdff5ee3d4bd2bf0d943e76a84bc13a93ce681456405",
+      "optimizedSHA256": "5ce8a671d0bcd9a654545145043cf4fedce7b2ce049c4c39dc6818db0bd025ea",
+      "sourceBytes": 2729,
+      "optimizedBytes": 2665,
+      "savedBytes": 64,
+      "size": [
+        32,
+        48
+      ],
+      "rgbaSHA256": "b64845437aa9f882f9e2d7557b3591f3b584be384e2a057cedee2581100ec0bd",
+      "alphaSHA256": "6268b878445b9c37cea7b670a57e96dacd9910483d98be01834e4706c527e80f",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-female-v2/Nova-female-v2-east-idle-1.png": {
+      "sourceSHA256": "2a002bb114d62d6b6243d4d8751cd8cf55edd1656adbbaa609c26d9cf57e3008",
+      "optimizedSHA256": "93bfaca355cdf8716b7ddad4e903104cc678fa9f5fdb0bfa071f5e1e7c9ee871",
+      "sourceBytes": 2663,
+      "optimizedBytes": 2626,
+      "savedBytes": 37,
+      "size": [
+        32,
+        48
+      ],
+      "rgbaSHA256": "d7cfc02e5e3b420fd653852c9e9a716de2f745a5e1a628247f9bc81c20594d89",
+      "alphaSHA256": "e50f6da7458c21b801091c02509f361512df7b10284c382c173fe5f9803d6048",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-female-v2/Nova-female-v2-east-idle-2.png": {
+      "sourceSHA256": "a161a38c29b5aaab18b29d7f574952714b8f60be1b97d59e007b09707c093d50",
+      "optimizedSHA256": "3693e8e4d14f71a8366de2af2a49cb540e6f01cd3c513adda1f78453727cf123",
+      "sourceBytes": 2707,
+      "optimizedBytes": 2651,
+      "savedBytes": 56,
+      "size": [
+        32,
+        48
+      ],
+      "rgbaSHA256": "465dac666021b92a273d784c996afec4665e3a43fd58ab8e68b8e554dd37c619",
+      "alphaSHA256": "b3fe8cec9354bdcfc0ed5939b4fc40fcd42c75212fb8d2e0cec35a83152096f0",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-female-v2/Nova-female-v2-east-idle-3.png": {
+      "sourceSHA256": "da34fe90376915738d96d1c34e48a1c72c32179e895c97ad7b55518fa7628229",
+      "optimizedSHA256": "69e0bddfa5d3b98aa1d228c7e12b38c13758bf751b26c933f87af6a936fd556f",
+      "sourceBytes": 2734,
+      "optimizedBytes": 2683,
+      "savedBytes": 51,
+      "size": [
+        32,
+        48
+      ],
+      "rgbaSHA256": "3a7b5440263a052f65bfb22601551df5c3d4c385a523ce17862ad423b86582b1",
+      "alphaSHA256": "6ff4e696e2be90b0386773229731642efef7b7808fdd1cad6dfa7b07b32fe6cb",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-female-v2/Nova-female-v2-east-walk-0.png": {
+      "sourceSHA256": "6ab5260dd4c1451f25412fbb3c1d795cc3ea44deed487cadc7d242c8316f6940",
+      "optimizedSHA256": "b6e3f520d3e42e39ba75123674947a48f7c4d9efd8b8f3d415770f6a319421d3",
+      "sourceBytes": 2926,
+      "optimizedBytes": 2849,
+      "savedBytes": 77,
+      "size": [
+        32,
+        48
+      ],
+      "rgbaSHA256": "45003a04b002049cc52f295043aedb530643f8e6d98e2a7128075e2ae6579070",
+      "alphaSHA256": "c22910fdb7b61aa0161d195b652d82d9740c52857be1e071a93b8adcfb3cb8d5",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-female-v2/Nova-female-v2-east-walk-1.png": {
+      "sourceSHA256": "d69e89a697736b92b5831aba713f62ec7f10678a232e55928f58398c6b9649df",
+      "optimizedSHA256": "c301a00549c03fc30721cfb6fb3ee3820ffe75f7593a3e414f3e7099dfa7844f",
+      "sourceBytes": 2902,
+      "optimizedBytes": 2836,
+      "savedBytes": 66,
+      "size": [
+        32,
+        48
+      ],
+      "rgbaSHA256": "3c1f0b5e57abbe81f942212d4bf8695c681a40308e3365fc73f870ac0e28868e",
+      "alphaSHA256": "cdcb9e426f24bd74f0dcf2c2656585e31a9e80a11a2194148c4e7e25340826c1",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-female-v2/Nova-female-v2-east-walk-2.png": {
+      "sourceSHA256": "57585c6eafb4a44126a5e967cf9faea842da072f9549dea4256726954f6c9659",
+      "optimizedSHA256": "f047119871876acd324a9ca9e10c48da1b234679da11b845545e0eda9174916e",
+      "sourceBytes": 2853,
+      "optimizedBytes": 2804,
+      "savedBytes": 49,
+      "size": [
+        32,
+        48
+      ],
+      "rgbaSHA256": "4db95724c57bf14449fdd504a951bb196c7d44db4adba17041bfa704730649fc",
+      "alphaSHA256": "6226e0cd9a1bbae249e76337e3e598d8fac4947eba42b4f3fba306de22ccc027",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-female-v2/Nova-female-v2-east-walk-3.png": {
+      "sourceSHA256": "ca94dd6fe1a090911cc44a3ac32d1b47ca4a64a1a0a0e51247ca5d5d6c76850e",
+      "optimizedSHA256": "5c309e5b924fdf3ea6b4316b184fb6bd2684d247f341f828f0b869242e0b5378",
+      "sourceBytes": 2917,
+      "optimizedBytes": 2845,
+      "savedBytes": 72,
+      "size": [
+        32,
+        48
+      ],
+      "rgbaSHA256": "224b1063f3761ae053f31aa510f6a83aa83458870a130c4981cafed995f3d2b9",
+      "alphaSHA256": "e4394c939bf52fefc7f63a788e77fce0111634ea08b6cce1236829735dabaf9c",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-female-v2/Nova-female-v2-north-idle-0.png": {
+      "sourceSHA256": "120a425629181af6c57bd7033ac13963e16f656ed490aba5c6b236edafde87fe",
+      "optimizedSHA256": "6b23ff57c65939fc5bf9b32923c7117b8fb93170629c5eeeac4db4cfd2466d18",
+      "sourceBytes": 2630,
+      "optimizedBytes": 2595,
+      "savedBytes": 35,
+      "size": [
+        32,
+        48
+      ],
+      "rgbaSHA256": "af19756efc17ed72a328fd111bdf8b8644b3a353ea12247253c7ce86b278066b",
+      "alphaSHA256": "0dc78acbc6bd8f9fa9c826ebc95ee73dab62063d7ac165444f2930241bc5604c",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-female-v2/Nova-female-v2-north-idle-1.png": {
+      "sourceSHA256": "00b6f43b68bc7d669ae8928f987c1300d2c6471020fce43f52246846dd3a7cfc",
+      "optimizedSHA256": "a3832235acaf937afe3a75f5a8e8bb1caf220959a0fc0e887ccd053338330c2e",
+      "sourceBytes": 2631,
+      "optimizedBytes": 2627,
+      "savedBytes": 4,
+      "size": [
+        32,
+        48
+      ],
+      "rgbaSHA256": "aeeb4c3cdb3de2197b496f58b18136b187513232c1b7b162785c87cbacdac102",
+      "alphaSHA256": "6886d1762d1176c6b843a0fddf1e35206583d51f458cae760aa86acd996408a3",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-female-v2/Nova-female-v2-north-idle-2.png": {
+      "sourceSHA256": "522856584c00199d18aeb5841390be3fb78e3568bcccd3252b983d059559493f",
+      "optimizedSHA256": "b572a04513e4dc580ee85189e988baebec878e5b2a9f75d984f3d2b131976ed6",
+      "sourceBytes": 2633,
+      "optimizedBytes": 2627,
+      "savedBytes": 6,
+      "size": [
+        32,
+        48
+      ],
+      "rgbaSHA256": "510846484077973238ea369845134a068eb1186b7b81d98f4a2da78dcbf0c916",
+      "alphaSHA256": "fea34e2cb785c859abc2bb754d23720fb4669d42b6592bf0f303c274c03aa49a",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-female-v2/Nova-female-v2-north-idle-3.png": {
+      "sourceSHA256": "a5f89fef10be64ab47a3c5afa4aa58851997266856a187c54b5b621a4a551678",
+      "optimizedSHA256": "fc1fbbf435c9f6258dbd005bd560019c6aa258eece746ba12747f89bcffea3c0",
+      "sourceBytes": 2664,
+      "optimizedBytes": 2628,
+      "savedBytes": 36,
+      "size": [
+        32,
+        48
+      ],
+      "rgbaSHA256": "4e31a1cc0f591a1bbefd70773c323a00042fe6f7dd5b7335dea46287787fad8b",
+      "alphaSHA256": "a2f824cc29ea82ed802718ee0892622d37dba7f5bbaaaadbcb9767c3ffb5ba3f",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-female-v2/Nova-female-v2-north-walk-0.png": {
+      "sourceSHA256": "76ad8eb01fa539be7b681db692c62628a8401a06fb23adb94e82c6d5a96258ca",
+      "optimizedSHA256": "76ad8eb01fa539be7b681db692c62628a8401a06fb23adb94e82c6d5a96258ca",
+      "sourceBytes": 2728,
+      "optimizedBytes": 2728,
+      "savedBytes": 0,
+      "size": [
+        32,
+        48
+      ],
+      "rgbaSHA256": "db1eeb90e4c3fced7fd2be66ef8ff3ced0190466f7c3314b241f959ea19405df",
+      "alphaSHA256": "47bdd5bb605c7a9850d1c7f189f6306bd3dd4c52c4fb4ba82482572bf7662211",
+      "method": "original",
+      "rejectedCandidates": 0
+    },
+    "build/nova-female-v2/Nova-female-v2-north-walk-1.png": {
+      "sourceSHA256": "5cfb6ea1c190e777efc38e0c14fb22e20a34518a9cb71c993707de70c684a8e7",
+      "optimizedSHA256": "a7cea7884a55351bb402bfc376bfeabab6ad76e2ab5dd55ccf5e0568e1fac783",
+      "sourceBytes": 2751,
+      "optimizedBytes": 2722,
+      "savedBytes": 29,
+      "size": [
+        32,
+        48
+      ],
+      "rgbaSHA256": "ad032bf4022221189c199560feb2e53c49674ff31c0c70d81d97eca80807faea",
+      "alphaSHA256": "9c561819bbea0c52f47a5abf615b2b6dd1333d141059c839585c642476525478",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-female-v2/Nova-female-v2-north-walk-2.png": {
+      "sourceSHA256": "e96c6462483cac11a2df55a272fb91b96a93f5f49ddd42814c6ccdbab86c7edb",
+      "optimizedSHA256": "306cb03721c546a2a3fac3e4622c1f06530e9a1a7f0631bccc08536c174b6a6a",
+      "sourceBytes": 2679,
+      "optimizedBytes": 2629,
+      "savedBytes": 50,
+      "size": [
+        32,
+        48
+      ],
+      "rgbaSHA256": "de00e430c7f0f9ba881affd44528fe97f3e769cf735b763f40a1d361965f1bc3",
+      "alphaSHA256": "3c8e0eb3115370d28dc351937225a58bd9d473ce88ebf12e1b988f39e7da203f",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-female-v2/Nova-female-v2-north-walk-3.png": {
+      "sourceSHA256": "c1864e5afbc82c56def33362bccdc460d04c17e3301a14f3f9b408cf8b64c6db",
+      "optimizedSHA256": "234c157491af35abf876fa3ebb7fc1bf31ef9e1961332fbd81bea8286cc760d1",
+      "sourceBytes": 2681,
+      "optimizedBytes": 2612,
+      "savedBytes": 69,
+      "size": [
+        32,
+        48
+      ],
+      "rgbaSHA256": "8b5d2ffa945677afd556c4f7a212d7c85c2a8e61d569766a4d51cee60a8e3f83",
+      "alphaSHA256": "7b83d25895af93865aa12eb8aebbeb9fb661e5c1c19cb6d3c8d494d6afaf168c",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-female-v2/Nova-female-v2-review-4x.png": {
+      "sourceSHA256": "6bbc188aaa10fa770de0a0b1e9ec570a6e01ef51fe82304cafc291bb98193143",
+      "optimizedSHA256": "5d3d563698e089b46a6c57f8b6adf6b8817e9ccb071afee2d8cdf311b49ef75d",
+      "sourceBytes": 118863,
+      "optimizedBytes": 103213,
+      "savedBytes": 15650,
+      "size": [
+        1024,
+        768
+      ],
+      "rgbaSHA256": "69921b00e60661f16b4d9c10e4e4ce7574c261b4d0afd7415638aca113e14486",
+      "alphaSHA256": "4e9a5d194bfc807909178bdac90202b7f70963fd66ae44020ef8bf26e2f64f4c",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-female-v2/Nova-female-v2-south-idle-0.png": {
+      "sourceSHA256": "fe05eed31edcbdaac6d7d7ea51a9a250cad03b1eacd15b0a9ec7597296f2e06b",
+      "optimizedSHA256": "b4460297771f0345facc0f4abcb6ce8745f7613e85bc477221722e7386326faf",
+      "sourceBytes": 2814,
+      "optimizedBytes": 2811,
+      "savedBytes": 3,
+      "size": [
+        32,
+        48
+      ],
+      "rgbaSHA256": "9f3f8e10bf695f3cb40c5438e7903c2b578ab08e574d60e86c2dcb0e99a043cd",
+      "alphaSHA256": "17618bef6f93199fa5181f17b64db57a4bfda77a0267b62b8b8d3756f23a2ca0",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-female-v2/Nova-female-v2-south-idle-1.png": {
+      "sourceSHA256": "6478a85426b18aaec124be4a5713c7e8d10b870e74ee45329a0a858634d3b373",
+      "optimizedSHA256": "3804802f4dacb3c0801db801da9c98952e457c42680bee9d3c86a5f02df7ee69",
+      "sourceBytes": 2812,
+      "optimizedBytes": 2743,
+      "savedBytes": 69,
+      "size": [
+        32,
+        48
+      ],
+      "rgbaSHA256": "f64f5176f15d6a6985f6a9fd2b4b61d8f87da0dda91fee4e3404ad301ff61205",
+      "alphaSHA256": "0b792bcf364347ee0d499f92ec84871c49b11e7003548b869bec1856421c8156",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-female-v2/Nova-female-v2-south-idle-2.png": {
+      "sourceSHA256": "8393359dc3b3885d5868da2e68d4f799a035b58826f08497320373bddc7393ec",
+      "optimizedSHA256": "84281c84a2ef484d6602a78d0a2b3fd96ad0ca1da0ac25e975e2ecc04d782f60",
+      "sourceBytes": 2790,
+      "optimizedBytes": 2767,
+      "savedBytes": 23,
+      "size": [
+        32,
+        48
+      ],
+      "rgbaSHA256": "f649b6e51c43665eaaf6afb7c00d7b52b94a8fdd000b56a71a8435ea8d57e634",
+      "alphaSHA256": "80e2800584a3b69a905157cf59d7493c3740a80dcf5a51f2f4aab1dc0e94d4fb",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-female-v2/Nova-female-v2-south-idle-3.png": {
+      "sourceSHA256": "85ab94581b2312a8352c74bcea3dfa3b6e1aada29c9443199bcfe811ee9e1c20",
+      "optimizedSHA256": "d5f286725c8e3b1e12857e09e2825038b25dac5adb8a107dd73122503b2fc11f",
+      "sourceBytes": 2810,
+      "optimizedBytes": 2768,
+      "savedBytes": 42,
+      "size": [
+        32,
+        48
+      ],
+      "rgbaSHA256": "4a215097cf4f05001a155f8c3910771e2d140dcf809866ed3d9af0d58e418abf",
+      "alphaSHA256": "323e93bf71143905ded4fa2a081b4045f407674c24431aaed4a5d9bd1cc6f8ef",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-female-v2/Nova-female-v2-south-walk-0.png": {
+      "sourceSHA256": "b91ad1a5b9db887f0a69c57f565a9a0a1e73755da680cf258ac2dc469f53d17a",
+      "optimizedSHA256": "991dab4d1d34c42ccefab24a7bd7fd81c58a1d56437c1515962f7949c0d284a2",
+      "sourceBytes": 2910,
+      "optimizedBytes": 2829,
+      "savedBytes": 81,
+      "size": [
+        32,
+        48
+      ],
+      "rgbaSHA256": "4ae98b77e66f2d2249e66eceb0cd7452d40293ca7c085d283bdb50729ff888e1",
+      "alphaSHA256": "913aa9491c94f5cb6cb98a7452b686d9bb66cfe6992495511a98aac731f82322",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-female-v2/Nova-female-v2-south-walk-1.png": {
+      "sourceSHA256": "7b0c30d3ed006a99597b0295b9857e0a9357ac6e09c31551cdeb2128f0278d1c",
+      "optimizedSHA256": "e8cf7b22ff4c8cbe2b96989f9f6efd203331586536d4f6917a6f5e9e0e29041a",
+      "sourceBytes": 2749,
+      "optimizedBytes": 2726,
+      "savedBytes": 23,
+      "size": [
+        32,
+        48
+      ],
+      "rgbaSHA256": "f51c02da7c0b0fb9d7a4aa2239025ca833c1c3d08561792e3cd3a7b390fa5941",
+      "alphaSHA256": "7f5720368735e7a18d7b0bd1142daa9061f85221e9645472835eb8393af4c3e7",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-female-v2/Nova-female-v2-south-walk-2.png": {
+      "sourceSHA256": "104f7adcbddec97e6b68dca2bf135e6884ffebdde5067e12e20323c907b3a67c",
+      "optimizedSHA256": "62a110cc5790e24c87936d530b60aadb1811e31a2a03dc2363be44bd07cbb4b9",
+      "sourceBytes": 2860,
+      "optimizedBytes": 2805,
+      "savedBytes": 55,
+      "size": [
+        32,
+        48
+      ],
+      "rgbaSHA256": "48a9385ed6e671779b5d5981250bd45b85e9ef5efacc1ed90b8c41ee183787fa",
+      "alphaSHA256": "d5ad178796855216d65a94f5e8971b277fb4459fe9a14f0d5e8bb3aae806a68a",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-female-v2/Nova-female-v2-south-walk-3.png": {
+      "sourceSHA256": "76d7d0bff68c2e242a244ba94915d20abf19402905a2fa1d753f1d3216906af2",
+      "optimizedSHA256": "db04500c0977765ac40bedab6ee600da994361107f01f38c02510c3b6bc72f63",
+      "sourceBytes": 2838,
+      "optimizedBytes": 2774,
+      "savedBytes": 64,
+      "size": [
+        32,
+        48
+      ],
+      "rgbaSHA256": "f955c45744a655aff0a3b4e6b05ac79924bb8357059138df2764f3561e96d459",
+      "alphaSHA256": "ac0f7ed66ba089e63acb21660088f5f6aa22bfad90571875f6990455104f70de",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-female-v2/Nova-female-v2-west-idle-0.png": {
+      "sourceSHA256": "e1533c9ee17ebc5f33e5c06e6bcb377c5e740d12d6c4a0ef5966f50872fb4433",
+      "optimizedSHA256": "5eada83527bff7c85d3ea94f43a3abc2d2cf3273a7591b49e974277857f7c980",
+      "sourceBytes": 2611,
+      "optimizedBytes": 2553,
+      "savedBytes": 58,
+      "size": [
+        32,
+        48
+      ],
+      "rgbaSHA256": "cb31905e59a111f1e89207bb6b523ab0de0ec821e7577f48fde6644b64ddaf0c",
+      "alphaSHA256": "bd9df3001c403066d67f20be89914ec659d64f95b7ffe701b1efe4ad23febc53",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-female-v2/Nova-female-v2-west-idle-1.png": {
+      "sourceSHA256": "da7ceda4932d97c48bca9e949a2a80f3e54e354beb9bcc4b943d73be0b938406",
+      "optimizedSHA256": "b4e9ec3954d51cc5272531fd7ea0d0b3033d047076730f735f782fcdb9ddbf3b",
+      "sourceBytes": 2626,
+      "optimizedBytes": 2539,
+      "savedBytes": 87,
+      "size": [
+        32,
+        48
+      ],
+      "rgbaSHA256": "658050fe4ef65d9fcc05ca42dbd05c3e84fcc3117a2b46a01fad0f60d7180ff2",
+      "alphaSHA256": "22570865df49f370f88421e768e28d0c5cf18722d02b322e74418af3d524f875",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-female-v2/Nova-female-v2-west-idle-2.png": {
+      "sourceSHA256": "b672f1a9aa1e07563d2689c0c387b918fdadba6165306429d884d9cfd84e044f",
+      "optimizedSHA256": "b0a8c0a5fb67fa7ed6b13930d41511b9d0857f45bf7930c3c234dab69afa9d9f",
+      "sourceBytes": 2591,
+      "optimizedBytes": 2515,
+      "savedBytes": 76,
+      "size": [
+        32,
+        48
+      ],
+      "rgbaSHA256": "f90012c446fd251609229ba90700d775d0c80fcf3e0d6c16f90d026c9e10ac5b",
+      "alphaSHA256": "03d31325ce791882ce88315c4e2716c8afe2a79ce892cc491e8fb76cf7563659",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-female-v2/Nova-female-v2-west-idle-3.png": {
+      "sourceSHA256": "19908430333a4613fa671e80201e51a3ed565f527cf9272b66fdaf147fd19803",
+      "optimizedSHA256": "2940782ad58b9883fd136444b02ae53c73ec4187f7a6f6579bff0b4950540dc4",
+      "sourceBytes": 2687,
+      "optimizedBytes": 2617,
+      "savedBytes": 70,
+      "size": [
+        32,
+        48
+      ],
+      "rgbaSHA256": "c3038fd5e41d059de96c16dd840cfa93520beed52a05957575ef182fff606477",
+      "alphaSHA256": "6ff97bb0b9718e91cab34558af7da1f8c38e9a4adfbb2242d99ad718afe6ed16",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-female-v2/Nova-female-v2-west-walk-0.png": {
+      "sourceSHA256": "cc1c19caba61385483dd37a4273f101575a9e1a4fa35b31312d4d6c2376a0922",
+      "optimizedSHA256": "f81871d9a14269d645201cb6032ee773d2dc9b84e18693b09dc0852e9a76c304",
+      "sourceBytes": 2806,
+      "optimizedBytes": 2720,
+      "savedBytes": 86,
+      "size": [
+        32,
+        48
+      ],
+      "rgbaSHA256": "f00332b0fef28f5818641c66b0bf0e7104adbd4b01d15cc3bced50e90d674be3",
+      "alphaSHA256": "f753895e38ff31efb9b6a3f535fa5b8b45dc762be140bfac98dc3da97ff4be46",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-female-v2/Nova-female-v2-west-walk-1.png": {
+      "sourceSHA256": "36feee2a4c8bc7523be59dcc2e43610e73b3d80847d5dd1c0aa1fa59472ebb95",
+      "optimizedSHA256": "5beae4a10f0671c79033f1242e905f5aeb793b24c0b7785a9d2061e72b60a024",
+      "sourceBytes": 2685,
+      "optimizedBytes": 2601,
+      "savedBytes": 84,
+      "size": [
+        32,
+        48
+      ],
+      "rgbaSHA256": "44f2ecee4108d64d40d6b8911e3ad45361fe813215934aa14b7b0efdeb3e45ca",
+      "alphaSHA256": "1c6a9a6c66906dbad193c90d1f16799037dd4347b8ba8337c6412a1ef3923e8d",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-female-v2/Nova-female-v2-west-walk-2.png": {
+      "sourceSHA256": "b580c8d0cc97bd67cf8f22a704ff4603441c136aadd3fad4c6a543b7a180acbc",
+      "optimizedSHA256": "233ce50059ca0ba1c3df4e6419e49ecd4c01aa3d1b48243a7c9eaf8fe55d236b",
+      "sourceBytes": 2816,
+      "optimizedBytes": 2740,
+      "savedBytes": 76,
+      "size": [
+        32,
+        48
+      ],
+      "rgbaSHA256": "0bbbac13117e078b958ca01aa1644557f3c48b9a181a6419f56f92a7074915d9",
+      "alphaSHA256": "c632fa4f4644ae168835a6b1eff6980ce0ba31fee438112afb7b80c8ebaf09a7",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-female-v2/Nova-female-v2-west-walk-3.png": {
+      "sourceSHA256": "39a214850d73fc7b0671028591b338d6bd2a52e3cf543ae43d124ada5ffa612f",
+      "optimizedSHA256": "88d909fb347455cdd7224b51e7c97afa6144cebabc96435fd20b164697fdd1a3",
+      "sourceBytes": 2763,
+      "optimizedBytes": 2679,
+      "savedBytes": 84,
+      "size": [
+        32,
+        48
+      ],
+      "rgbaSHA256": "d78e7f2fa5ad048e1b088d8efb8a2979815bf8a43c5be5a082d04116a368087a",
+      "alphaSHA256": "771070d3191b2a909ac92d109ba0787e37a4cd0572141d840d77f65ccf745e1b",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-female-v2/Nova-male-east-0.png": {
+      "sourceSHA256": "e4582eb76fe55ccb4868d1c19429a513f80c491fe3f9bc470f819b8268d3acae",
+      "optimizedSHA256": "2b055402150fbd6bb246209a60562b0fb65225a55dd88272f73b3b3d9a927123",
+      "sourceBytes": 2829,
+      "optimizedBytes": 2782,
+      "savedBytes": 47,
+      "size": [
+        32,
+        48
+      ],
+      "rgbaSHA256": "11e9f86c079324d1399fb88c779024a245163a7bb70ff4d33790b052cbec5d5b",
+      "alphaSHA256": "db3bdbeaf8acdfd9ac495e1d1ed7fc032e93d6718387eee853aabfc457b70c08",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-female-v2/Nova-male-east-1.png": {
+      "sourceSHA256": "8be6d004806ba359e2e65e607e12a121dcf0179ee8339d6c7a0fd2c6a726e53c",
+      "optimizedSHA256": "be159585e6d860ba0f14ce8bfd1b3502004415663a0d3638b34d3fc03c5dec8e",
+      "sourceBytes": 2823,
+      "optimizedBytes": 2779,
+      "savedBytes": 44,
+      "size": [
+        32,
+        48
+      ],
+      "rgbaSHA256": "56c9a3065c45d9f6c37164356d9214997bf7437724cf3dd1b643e689a7f2f686",
+      "alphaSHA256": "341a655afd68b1c822bcfb5f5a3ddcb00689a253cc9538c0494cb894b288bbf9",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-female-v2/Nova-male-east-2.png": {
+      "sourceSHA256": "7855736be34efaec53150a840f6972e19f6e1adac7bf5fd75742a4c2ee2f35bc",
+      "optimizedSHA256": "c3e9be0981a96a803de08bbda02417569fb185ee9609bad4c02321cb92aa4d22",
+      "sourceBytes": 2848,
+      "optimizedBytes": 2799,
+      "savedBytes": 49,
+      "size": [
+        32,
+        48
+      ],
+      "rgbaSHA256": "cbe0dc4898b362ebd134f690e947a509c335f6c4bdcc130be9f2c1b286f19b36",
+      "alphaSHA256": "03afd624063fd1b1b702992e3adfcac014cd3961c860e502c028c448833b6d3c",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-female-v2/Nova-male-east-3.png": {
+      "sourceSHA256": "3e4541ec80db454256ba96095aa7926c518fd1da390f81e5b83c430e1af8fb13",
+      "optimizedSHA256": "a639d54c90498899eeaf5853beafd2f562244de5912afb7494513c7a770815ea",
+      "sourceBytes": 2697,
+      "optimizedBytes": 2641,
+      "savedBytes": 56,
+      "size": [
+        32,
+        48
+      ],
+      "rgbaSHA256": "6aa58eea42d4d47501d1d3d5072c9f5effaabeb5806b261ab2cd02516dbc34d4",
+      "alphaSHA256": "93e50e5bc83e8dbecb4614af7e4392499446d34f150a8479d66f3084b1586780",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-female-v2/Nova-male-north-0.png": {
+      "sourceSHA256": "d20b9696e0fce895ec5ba4422d8f4b1fbc7c5c9f73b066b124941cf093dca10d",
+      "optimizedSHA256": "117b214935c1ba422d4116831ee8b08b8d04398cd4ff332232fd1a8d150d4572",
+      "sourceBytes": 2830,
+      "optimizedBytes": 2791,
+      "savedBytes": 39,
+      "size": [
+        32,
+        48
+      ],
+      "rgbaSHA256": "fda713ef07bb1fcb3ba76434c0469bc2701e9a61e1fa810b28118d21ca1dcf0d",
+      "alphaSHA256": "4501bc62ae42a072e5aa724b4e10396c7bbacadc4b06a5c755fa7bb62ee8362b",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-female-v2/Nova-male-north-1.png": {
+      "sourceSHA256": "b8a8a347a3e7a4a22ad35610a99de09a0a922961bf25d2a8256ef10474bf2ac7",
+      "optimizedSHA256": "30cffc49f3ae5a75f84ddd65cd1baef0d5d81bf5ce4243fbae0b9bee140aaef0",
+      "sourceBytes": 2783,
+      "optimizedBytes": 2743,
+      "savedBytes": 40,
+      "size": [
+        32,
+        48
+      ],
+      "rgbaSHA256": "06aca23afb4416565a9bc273801cc2e24873ffbbc17ef86209496503724ff6ab",
+      "alphaSHA256": "9fec61e7dbaad638a5d72cbbc7687e512b2207a7e8e13e2d132255d8697d8796",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-female-v2/Nova-male-north-2.png": {
+      "sourceSHA256": "822e96fd3a692426ca115dba20cfcc5bdaff1fe304791e3c89f099701163e93e",
+      "optimizedSHA256": "e11b612dbfc610500c2ae0148b8bad58e36bd3da6f43241b52f969d04ae688ef",
+      "sourceBytes": 2964,
+      "optimizedBytes": 2918,
+      "savedBytes": 46,
+      "size": [
+        32,
+        48
+      ],
+      "rgbaSHA256": "eadfa64fc4ea800ce2066365c456e3bece62eec2a26ebd9f68bf9fc72139654a",
+      "alphaSHA256": "e17f3cd515d6b2033d02c1913fb249af79ce9f51d471b2b70a7a0c6278bd74d7",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-female-v2/Nova-male-north-3.png": {
+      "sourceSHA256": "f88ea9be20cf33bd2311c0dc880c75d75a491034a0a1b5ffbe3b1d8e6862f6d5",
+      "optimizedSHA256": "296083b647fc1e361735bb6dc6e2feadaa9e6d1fe0a659d0117e4a93b3d3f076",
+      "sourceBytes": 2635,
+      "optimizedBytes": 2595,
+      "savedBytes": 40,
+      "size": [
+        32,
+        48
+      ],
+      "rgbaSHA256": "791e99eddc4c0dc5285c2a8051ff4a3ca5a0a74d3740b20e7e03968480dabd54",
+      "alphaSHA256": "be62a327511c5828ccb119d77ebc806babef0660e01f887473aef84d02efa684",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-female-v2/Nova-male-south-0.png": {
+      "sourceSHA256": "7bf922f0ec4b6591dc88c2aa49c1add713fb02608d4e0e7d70bb69b82ee1493b",
+      "optimizedSHA256": "560653a82f3665bea1e3959618f30bf1b1ba9183044a54b87cd236663b6bc416",
+      "sourceBytes": 2864,
+      "optimizedBytes": 2808,
+      "savedBytes": 56,
+      "size": [
+        32,
+        48
+      ],
+      "rgbaSHA256": "36eb4c20d2c68fcb77aad5b7cf0a744eb755c2ec49c2196daa3cae4d334b3b8d",
+      "alphaSHA256": "cff08f8a757998fef785c530c7bfa244caadb6c88a3429e931171be2f8e7a069",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-female-v2/Nova-male-south-1.png": {
+      "sourceSHA256": "d5706d2e83b0f75b5cb62b76ae8818a6c1b3a4637db79dda54183a70e8e1468b",
+      "optimizedSHA256": "4cb93470d26935c7986eb297a310db947a0bb0a104628adec4c3a8214422265f",
+      "sourceBytes": 2874,
+      "optimizedBytes": 2839,
+      "savedBytes": 35,
+      "size": [
+        32,
+        48
+      ],
+      "rgbaSHA256": "b188c8aac1112bcd13c7ac19db2406377999e3c1441a10ad06688124eff198aa",
+      "alphaSHA256": "73aa572312c6855464e457edd7cdcc34172fabe06ced5426e457a467559af828",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-female-v2/Nova-male-south-2.png": {
+      "sourceSHA256": "c19ed2381e20fbbcd130db7f7f389875c6f31c87cca86e4c5c6efd78298f87e6",
+      "optimizedSHA256": "e7a60e15f9d3cc951a7d45caf059234910b3e646564225639d84b4da16e8d7ff",
+      "sourceBytes": 2939,
+      "optimizedBytes": 2895,
+      "savedBytes": 44,
+      "size": [
+        32,
+        48
+      ],
+      "rgbaSHA256": "54ef5402d4a9e1070a739020b326cee1615c8e2267cd4f6196ba61501bcd985a",
+      "alphaSHA256": "682150b4e21e9fc7d33e696da17705ec4814cdb23f8ef5e536ec79e08bd1a9f3",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-female-v2/Nova-male-south-3.png": {
+      "sourceSHA256": "a554a9c56d51192e1840d18c64ff42dee8e4df4a1148f049f7e801cca217963f",
+      "optimizedSHA256": "a208c6a3c5d43513db77e6fdf896a8b07ea23e17a5ee3be4452cbade3ea165ce",
+      "sourceBytes": 2904,
+      "optimizedBytes": 2842,
+      "savedBytes": 62,
+      "size": [
+        32,
+        48
+      ],
+      "rgbaSHA256": "a966001572dfb8286f6558986f3a3ed807d553e1c518d2ecb7b4fd2e8247e837",
+      "alphaSHA256": "7ecfb4436afc04bfcc7fae194377fd6edbc2871d5e400491e02f12d2cfc1c1b6",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-female-v2/Nova-male-west-0.png": {
+      "sourceSHA256": "1fdb4b7d99b9c5af4d64dfa108f3455255e2d4b5a0b0a50a7cba2c4c448b96e0",
+      "optimizedSHA256": "8fbd9ee71f898467edbc9d64d7cbad51ddf2e460f1eb55159f8f80b43cd8d7dc",
+      "sourceBytes": 2917,
+      "optimizedBytes": 2871,
+      "savedBytes": 46,
+      "size": [
+        32,
+        48
+      ],
+      "rgbaSHA256": "57dae7640c64a596821f6ce23da13567ad1354c49565fe83db28e0e0aeb2e69f",
+      "alphaSHA256": "39da75157e5d36bf66d2e2f8ae45064278fd3610996ba1a80e5ec560d66d42ce",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-female-v2/Nova-male-west-1.png": {
+      "sourceSHA256": "4ed07791778f6c2d4709f1871dc1ff8ba99a37860a60a93954fc11dcd2438f47",
+      "optimizedSHA256": "e6248b25143e3676ee9117d98beadd8cc4cdae714ca4ca73e33a5dc7a14b2021",
+      "sourceBytes": 2853,
+      "optimizedBytes": 2821,
+      "savedBytes": 32,
+      "size": [
+        32,
+        48
+      ],
+      "rgbaSHA256": "4e7e2f9a464d9aec3cdef001e047dea9b79a4bb75118665f3948eff6bd167f8b",
+      "alphaSHA256": "4d1fa1a13001f91993e3933a86b3012240563ef7efa6f0050b3bf5419f68926a",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-female-v2/Nova-male-west-2.png": {
+      "sourceSHA256": "42105d57c2247d649b9afce1bb3c4df484052e780045a77904353ee7a50b6997",
+      "optimizedSHA256": "e9c9c0ef3dd78fd131d93b8fa28b56daa00ff6a1416f5ed5e2f3331fdb24c08b",
+      "sourceBytes": 2938,
+      "optimizedBytes": 2906,
+      "savedBytes": 32,
+      "size": [
+        32,
+        48
+      ],
+      "rgbaSHA256": "be0f1987a20b2f8064e126a41cdcd7f59ce19bc0ddca135d5ad5c4a4ae5b2855",
+      "alphaSHA256": "57ab94fd6cb255d469f1d0b3ead1fed4996485c1a857f63684112bd8755fd0b7",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-female-v2/Nova-male-west-3.png": {
+      "sourceSHA256": "1ea1cb835ff582f11aba63278c6d04d3f2abdb93e05dff6c676cf0285e6b5bc1",
+      "optimizedSHA256": "3580f403133f9680924b7f6347c66a74cef215219b4bee51645c90c3d771460f",
+      "sourceBytes": 2694,
+      "optimizedBytes": 2676,
+      "savedBytes": 18,
+      "size": [
+        32,
+        48
+      ],
+      "rgbaSHA256": "da060740fa86ba83dd4fd5b9a2269c115ba7e1abedaff8d002873ea58b6b0829",
+      "alphaSHA256": "8603c0645ab2c7634d7f939c717355ca3a5aa6ca8f3aaf1551f957555205b7b3",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-sword/Nova-Female-v2-Sword-Atlas.png": {
+      "sourceSHA256": "3a50f5f0e1e62d4263c331f423ab3ddafc853a900859a1df10eb5b9483ff7dd9",
+      "optimizedSHA256": "3721f1bd961a8b9f5f239b0fd57e3e40fcdf8631e6aa2e117dd02f69bf51b7fc",
+      "sourceBytes": 65947,
+      "optimizedBytes": 64478,
+      "savedBytes": 1469,
+      "size": [
+        320,
+        256
+      ],
+      "rgbaSHA256": "28e29d3d464faca01b24f1059e0f0aa5c4e0836514573b3cb5c9e8324b7679c7",
+      "alphaSHA256": "018cae56c0f8c35b9a6609eeaf579f08506b5a4426fdcf75f7f2ce813055f90d",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-sword/Nova-Female-v2-Sword-Contact.png": {
+      "sourceSHA256": "078c1ae2efce4c7d6eb65a459614c69f9b50cd9e451374ea7f09ed11d6b1acc3",
+      "optimizedSHA256": "4f0287d656f3a2377536c9a618614ff3a082899e540b05aba5b47d600a4eff7b",
+      "sourceBytes": 84581,
+      "optimizedBytes": 70438,
+      "savedBytes": 14143,
+      "size": [
+        960,
+        768
+      ],
+      "rgbaSHA256": "acdb79561b3b168b57971b8c3c7c66746b57fa1f63747fbc66eb6663c7b88e24",
+      "alphaSHA256": "aff24efdb49871d80e39162bf3151944cf7547baa72ea60cd50da77c4d94849c",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-sword/Nova-female-v2-attack-east-0.png": {
+      "sourceSHA256": "d44beab124693b60e9f36993fe8733ebef8eb7def7f9bb546ac8fd57dfb65ec4",
+      "optimizedSHA256": "ab11c4f23fca4b094715ecc35c9c530af0b7d9689aca12214467b83f8bc46a85",
+      "sourceBytes": 4099,
+      "optimizedBytes": 3932,
+      "savedBytes": 167,
+      "size": [
+        80,
+        64
+      ],
+      "rgbaSHA256": "245d8d057f5f0da78ace0e696d00852671a408912e4481acbf53fb7b5556eb55",
+      "alphaSHA256": "b34253bf6c287b6a43540b4c8d1a9139b44efcc1e0b17d51eb7e7944b539b2c9",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-sword/Nova-female-v2-attack-east-1.png": {
+      "sourceSHA256": "b9c455d7144de669acb955cbf3a7966978a572270db864fe178549a8fb6894e6",
+      "optimizedSHA256": "cf3f9915f261769630b1ba6fc886052ad54c6b4dad8242e55217c609ee7f6042",
+      "sourceBytes": 4594,
+      "optimizedBytes": 4525,
+      "savedBytes": 69,
+      "size": [
+        80,
+        64
+      ],
+      "rgbaSHA256": "f3d0cf75dac5506386ff700c30e9c3d6fdd2abc3c7db6511d19138489c4d8855",
+      "alphaSHA256": "d7de882a85b2500ea2403623dcdcf5679570824c6ba3e2ce194e6614ad73b22a",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-sword/Nova-female-v2-attack-east-2.png": {
+      "sourceSHA256": "0bc20e3d9839a16cf2e64fe4e41ae8e6c4914dd66f1cadf3124c31645a74c364",
+      "optimizedSHA256": "631673f29befc3e9ee1c40bf0868386bd54d34b15d9acc09945541d20890dd2a",
+      "sourceBytes": 4594,
+      "optimizedBytes": 4454,
+      "savedBytes": 140,
+      "size": [
+        80,
+        64
+      ],
+      "rgbaSHA256": "38a5f92b73c46325c0ba7882a3b40822513d35001aab72c3e910d93872db4d6a",
+      "alphaSHA256": "6830d8aac16a9c6b54d367cb89069aa9a27dbe42ccc5814479a192046106e565",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-sword/Nova-female-v2-attack-east-3.png": {
+      "sourceSHA256": "fbefa3d5aab9490f3be0fabfb9ef0d129bce9430607f9a3a461542999776ecb6",
+      "optimizedSHA256": "be6c6d5edbc2eef35527a6ed560b7384b5e55ce5830823e4bd3e855681d8797b",
+      "sourceBytes": 3786,
+      "optimizedBytes": 3633,
+      "savedBytes": 153,
+      "size": [
+        80,
+        64
+      ],
+      "rgbaSHA256": "7d328ac800cf6c832d1e699c34b2beb0df87f6ecfbf386477222feff01b158cd",
+      "alphaSHA256": "11b487826eac091a2875ba51d6865dbf2545cfd5f0de94a2aa4499602f4971e4",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-sword/Nova-female-v2-attack-north-0.png": {
+      "sourceSHA256": "689910f2a7b06aa01c21a0f815de0f0d612e61594e45e77e3506389d7046e788",
+      "optimizedSHA256": "865a2e4f7656f0c2b16cf4af6f04ff1593cfa5edb5160db6b5f73d48fbfc40c6",
+      "sourceBytes": 3881,
+      "optimizedBytes": 3815,
+      "savedBytes": 66,
+      "size": [
+        80,
+        64
+      ],
+      "rgbaSHA256": "f286a98b227993825762e7e72c0ba44ed5f1c167b9c8d21fda8ddbfd65dfa8aa",
+      "alphaSHA256": "917df8e6de8c58651eea380531ae6fed992640ce0a6219ba053552737188cd6c",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-sword/Nova-female-v2-attack-north-1.png": {
+      "sourceSHA256": "45d0bea70eaf57d0f6e9399e7293739c4f79076cf4e8fea4434cd983373cad15",
+      "optimizedSHA256": "d45506daf63b2cf4f843d0ba2ccb2a32fc183c50c0d2b2e79d610814f3298678",
+      "sourceBytes": 4857,
+      "optimizedBytes": 4786,
+      "savedBytes": 71,
+      "size": [
+        80,
+        64
+      ],
+      "rgbaSHA256": "7b199398cbcead4f71e79ef6aad0ce596f99cf71cc315fad270e75a5ba79398e",
+      "alphaSHA256": "5dc523c20ce698e1535c22f5c76c9d9eec3946e659d38c9db09116c6e39ea26a",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-sword/Nova-female-v2-attack-north-2.png": {
+      "sourceSHA256": "58f0f70d9f55d584bac3d2d7be1ac5134eda9a52d4082fd335593aca8b597a40",
+      "optimizedSHA256": "c4c4719d71a737fb2ef21dbd63b1b6262066a59a2c7e596eb02fb229e65f2493",
+      "sourceBytes": 4958,
+      "optimizedBytes": 4855,
+      "savedBytes": 103,
+      "size": [
+        80,
+        64
+      ],
+      "rgbaSHA256": "9b546ae16ae21667ce9169915b73f70166b9317fa42a27224e9233ae748fd69a",
+      "alphaSHA256": "ec8e874ffcd8f1f733190425f42ae1b8422b9304254016ee7bb8ed7aa4ac6933",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-sword/Nova-female-v2-attack-north-3.png": {
+      "sourceSHA256": "110d76d1896f3d6c8d796c80ec61565e1c1582871a319f824b8c11ec323eec4c",
+      "optimizedSHA256": "d6f7ec6436c61dacd2b047f992572ee0e2a9ca2e636fad2c0eb84d93a7dcbf63",
+      "sourceBytes": 3783,
+      "optimizedBytes": 3771,
+      "savedBytes": 12,
+      "size": [
+        80,
+        64
+      ],
+      "rgbaSHA256": "fbd7332f5a3bf12100fa5c47b066861e6cedf773c7d39bea2ee277254a02abed",
+      "alphaSHA256": "defc1685314f0f410e15447d5b5829fa951733e5d2386196d7decdffa86cde14",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-sword/Nova-female-v2-attack-south-0.png": {
+      "sourceSHA256": "81496e4f8c5cadf188fb99f1249956b344ff87a0d5cf1a4f332ab0913da56c31",
+      "optimizedSHA256": "9265155fe2bda8eaf87e238493e74c2695df5168f6a568d9f3b314868527846d",
+      "sourceBytes": 4014,
+      "optimizedBytes": 3825,
+      "savedBytes": 189,
+      "size": [
+        80,
+        64
+      ],
+      "rgbaSHA256": "2ef780b870b957a6356a75583faeac4d7fe1d553813d06836f6c0e5d6461173d",
+      "alphaSHA256": "8ef7d2911795c33e2cc5a35270beb51eab8f2ec0f9db2b1ce75106614b64fcbe",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-sword/Nova-female-v2-attack-south-1.png": {
+      "sourceSHA256": "49d900e7ce6cdae3658a9ec6e9a42e3bf1b5ebe3513533d8dddc146df019901d",
+      "optimizedSHA256": "50bebd93c810813db1f1d986d54eff273945b06b8d59d7d17620562ed2483c7c",
+      "sourceBytes": 4268,
+      "optimizedBytes": 4155,
+      "savedBytes": 113,
+      "size": [
+        80,
+        64
+      ],
+      "rgbaSHA256": "dd3fac560fe87e4ab8cb6ad1477495ff2057f12a557729702fc8c38cab51ea4c",
+      "alphaSHA256": "31a0225e3f38f8466fe69cc25e3f5daa9f28af8e60d111f0fcc31b76f9307687",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-sword/Nova-female-v2-attack-south-2.png": {
+      "sourceSHA256": "458015170b0d49aaf39d77cedb7c417d9cc9d7569aab32579807bbde0c042b27",
+      "optimizedSHA256": "41ed845c4e540f6107c9a9aff74d8180ef0f4eb923289231470b02ca6cc01936",
+      "sourceBytes": 4419,
+      "optimizedBytes": 4282,
+      "savedBytes": 137,
+      "size": [
+        80,
+        64
+      ],
+      "rgbaSHA256": "242874dbbc4c3f680b62e7d1172291b54a7937afa253e3b0fe8970c12d20a30c",
+      "alphaSHA256": "2882e0034f5b6a47bbfae4b003722f40aea35569871060c2f42e9e997299f62b",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-sword/Nova-female-v2-attack-south-3.png": {
+      "sourceSHA256": "6282bc1f117bba154fe2f84bde3afb2d8c1f8d95b17029516513dba38297412a",
+      "optimizedSHA256": "11c12c5cfe0edbf8d601a28c3c004090ea72b599b091c0626de40addf6c638cf",
+      "sourceBytes": 3716,
+      "optimizedBytes": 3600,
+      "savedBytes": 116,
+      "size": [
+        80,
+        64
+      ],
+      "rgbaSHA256": "6806bb674f80937dad9b5ff04387773c7c5885ac8281ef69c507147ebb783723",
+      "alphaSHA256": "6b682f762c43954b2dd76788141d121236d0956d44c23f2e12c2ca3281b2a04f",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-sword/Nova-female-v2-attack-west-0.png": {
+      "sourceSHA256": "6ab622776c992b8443b702c958b661e33287169fea8b89020d122d235de314c7",
+      "optimizedSHA256": "ea774f33b6e95dd5c9aedae0c7fbcce6d4ba7c3c04a1456bf3e3c2c0ce2eed26",
+      "sourceBytes": 4227,
+      "optimizedBytes": 4054,
+      "savedBytes": 173,
+      "size": [
+        80,
+        64
+      ],
+      "rgbaSHA256": "be6d0fa9ce87278ebab00e2641704d9b2436c35d7a88489020f47d768bfccf42",
+      "alphaSHA256": "376cc6221ddd5eadb1afbb263dfe06512a35f969df12eacd6e65a801059c1cd1",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-sword/Nova-female-v2-attack-west-1.png": {
+      "sourceSHA256": "28c441eab8714d103c264afe9286ca4f14cfddfd1700cd00c15138e412edfe75",
+      "optimizedSHA256": "90564acb563c5fdba306f5abc72833a66c77181024b817d3e171c60490a375a2",
+      "sourceBytes": 4633,
+      "optimizedBytes": 4564,
+      "savedBytes": 69,
+      "size": [
+        80,
+        64
+      ],
+      "rgbaSHA256": "28f143f466b8c557b1773125908b6ae71e0760232f91872c1f8130f2e9c1bb0a",
+      "alphaSHA256": "3cac666c8f92566c81630bc147829e583566af315c89ecc985b78a9fb506f9c9",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-sword/Nova-female-v2-attack-west-2.png": {
+      "sourceSHA256": "a4590da9266e12e841cdb0e01f9f4c65ceef7f73aed09a641011b37056269b43",
+      "optimizedSHA256": "0c3e9dd41e96429b5b2d810f85e04fc5a18c51b09290322fc4a3856817139d77",
+      "sourceBytes": 4696,
+      "optimizedBytes": 4580,
+      "savedBytes": 116,
+      "size": [
+        80,
+        64
+      ],
+      "rgbaSHA256": "86fe15b7edc3a277fa3ae92584f56a1efa6cdbeed5647b983508283cc1398210",
+      "alphaSHA256": "449451feec509b50e35f24ffd21617b3e37036baba14dfe4608bc9c5332cf6ec",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/nova-sword/Nova-female-v2-attack-west-3.png": {
+      "sourceSHA256": "64ac86e6e68545ae09d50d6fa3cfe953b18bfe344883c814b89cd851f8f857ec",
+      "optimizedSHA256": "47c490a1f2d7681ac97a17781de4830ee4b8534d1c75387d0b7a14c3c1dca5a1",
+      "sourceBytes": 4017,
+      "optimizedBytes": 3871,
+      "savedBytes": 146,
+      "size": [
+        80,
+        64
+      ],
+      "rgbaSHA256": "905268dae02d61f426085ae0b641b92b940ab87a4a9b8093ed625339825e552e",
+      "alphaSHA256": "89defc3cffced4bce3711fd0f3d92cc23d153558d1d2b4389dab3340c07472a9",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/oakwood-rest/Nova-female-rest-0.png": {
+      "sourceSHA256": "fba2426586738c0a57b366ead4ec0e20f0985f2246a7e1b85b1d80db541f62be",
+      "optimizedSHA256": "3d4be387b4e7c43c668a177c777a826d221b497b32cc1f61704a564e5c393def",
+      "sourceBytes": 34135,
+      "optimizedBytes": 33686,
+      "savedBytes": 449,
+      "size": [
+        120,
+        164
+      ],
+      "rgbaSHA256": "69bad882174a57aebdede0623dc19e22e571bc1dd120c86a12593a0797c6a2ef",
+      "alphaSHA256": "fc330389de3e0d87e2e3786d309c6596980d7b16b3691a0ae03461dd0dfa8f18",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/oakwood-rest/Nova-female-rest-1.png": {
+      "sourceSHA256": "9e0fbfb324a5c1a07f7384e8e7eefa9e1752f98a2e9f7a9976b559d0ee44e63b",
+      "optimizedSHA256": "ffb4b726d869a0de8ded8f8b83c8500e02f5d737abf303d00b6816c2e8d8c0e8",
+      "sourceBytes": 34505,
+      "optimizedBytes": 34104,
+      "savedBytes": 401,
+      "size": [
+        120,
+        164
+      ],
+      "rgbaSHA256": "dc0a8ed4d632af9a87ee7835dc53fb433e5e20e6b0e47b5f7f686bdb2c16cdad",
+      "alphaSHA256": "a7d6775ac80f1862dcbd5383ba4f4aacc436465ca0cfef8831fc932d17690914",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/oakwood-rest/Nova-male-rest-0.png": {
+      "sourceSHA256": "d8cf832fb7fbe1baa086b88756418fd59a906e2fb79a4a9d3f0c30bd80a59a3a",
+      "optimizedSHA256": "5ce1fb4f15cff97f8124cd01423873d04e10ebb34d825e8319b58c8a2f2c0e47",
+      "sourceBytes": 38858,
+      "optimizedBytes": 38447,
+      "savedBytes": 411,
+      "size": [
+        128,
+        172
+      ],
+      "rgbaSHA256": "dfb2998ad8a41b88e0eada30367ad8917f09feb8a641a4328d3dc139c310840f",
+      "alphaSHA256": "a8d2ede82b652e1a90efeda03f4dee0f76aaa5c1c398fe8d2413119227affe49",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/oakwood-rest/Nova-male-rest-1.png": {
+      "sourceSHA256": "671af0398b9dde279b414b1ffe6d7e57976591404075c86f7637eee0be40abe1",
+      "optimizedSHA256": "2fd8719f49e2fa4f8d1599d1fb0ffa3e539d4a7f73d3374f405c2ac5c094db56",
+      "sourceBytes": 38269,
+      "optimizedBytes": 37823,
+      "savedBytes": 446,
+      "size": [
+        128,
+        172
+      ],
+      "rgbaSHA256": "c0948d9d62f8eff263597f51937266f9c01b3b154d5ee2b1c51d2d93189f66d5",
+      "alphaSHA256": "d41d97de6c52a929ecc1c42ca3e8ad8e3a9f3e0f98777b95e5ae96b786496cac",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/oakwood-rest/Oakwood-Rest-Background.png": {
+      "sourceSHA256": "ce4ea4ca67da4da1ad06a9658c4baff77070a6696e1cfa0f0c437fa3ce796a7f",
+      "optimizedSHA256": "b983052685ba70a2ae6be16efe106cca59cfde65a77004022caee7cfb0db6469",
+      "sourceBytes": 332175,
+      "optimizedBytes": 331931,
+      "savedBytes": 244,
+      "size": [
+        512,
+        288
+      ],
+      "rgbaSHA256": "65133a390050e64120bcd191eb423d1fb21829879c040996f0585e91d4b0a560",
+      "alphaSHA256": "4ae2e6e6e32dace013ba173d69a66ac11951b0d718d68aaf31816a8b69264794",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/slime-blue/Slime-Blue-Atlas.png": {
+      "sourceSHA256": "8ddcc4cc961f0849e0c65733c4557a17a0a727dbed4001e495218868404b857d",
+      "optimizedSHA256": "f205add8f04082e0ba6a2281e9d9c455f55ef80482079fdfa348dd25ff00bedf",
+      "sourceBytes": 13573,
+      "optimizedBytes": 12982,
+      "savedBytes": 591,
+      "size": [
+        192,
+        96
+      ],
+      "rgbaSHA256": "29f6156e211c21b7d357dd5447e5b7c688725513876f09a66f3cad1032f8819b",
+      "alphaSHA256": "a8bc8b007db075e5afb18ffc3c1eeb090869685732e75e413cd77667f55abd57",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/slime-blue/Slime-Blue-Battle-Preview.png": {
+      "sourceSHA256": "684c257f88afe0eeb507058ee6aeb7a06190acd7238fd287bfba78bc91aff883",
+      "optimizedSHA256": "4e744154aefccb07823093a323b561df5a9664adcede79148eab1b372e882db9",
+      "sourceBytes": 13040,
+      "optimizedBytes": 10807,
+      "savedBytes": 2233,
+      "size": [
+        720,
+        405
+      ],
+      "rgbaSHA256": "b20257783ed4e769aba96bee8043f8a20c6fb247cb4ed7d3c0d237805c924e56",
+      "alphaSHA256": "a71a95e09039e01eade7dd7630ec46290dcbf7a7bfa7c648c589627d06a4b48f",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/slime-blue/Slime-Blue-Contact-4x.png": {
+      "sourceSHA256": "552971fbb116181c586959f40e53805d77b6b37b7e75f71a14a55142fdbd9a8a",
+      "optimizedSHA256": "c46f619d3943222502ded90bf177f912e1f69e58cdca37c5209d4a59498be65c",
+      "sourceBytes": 19115,
+      "optimizedBytes": 15914,
+      "savedBytes": 3201,
+      "size": [
+        768,
+        384
+      ],
+      "rgbaSHA256": "855c59c3f8b82782d09af75272c807626a11fbf794346602935bc899b246f1a8",
+      "alphaSHA256": "0b3354cffa6c6c8a6a3cfb45ac53cf3199b68308f89526282528c008e7ebd9ae",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/slime-blue/Slime-Blue-attack-0.png": {
+      "sourceSHA256": "68b015726fa10c9ecf05d8a2459d2373b39e6083d11f0d4f918ad9900de56bed",
+      "optimizedSHA256": "1a5c8a036a628bca9b6cae9f5c7d67affacd580a6ab74ec655af3a011c40e2d4",
+      "sourceBytes": 2007,
+      "optimizedBytes": 1960,
+      "savedBytes": 47,
+      "size": [
+        48,
+        48
+      ],
+      "rgbaSHA256": "fa01b5e4bf83b5d3c10a57ac6c5abf22e77b0a6861b98b67acf0295adc5a3175",
+      "alphaSHA256": "c463b5fa659e48e96a34edd7f49f734d93f1d62c8e410825fcf082c301af0f21",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/slime-blue/Slime-Blue-attack-1.png": {
+      "sourceSHA256": "38f05d4602fe69686f7ded9ba9bb383b2c902f1e5fec9328ea8f499ad985c1eb",
+      "optimizedSHA256": "900b022dd713c8fa264bd09f5c421e20f59db8b59a3bfaf380da660f4ac1d281",
+      "sourceBytes": 2207,
+      "optimizedBytes": 2131,
+      "savedBytes": 76,
+      "size": [
+        48,
+        48
+      ],
+      "rgbaSHA256": "bdc4b17e14e6a26ae6d10baf301aabad54c6241ea03d3154ab5248206b6a9486",
+      "alphaSHA256": "f1a0339aefb74d887b8acfdfaba8a6405a6bdd4b7d51be99da1b5124fd49130e",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/slime-blue/Slime-Blue-attack-2.png": {
+      "sourceSHA256": "c59d27a7340c28107c2b95e8fd0541e50daf82be2f729d547fc8bbfd4dd8fc7d",
+      "optimizedSHA256": "c1f8284781e99f269735c9ffd991e90e4b7aae2cc0f81b8032d3c63953044a91",
+      "sourceBytes": 1934,
+      "optimizedBytes": 1883,
+      "savedBytes": 51,
+      "size": [
+        48,
+        48
+      ],
+      "rgbaSHA256": "d1c8c14df107908e85707ef1fbd1161640e7671f8e350ed834356e1f29b83233",
+      "alphaSHA256": "f9fec48e3cd3920ce8fa322dfbe761b9f19ac6ad1ced495142e9267603b022bd",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/slime-blue/Slime-Blue-block-0.png": {
+      "sourceSHA256": "a06ca633fc447646ed8bc94d777d55c7fd8d11efd93cbb3f01ef3a07e70b1e5c",
+      "optimizedSHA256": "c103d87e71b3dd3fdb0750383812e0a14c8f5b6c98045bbc3637b2d5f97683ca",
+      "sourceBytes": 1592,
+      "optimizedBytes": 1569,
+      "savedBytes": 23,
+      "size": [
+        48,
+        48
+      ],
+      "rgbaSHA256": "c8f5c26caf6b0f9fdbecbe63c30a9583aa8d030e81433e413661b934da4a3d53",
+      "alphaSHA256": "8c84c3751799b5d01cda1deebd79c3e2ccd46202c6959ce4e6120d9cf3d0ff41",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/slime-blue/Slime-Blue-defeated-0.png": {
+      "sourceSHA256": "5de454185fc6ac066c9a7e1129a89152e084826d586dd872dc04c948b0e58f00",
+      "optimizedSHA256": "731b5a0ee5fad758ec20bc0b3bd091b7056f60c476ddafbd1a4698a171dc53e2",
+      "sourceBytes": 1178,
+      "optimizedBytes": 1151,
+      "savedBytes": 27,
+      "size": [
+        48,
+        48
+      ],
+      "rgbaSHA256": "586959c87e8224dbe364bd449586752bb6f174a8832b9d144a033788d24c53e7",
+      "alphaSHA256": "254b526279e520512bda10674dddbfe1e83039ed7dae059a2e3dfd56988a86ee",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/slime-blue/Slime-Blue-hurt-0.png": {
+      "sourceSHA256": "32d2f58ed98cc8e0c13b43f508071f4237275d3afe418cc9384c3d4f9309782f",
+      "optimizedSHA256": "f6933add66470c4dcb42ffe1993f386057275c3c83cd853bf0f277e67dbf48ab",
+      "sourceBytes": 1779,
+      "optimizedBytes": 1723,
+      "savedBytes": 56,
+      "size": [
+        48,
+        48
+      ],
+      "rgbaSHA256": "5c66a6288a384e2be7054802abfd482db1080d7e2b4756ccc98c33f35f7c4f5e",
+      "alphaSHA256": "55227cc5da7f227d31fb13951d76f9c65f1f9897ae23c7087157d5968de0a469",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/slime-blue/Slime-Blue-idle-0.png": {
+      "sourceSHA256": "0bf31740b4acbb8c14f06134af076626fedcc04575a8ea4d73d12b61a7a36804",
+      "optimizedSHA256": "951b96df732d33a2e23e27ded9c9d93be78418f659d33ceb00a562ef96890d52",
+      "sourceBytes": 2072,
+      "optimizedBytes": 2051,
+      "savedBytes": 21,
+      "size": [
+        48,
+        48
+      ],
+      "rgbaSHA256": "b0c423d42ff705cc7e5e9b1a7465dad8e1a735bbd5080ecbc9d6a2ca33a78928",
+      "alphaSHA256": "a1a87b9b0794c4692e9c4633ba98c7c75de5acb7a4184147317ff0e2bddf620f",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/slime-blue/Slime-Blue-idle-1.png": {
+      "sourceSHA256": "f02e1eb171e5b35694760b2862989f0e3e0e64f181eeb2fdcb4ee3a985a8d54e",
+      "optimizedSHA256": "014a7ed079737ed2e5bb3f1bac6e65c622c0742fecbc6576ef44463c856c3908",
+      "sourceBytes": 1798,
+      "optimizedBytes": 1758,
+      "savedBytes": 40,
+      "size": [
+        48,
+        48
+      ],
+      "rgbaSHA256": "3f1dccf41524b5e7be506eb3dfae151c48fb62ff18664a54e3aee396a8052687",
+      "alphaSHA256": "d0c8bad7d797a95fef65b122676948d350e0ab6dfa32ad245b219f0fcc89e2b6",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/validated-ground/F002-Sunlit-Forest-Left.png": {
+      "sourceSHA256": "801fa83e1dec53c586d3d0410d19e1fb951a839f203c75e62395be4634a7db3e",
+      "optimizedSHA256": "8de366bb273a348c557580579079fbcf679bd23a83705297e48addca3c6dfff5",
+      "sourceBytes": 379601,
+      "optimizedBytes": 331769,
+      "savedBytes": 47832,
+      "size": [
+        512,
+        288
+      ],
+      "rgbaSHA256": "92aa4f4ff58a16ddfefa3bbf576b651f294ce6f6d0eb1dd678def6b4db276865",
+      "alphaSHA256": "4ae2e6e6e32dace013ba173d69a66ac11951b0d718d68aaf31816a8b69264794",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/validated-ground/F002-Sunlit-Forest-Right.png": {
+      "sourceSHA256": "067dd7639c3811b0f107c5818c2de5c76f084c5ce44405a8d30f22c3be50e7a8",
+      "optimizedSHA256": "3a9dbfc77b0b3357e84df309c688b5cdbc2283b8ad0e934b2950998ea66113af",
+      "sourceBytes": 374896,
+      "optimizedBytes": 327036,
+      "savedBytes": 47860,
+      "size": [
+        512,
+        288
+      ],
+      "rgbaSHA256": "4d7f7fab65c50a0d2c1b86192c9bdbba1e62b697488078823dacf3be4aabd858",
+      "alphaSHA256": "4ae2e6e6e32dace013ba173d69a66ac11951b0d718d68aaf31816a8b69264794",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/validated-ground/F002-Sunlit-Forest-RoadMask.png": {
+      "sourceSHA256": "b54364620939589139a384db766f7ba01e15a777dbd0cb19c5a1d6998d6e57bb",
+      "optimizedSHA256": "46168eb502a3974a100391f24be1ab76da502abe3fb47470288edf300ee7044c",
+      "sourceBytes": 1710,
+      "optimizedBytes": 158,
+      "savedBytes": 1552,
+      "size": [
+        1024,
+        288
+      ],
+      "rgbaSHA256": "27c0a71e98ab1d6f840132fe29382502acc235717edd37c1980d8b81bae0c768",
+      "alphaSHA256": "0b3354cffa6c6c8a6a3cfb45ac53cf3199b68308f89526282528c008e7ebd9ae",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/validated-ground/Sunlit-Tree.png": {
+      "sourceSHA256": "8fbc550809be7ce3d1d357a4b7baa568c02cbb65d85faf8602d3f26050c86422",
+      "optimizedSHA256": "8fbc550809be7ce3d1d357a4b7baa568c02cbb65d85faf8602d3f26050c86422",
+      "sourceBytes": 28913,
+      "optimizedBytes": 28913,
+      "savedBytes": 0,
+      "size": [
+        128,
+        160
+      ],
+      "rgbaSHA256": "546d9ef82d5fc024a0b7db623b0bbf2c45bbc4d9424eb583cde663f7bf83d8f0",
+      "alphaSHA256": "a49453093cb3c88deea16c66cf80aeb582716f09ed550e9f4c380f7adce129a4",
+      "method": "original",
+      "rejectedCandidates": 0
+    },
+    "build/validated-ground/corner-ne.png": {
+      "sourceSHA256": "04bb6f8c71168fe3fd634513372c518d7b0b650a78244ddcdd145e1df9110de1",
+      "optimizedSHA256": "e3d0de6cab4eda76f8f2e9354a4961b6774385cecae2c699dc2662c99f840bac",
+      "sourceBytes": 1103,
+      "optimizedBytes": 966,
+      "savedBytes": 137,
+      "size": [
+        32,
+        18
+      ],
+      "rgbaSHA256": "38878c5987c1e5b149dd08ebc249368b210fb18a5d8f581cdace7ff6a1d06338",
+      "alphaSHA256": "a240facb7a0d5897b5826bfa52dee1963929a424e1e2d78dd2f72cd5a85cbcdf",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/validated-ground/corner-nw.png": {
+      "sourceSHA256": "04bb6f8c71168fe3fd634513372c518d7b0b650a78244ddcdd145e1df9110de1",
+      "optimizedSHA256": "e3d0de6cab4eda76f8f2e9354a4961b6774385cecae2c699dc2662c99f840bac",
+      "sourceBytes": 1103,
+      "optimizedBytes": 966,
+      "savedBytes": 137,
+      "size": [
+        32,
+        18
+      ],
+      "rgbaSHA256": "38878c5987c1e5b149dd08ebc249368b210fb18a5d8f581cdace7ff6a1d06338",
+      "alphaSHA256": "a240facb7a0d5897b5826bfa52dee1963929a424e1e2d78dd2f72cd5a85cbcdf",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/validated-ground/corner-se.png": {
+      "sourceSHA256": "04bb6f8c71168fe3fd634513372c518d7b0b650a78244ddcdd145e1df9110de1",
+      "optimizedSHA256": "e3d0de6cab4eda76f8f2e9354a4961b6774385cecae2c699dc2662c99f840bac",
+      "sourceBytes": 1103,
+      "optimizedBytes": 966,
+      "savedBytes": 137,
+      "size": [
+        32,
+        18
+      ],
+      "rgbaSHA256": "38878c5987c1e5b149dd08ebc249368b210fb18a5d8f581cdace7ff6a1d06338",
+      "alphaSHA256": "a240facb7a0d5897b5826bfa52dee1963929a424e1e2d78dd2f72cd5a85cbcdf",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/validated-ground/corner-sw.png": {
+      "sourceSHA256": "04bb6f8c71168fe3fd634513372c518d7b0b650a78244ddcdd145e1df9110de1",
+      "optimizedSHA256": "e3d0de6cab4eda76f8f2e9354a4961b6774385cecae2c699dc2662c99f840bac",
+      "sourceBytes": 1103,
+      "optimizedBytes": 966,
+      "savedBytes": 137,
+      "size": [
+        32,
+        18
+      ],
+      "rgbaSHA256": "38878c5987c1e5b149dd08ebc249368b210fb18a5d8f581cdace7ff6a1d06338",
+      "alphaSHA256": "a240facb7a0d5897b5826bfa52dee1963929a424e1e2d78dd2f72cd5a85cbcdf",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/validated-ground/meadow-open-v1-east.png": {
+      "sourceSHA256": "7076578c910ab1a341c228fd403c8c5832c048de05813a90d5bf30aafce56ab1",
+      "optimizedSHA256": "8fd0bab9b0d2a77f25fbb4d85794ec89329997eff11b60dca179961dc34be68c",
+      "sourceBytes": 1388,
+      "optimizedBytes": 1165,
+      "savedBytes": 223,
+      "size": [
+        32,
+        288
+      ],
+      "rgbaSHA256": "a781641505ba3222205cf1a2cf4831c4554f7481c032fcc01e19cdacd248560b",
+      "alphaSHA256": "a27a50c72e45c4f5a44249d2913d9c56b43815d800757303c49dd643c5f40818",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/validated-ground/meadow-open-v1-north.png": {
+      "sourceSHA256": "d88cab4cfb4c43874be7ad3a6a312e21091313293c283a3cef468bcd4d2cf406",
+      "optimizedSHA256": "8b58d26a85da2d7f4c5bbff3c4a4fa3236189f50106bd17191366e5f3e132ac1",
+      "sourceBytes": 1257,
+      "optimizedBytes": 1085,
+      "savedBytes": 172,
+      "size": [
+        512,
+        18
+      ],
+      "rgbaSHA256": "49b33ace57d5ffb72daceaad12f4e7c7eb5848e9e22e3030d4884efe8eda7355",
+      "alphaSHA256": "a27a50c72e45c4f5a44249d2913d9c56b43815d800757303c49dd643c5f40818",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/validated-ground/meadow-open-v1-south.png": {
+      "sourceSHA256": "d88cab4cfb4c43874be7ad3a6a312e21091313293c283a3cef468bcd4d2cf406",
+      "optimizedSHA256": "8b58d26a85da2d7f4c5bbff3c4a4fa3236189f50106bd17191366e5f3e132ac1",
+      "sourceBytes": 1257,
+      "optimizedBytes": 1085,
+      "savedBytes": 172,
+      "size": [
+        512,
+        18
+      ],
+      "rgbaSHA256": "49b33ace57d5ffb72daceaad12f4e7c7eb5848e9e22e3030d4884efe8eda7355",
+      "alphaSHA256": "a27a50c72e45c4f5a44249d2913d9c56b43815d800757303c49dd643c5f40818",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/validated-ground/meadow-open-v1-west.png": {
+      "sourceSHA256": "7076578c910ab1a341c228fd403c8c5832c048de05813a90d5bf30aafce56ab1",
+      "optimizedSHA256": "8fd0bab9b0d2a77f25fbb4d85794ec89329997eff11b60dca179961dc34be68c",
+      "sourceBytes": 1388,
+      "optimizedBytes": 1165,
+      "savedBytes": 223,
+      "size": [
+        32,
+        288
+      ],
+      "rgbaSHA256": "a781641505ba3222205cf1a2cf4831c4554f7481c032fcc01e19cdacd248560b",
+      "alphaSHA256": "a27a50c72e45c4f5a44249d2913d9c56b43815d800757303c49dd643c5f40818",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/validated-ground/meadow-road-v1-east.png": {
+      "sourceSHA256": "cf44f2f9ce635fa33c6adebd0b0e4a7f057995a12b3613dc93ce9c94a0b1a000",
+      "optimizedSHA256": "4269fce68cf7c189f4206c84f0d23f20ec94b9aac76a7cf505b70a7c1a020a0b",
+      "sourceBytes": 20097,
+      "optimizedBytes": 17160,
+      "savedBytes": 2937,
+      "size": [
+        32,
+        288
+      ],
+      "rgbaSHA256": "05b4c8627f62457e424e54ed57fcda8bf907eca993454c7eb9a4594bbe562140",
+      "alphaSHA256": "a27a50c72e45c4f5a44249d2913d9c56b43815d800757303c49dd643c5f40818",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/validated-ground/meadow-road-v1-north.png": {
+      "sourceSHA256": "5593092a5c46b95dcc7e65c261e5dc341d75d8e6cd0c65f85e7c9e1d10c33bae",
+      "optimizedSHA256": "7bf560242a7d589e3f77eef391e5bf87dd367edb41da35a25d009f90761babeb",
+      "sourceBytes": 2236,
+      "optimizedBytes": 1985,
+      "savedBytes": 251,
+      "size": [
+        512,
+        18
+      ],
+      "rgbaSHA256": "3d4608313619f44b1bd9dd264e2232e0f2b8f68d471252eb12321fe4fda2ca20",
+      "alphaSHA256": "a27a50c72e45c4f5a44249d2913d9c56b43815d800757303c49dd643c5f40818",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/validated-ground/meadow-road-v1-south.png": {
+      "sourceSHA256": "5593092a5c46b95dcc7e65c261e5dc341d75d8e6cd0c65f85e7c9e1d10c33bae",
+      "optimizedSHA256": "7bf560242a7d589e3f77eef391e5bf87dd367edb41da35a25d009f90761babeb",
+      "sourceBytes": 2236,
+      "optimizedBytes": 1985,
+      "savedBytes": 251,
+      "size": [
+        512,
+        18
+      ],
+      "rgbaSHA256": "3d4608313619f44b1bd9dd264e2232e0f2b8f68d471252eb12321fe4fda2ca20",
+      "alphaSHA256": "a27a50c72e45c4f5a44249d2913d9c56b43815d800757303c49dd643c5f40818",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    },
+    "build/validated-ground/meadow-road-v1-west.png": {
+      "sourceSHA256": "ca847b12779932166c35f281986be9e21c3094c5edd0a71f0655daa1f1cf30c4",
+      "optimizedSHA256": "c36baa311a2c7148967a3a5edb203632c4eec9e73b54c26b626bea4124b56c7d",
+      "sourceBytes": 20371,
+      "optimizedBytes": 17323,
+      "savedBytes": 3048,
+      "size": [
+        32,
+        288
+      ],
+      "rgbaSHA256": "17a802f914c17ed91301dbc5172f16fdd58c2045d749f0a11dcc4f5988bc443d",
+      "alphaSHA256": "a27a50c72e45c4f5a44249d2913d9c56b43815d800757303c49dd643c5f40818",
+      "method": "oxipng -o 4",
+      "rejectedCandidates": 0
+    }
+  },
+  "sourceBytes": 2141106,
+  "optimizedBytes": 1935082,
+  "savedBytes": 206024,
+  "changedFiles": 127
+}

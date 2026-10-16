@@ -1,0 +1,322 @@
+{
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "sourceSHA256": "d7d67b66500eb84513a732c8714463dda9955da405c705caed3081e213cb567f",
+  "frameSize": [
+    80,
+    64
+  ],
+  "pivot": [
+    40,
+    56
+  ],
+  "inverseScale": 5.25,
+  "frames": [
+    {
+      "name": "Nova-female-v2-attack-south-0.png",
+      "sourceRect": [
+        0,
+        0,
+        336,
+        335
+      ],
+      "sourceAnchor": [
+        186,
+        295
+      ],
+      "paintBounds": [
+        20,
+        14,
+        69,
+        64
+      ]
+    },
+    {
+      "name": "Nova-female-v2-attack-south-1.png",
+      "sourceRect": [
+        336,
+        0,
+        630,
+        335
+      ],
+      "sourceAnchor": [
+        468,
+        295
+      ],
+      "paintBounds": [
+        15,
+        17,
+        71,
+        60
+      ]
+    },
+    {
+      "name": "Nova-female-v2-attack-south-2.png",
+      "sourceRect": [
+        630,
+        0,
+        931,
+        335
+      ],
+      "sourceAnchor": [
+        775,
+        296
+      ],
+      "paintBounds": [
+        12,
+        15,
+        69,
+        58
+      ]
+    },
+    {
+      "name": "Nova-female-v2-attack-south-3.png",
+      "sourceRect": [
+        931,
+        0,
+        1254,
+        335
+      ],
+      "sourceAnchor": [
+        1078,
+        296
+      ],
+      "paintBounds": [
+        17,
+        16,
+        60,
+        58
+      ]
+    },
+    {
+      "name": "Nova-female-v2-attack-north-0.png",
+      "sourceRect": [
+        0,
+        335,
+        338,
+        628
+      ],
+      "sourceAnchor": [
+        178,
+        595
+      ],
+      "paintBounds": [
+        18,
+        6,
+        68,
+        61
+      ]
+    },
+    {
+      "name": "Nova-female-v2-attack-north-1.png",
+      "sourceRect": [
+        338,
+        335,
+        657,
+        628
+      ],
+      "sourceAnchor": [
+        479,
+        595
+      ],
+      "paintBounds": [
+        19,
+        11,
+        72,
+        56
+      ]
+    },
+    {
+      "name": "Nova-female-v2-attack-north-2.png",
+      "sourceRect": [
+        657,
+        335,
+        967,
+        628
+      ],
+      "sourceAnchor": [
+        766,
+        595
+      ],
+      "paintBounds": [
+        22,
+        8,
+        78,
+        61
+      ]
+    },
+    {
+      "name": "Nova-female-v2-attack-north-3.png",
+      "sourceRect": [
+        967,
+        335,
+        1254,
+        628
+      ],
+      "sourceAnchor": [
+        1063,
+        595
+      ],
+      "paintBounds": [
+        23,
+        7,
+        69,
+        59
+      ]
+    },
+    {
+      "name": "Nova-female-v2-attack-west-0.png",
+      "sourceRect": [
+        0,
+        628,
+        335,
+        926
+      ],
+      "sourceAnchor": [
+        165,
+        888
+      ],
+      "paintBounds": [
+        26,
+        6,
+        72,
+        57
+      ]
+    },
+    {
+      "name": "Nova-female-v2-attack-west-1.png",
+      "sourceRect": [
+        335,
+        628,
+        637,
+        926
+      ],
+      "sourceAnchor": [
+        480,
+        888
+      ],
+      "paintBounds": [
+        12,
+        6,
+        66,
+        63
+      ]
+    },
+    {
+      "name": "Nova-female-v2-attack-west-2.png",
+      "sourceRect": [
+        637,
+        628,
+        934,
+        926
+      ],
+      "sourceAnchor": [
+        764,
+        888
+      ],
+      "paintBounds": [
+        19,
+        6,
+        69,
+        60
+      ]
+    },
+    {
+      "name": "Nova-female-v2-attack-west-3.png",
+      "sourceRect": [
+        934,
+        628,
+        1254,
+        926
+      ],
+      "sourceAnchor": [
+        1068,
+        888
+      ],
+      "paintBounds": [
+        17,
+        9,
+        66,
+        57
+      ]
+    },
+    {
+      "name": "Nova-female-v2-attack-east-0.png",
+      "sourceRect": [
+        0,
+        926,
+        335,
+        1254
+      ],
+      "sourceAnchor": [
+        188,
+        1172
+      ],
+      "paintBounds": [
+        12,
+        16,
+        60,
+        58
+      ]
+    },
+    {
+      "name": "Nova-female-v2-attack-east-1.png",
+      "sourceRect": [
+        335,
+        926,
+        656,
+        1254
+      ],
+      "sourceAnchor": [
+        484,
+        1172
+      ],
+      "paintBounds": [
+        21,
+        11,
+        71,
+        57
+      ]
+    },
+    {
+      "name": "Nova-female-v2-attack-east-2.png",
+      "sourceRect": [
+        656,
+        926,
+        964,
+        1254
+      ],
+      "sourceAnchor": [
+        779,
+        1173
+      ],
+      "paintBounds": [
+        20,
+        15,
+        75,
+        59
+      ]
+    },
+    {
+      "name": "Nova-female-v2-attack-east-3.png",
+      "sourceRect": [
+        964,
+        926,
+        1254,
+        1254
+      ],
+      "sourceAnchor": [
+        1086,
+        1173
+      ],
+      "paintBounds": [
+        18,
+        16,
+        61,
+        57
+      ]
+    }
+  ]
+}

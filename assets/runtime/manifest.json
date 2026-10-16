@@ -1,0 +1,1090 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Exact prepared raster/navigation inputs; no firmware binaries or browser review exports",
+  "files": {
+    "build/dire-wolf/Dire-Wolf-Atlas.png": {
+      "bytes": 29229,
+      "sha256": "6a50ee10f34d051053949913d79f7b5efb4a0e7b0b146a9362ad4b25574ea57b"
+    },
+    "build/dire-wolf/Dire-Wolf-Contact-4x.png": {
+      "bytes": 37637,
+      "sha256": "da23669cb453d2528bb9fc1827df2f8791b4124eab764377f006a7f83ec293c4"
+    },
+    "build/dire-wolf/Dire-Wolf-attack-0.png": {
+      "bytes": 3957,
+      "sha256": "192428cf39f4b7b6e63b4d10c927403929354c0fad3dd312bf86d10de29aecdc"
+    },
+    "build/dire-wolf/Dire-Wolf-attack-1.png": {
+      "bytes": 3788,
+      "sha256": "29b9aaf242cca8d6bb9ac8491556ceca6c132a3f479c8d9c8049a2bfb1a9f787"
+    },
+    "build/dire-wolf/Dire-Wolf-attack-2.png": {
+      "bytes": 3991,
+      "sha256": "ee64d4cae258e8c7e14c033f40741e5ce383da76e0a61c23d005fbebdd70f798"
+    },
+    "build/dire-wolf/Dire-Wolf-block-0.png": {
+      "bytes": 3902,
+      "sha256": "216bb65fcdb47d9f6760b6bd64ab7e544bb881c7e34b661f4fc5511597a188a2"
+    },
+    "build/dire-wolf/Dire-Wolf-defeated-0.png": {
+      "bytes": 2887,
+      "sha256": "30aa05d22ad1d03b360b3c0f6c1b6917a7623347f3c1b325b77b6f4f5d3874d3"
+    },
+    "build/dire-wolf/Dire-Wolf-hurt-0.png": {
+      "bytes": 3860,
+      "sha256": "d99407a495ae40f8c33002d0dd7b1f06050dc7e56d8d9e3c807fa73f9f7efd59"
+    },
+    "build/dire-wolf/Dire-Wolf-idle-0.png": {
+      "bytes": 4034,
+      "sha256": "5d129819c17f3088af54527f51f0afac4180a0638d7086e431f81bcfb77fa760"
+    },
+    "build/dire-wolf/Dire-Wolf-idle-1.png": {
+      "bytes": 4144,
+      "sha256": "ac6297a0fd6b4aefa298ecc0f94fde0bc69f1cf3849f76271e95950927d60447"
+    },
+    "build/dire-wolf/preparation-report.json": {
+      "bytes": 2278,
+      "sha256": "ee21a13f347a6c69715e5c611c92f39a38bc92ea2688d6dc365ae184f42f27f9"
+    },
+    "build/dire-wolf/wolf.json": {
+      "bytes": 589,
+      "sha256": "7b94bd6423858308b82dbf1e15df3fd4487ce017666dabeb2eee2fa1128e397d"
+    },
+    "build/goblin/Goblin-Atlas.png": {
+      "bytes": 15612,
+      "sha256": "a9d3c4922669af2bab88c03587ac2c9c1bc02e8c0659ca49357880216f0f94c4"
+    },
+    "build/goblin/Goblin-Contact-4x.png": {
+      "bytes": 21092,
+      "sha256": "53a18a9f0457cf49913f673dcd5cc13c89871d70fc2471964578eefcf8ca3b72"
+    },
+    "build/goblin/Goblin-attack-0.png": {
+      "bytes": 2328,
+      "sha256": "f21479f186554c1904677b0a3b4440909af088e12484c8f2e813aca87cc5dbd2"
+    },
+    "build/goblin/Goblin-attack-1.png": {
+      "bytes": 2254,
+      "sha256": "327cee3474db8c975082889c0606c580c71db487a16efa9eb773348c640f2f8c"
+    },
+    "build/goblin/Goblin-attack-2.png": {
+      "bytes": 2183,
+      "sha256": "a8a85c9edfb560ece7100784db50b84ee4a732387e91d43e6247906831e00fc1"
+    },
+    "build/goblin/Goblin-block-0.png": {
+      "bytes": 2026,
+      "sha256": "71f4237ac31f3e086eeb5e478124e52a660d35f7767ae3aa433f5d21956f20bf"
+    },
+    "build/goblin/Goblin-defeated-0.png": {
+      "bytes": 1676,
+      "sha256": "17411ed5dd41244635b96b8a0afffe49aea5c69cd1e2226810828cf6e2143030"
+    },
+    "build/goblin/Goblin-hurt-0.png": {
+      "bytes": 2054,
+      "sha256": "19c61df1c422ad3078eece3594cff8d78110800c043b21ae6e5fa00e82de83c8"
+    },
+    "build/goblin/Goblin-idle-0.png": {
+      "bytes": 2245,
+      "sha256": "57716657ded60e6b1da870f35dcea84b246987c4589e9766e48b501a140a5ae4"
+    },
+    "build/goblin/Goblin-idle-1.png": {
+      "bytes": 2101,
+      "sha256": "daab57d09f2378180afa5f5f03b523f410363dc619b570616545cc040f014fdc"
+    },
+    "build/goblin/goblin.json": {
+      "bytes": 562,
+      "sha256": "bafc3b5133dfc3114220d862d0125a7bdfae01ef9196b51f61a235bcb3266bf4"
+    },
+    "build/goblin/preparation-report.json": {
+      "bytes": 2290,
+      "sha256": "2b51deaa2f4c7d7c6ba15016eda81ea4ce01914e0ee600ec9f5decfa26aad161"
+    },
+    "build/nova-female-v2/Nova-female-v2-contact-review.png": {
+      "bytes": 105866,
+      "sha256": "a51073d10f3f931660f510e4ec0c0d0ca6557ad167514b6dbe27350700eeae51"
+    },
+    "build/nova-female-v2/Nova-female-v2-east-idle-0.png": {
+      "bytes": 2729,
+      "sha256": "8741b16a75acdeb11ca6cdff5ee3d4bd2bf0d943e76a84bc13a93ce681456405"
+    },
+    "build/nova-female-v2/Nova-female-v2-east-idle-1.png": {
+      "bytes": 2663,
+      "sha256": "2a002bb114d62d6b6243d4d8751cd8cf55edd1656adbbaa609c26d9cf57e3008"
+    },
+    "build/nova-female-v2/Nova-female-v2-east-idle-2.png": {
+      "bytes": 2707,
+      "sha256": "a161a38c29b5aaab18b29d7f574952714b8f60be1b97d59e007b09707c093d50"
+    },
+    "build/nova-female-v2/Nova-female-v2-east-idle-3.png": {
+      "bytes": 2734,
+      "sha256": "da34fe90376915738d96d1c34e48a1c72c32179e895c97ad7b55518fa7628229"
+    },
+    "build/nova-female-v2/Nova-female-v2-east-walk-0.png": {
+      "bytes": 2926,
+      "sha256": "6ab5260dd4c1451f25412fbb3c1d795cc3ea44deed487cadc7d242c8316f6940"
+    },
+    "build/nova-female-v2/Nova-female-v2-east-walk-1.png": {
+      "bytes": 2902,
+      "sha256": "d69e89a697736b92b5831aba713f62ec7f10678a232e55928f58398c6b9649df"
+    },
+    "build/nova-female-v2/Nova-female-v2-east-walk-2.png": {
+      "bytes": 2853,
+      "sha256": "57585c6eafb4a44126a5e967cf9faea842da072f9549dea4256726954f6c9659"
+    },
+    "build/nova-female-v2/Nova-female-v2-east-walk-3.png": {
+      "bytes": 2917,
+      "sha256": "ca94dd6fe1a090911cc44a3ac32d1b47ca4a64a1a0a0e51247ca5d5d6c76850e"
+    },
+    "build/nova-female-v2/Nova-female-v2-north-idle-0.png": {
+      "bytes": 2630,
+      "sha256": "120a425629181af6c57bd7033ac13963e16f656ed490aba5c6b236edafde87fe"
+    },
+    "build/nova-female-v2/Nova-female-v2-north-idle-1.png": {
+      "bytes": 2631,
+      "sha256": "00b6f43b68bc7d669ae8928f987c1300d2c6471020fce43f52246846dd3a7cfc"
+    },
+    "build/nova-female-v2/Nova-female-v2-north-idle-2.png": {
+      "bytes": 2633,
+      "sha256": "522856584c00199d18aeb5841390be3fb78e3568bcccd3252b983d059559493f"
+    },
+    "build/nova-female-v2/Nova-female-v2-north-idle-3.png": {
+      "bytes": 2664,
+      "sha256": "a5f89fef10be64ab47a3c5afa4aa58851997266856a187c54b5b621a4a551678"
+    },
+    "build/nova-female-v2/Nova-female-v2-north-walk-0.png": {
+      "bytes": 2728,
+      "sha256": "76ad8eb01fa539be7b681db692c62628a8401a06fb23adb94e82c6d5a96258ca"
+    },
+    "build/nova-female-v2/Nova-female-v2-north-walk-1.png": {
+      "bytes": 2751,
+      "sha256": "5cfb6ea1c190e777efc38e0c14fb22e20a34518a9cb71c993707de70c684a8e7"
+    },
+    "build/nova-female-v2/Nova-female-v2-north-walk-2.png": {
+      "bytes": 2679,
+      "sha256": "e96c6462483cac11a2df55a272fb91b96a93f5f49ddd42814c6ccdbab86c7edb"
+    },
+    "build/nova-female-v2/Nova-female-v2-north-walk-3.png": {
+      "bytes": 2681,
+      "sha256": "c1864e5afbc82c56def33362bccdc460d04c17e3301a14f3f9b408cf8b64c6db"
+    },
+    "build/nova-female-v2/Nova-female-v2-review-4x.png": {
+      "bytes": 118863,
+      "sha256": "6bbc188aaa10fa770de0a0b1e9ec570a6e01ef51fe82304cafc291bb98193143"
+    },
+    "build/nova-female-v2/Nova-female-v2-south-idle-0.png": {
+      "bytes": 2814,
+      "sha256": "fe05eed31edcbdaac6d7d7ea51a9a250cad03b1eacd15b0a9ec7597296f2e06b"
+    },
+    "build/nova-female-v2/Nova-female-v2-south-idle-1.png": {
+      "bytes": 2812,
+      "sha256": "6478a85426b18aaec124be4a5713c7e8d10b870e74ee45329a0a858634d3b373"
+    },
+    "build/nova-female-v2/Nova-female-v2-south-idle-2.png": {
+      "bytes": 2790,
+      "sha256": "8393359dc3b3885d5868da2e68d4f799a035b58826f08497320373bddc7393ec"
+    },
+    "build/nova-female-v2/Nova-female-v2-south-idle-3.png": {
+      "bytes": 2810,
+      "sha256": "85ab94581b2312a8352c74bcea3dfa3b6e1aada29c9443199bcfe811ee9e1c20"
+    },
+    "build/nova-female-v2/Nova-female-v2-south-walk-0.png": {
+      "bytes": 2910,
+      "sha256": "b91ad1a5b9db887f0a69c57f565a9a0a1e73755da680cf258ac2dc469f53d17a"
+    },
+    "build/nova-female-v2/Nova-female-v2-south-walk-1.png": {
+      "bytes": 2749,
+      "sha256": "7b0c30d3ed006a99597b0295b9857e0a9357ac6e09c31551cdeb2128f0278d1c"
+    },
+    "build/nova-female-v2/Nova-female-v2-south-walk-2.png": {
+      "bytes": 2860,
+      "sha256": "104f7adcbddec97e6b68dca2bf135e6884ffebdde5067e12e20323c907b3a67c"
+    },
+    "build/nova-female-v2/Nova-female-v2-south-walk-3.png": {
+      "bytes": 2838,
+      "sha256": "76d7d0bff68c2e242a244ba94915d20abf19402905a2fa1d753f1d3216906af2"
+    },
+    "build/nova-female-v2/Nova-female-v2-west-idle-0.png": {
+      "bytes": 2611,
+      "sha256": "e1533c9ee17ebc5f33e5c06e6bcb377c5e740d12d6c4a0ef5966f50872fb4433"
+    },
+    "build/nova-female-v2/Nova-female-v2-west-idle-1.png": {
+      "bytes": 2626,
+      "sha256": "da7ceda4932d97c48bca9e949a2a80f3e54e354beb9bcc4b943d73be0b938406"
+    },
+    "build/nova-female-v2/Nova-female-v2-west-idle-2.png": {
+      "bytes": 2591,
+      "sha256": "b672f1a9aa1e07563d2689c0c387b918fdadba6165306429d884d9cfd84e044f"
+    },
+    "build/nova-female-v2/Nova-female-v2-west-idle-3.png": {
+      "bytes": 2687,
+      "sha256": "19908430333a4613fa671e80201e51a3ed565f527cf9272b66fdaf147fd19803"
+    },
+    "build/nova-female-v2/Nova-female-v2-west-walk-0.png": {
+      "bytes": 2806,
+      "sha256": "cc1c19caba61385483dd37a4273f101575a9e1a4fa35b31312d4d6c2376a0922"
+    },
+    "build/nova-female-v2/Nova-female-v2-west-walk-1.png": {
+      "bytes": 2685,
+      "sha256": "36feee2a4c8bc7523be59dcc2e43610e73b3d80847d5dd1c0aa1fa59472ebb95"
+    },
+    "build/nova-female-v2/Nova-female-v2-west-walk-2.png": {
+      "bytes": 2816,
+      "sha256": "b580c8d0cc97bd67cf8f22a704ff4603441c136aadd3fad4c6a543b7a180acbc"
+    },
+    "build/nova-female-v2/Nova-female-v2-west-walk-3.png": {
+      "bytes": 2763,
+      "sha256": "39a214850d73fc7b0671028591b338d6bd2a52e3cf543ae43d124ada5ffa612f"
+    },
+    "build/nova-female-v2/Nova-male-east-0.png": {
+      "bytes": 2829,
+      "sha256": "e4582eb76fe55ccb4868d1c19429a513f80c491fe3f9bc470f819b8268d3acae"
+    },
+    "build/nova-female-v2/Nova-male-east-1.png": {
+      "bytes": 2823,
+      "sha256": "8be6d004806ba359e2e65e607e12a121dcf0179ee8339d6c7a0fd2c6a726e53c"
+    },
+    "build/nova-female-v2/Nova-male-east-2.png": {
+      "bytes": 2848,
+      "sha256": "7855736be34efaec53150a840f6972e19f6e1adac7bf5fd75742a4c2ee2f35bc"
+    },
+    "build/nova-female-v2/Nova-male-east-3.png": {
+      "bytes": 2697,
+      "sha256": "3e4541ec80db454256ba96095aa7926c518fd1da390f81e5b83c430e1af8fb13"
+    },
+    "build/nova-female-v2/Nova-male-north-0.png": {
+      "bytes": 2830,
+      "sha256": "d20b9696e0fce895ec5ba4422d8f4b1fbc7c5c9f73b066b124941cf093dca10d"
+    },
+    "build/nova-female-v2/Nova-male-north-1.png": {
+      "bytes": 2783,
+      "sha256": "b8a8a347a3e7a4a22ad35610a99de09a0a922961bf25d2a8256ef10474bf2ac7"
+    },
+    "build/nova-female-v2/Nova-male-north-2.png": {
+      "bytes": 2964,
+      "sha256": "822e96fd3a692426ca115dba20cfcc5bdaff1fe304791e3c89f099701163e93e"
+    },
+    "build/nova-female-v2/Nova-male-north-3.png": {
+      "bytes": 2635,
+      "sha256": "f88ea9be20cf33bd2311c0dc880c75d75a491034a0a1b5ffbe3b1d8e6862f6d5"
+    },
+    "build/nova-female-v2/Nova-male-south-0.png": {
+      "bytes": 2864,
+      "sha256": "7bf922f0ec4b6591dc88c2aa49c1add713fb02608d4e0e7d70bb69b82ee1493b"
+    },
+    "build/nova-female-v2/Nova-male-south-1.png": {
+      "bytes": 2874,
+      "sha256": "d5706d2e83b0f75b5cb62b76ae8818a6c1b3a4637db79dda54183a70e8e1468b"
+    },
+    "build/nova-female-v2/Nova-male-south-2.png": {
+      "bytes": 2939,
+      "sha256": "c19ed2381e20fbbcd130db7f7f389875c6f31c87cca86e4c5c6efd78298f87e6"
+    },
+    "build/nova-female-v2/Nova-male-south-3.png": {
+      "bytes": 2904,
+      "sha256": "a554a9c56d51192e1840d18c64ff42dee8e4df4a1148f049f7e801cca217963f"
+    },
+    "build/nova-female-v2/Nova-male-west-0.png": {
+      "bytes": 2917,
+      "sha256": "1fdb4b7d99b9c5af4d64dfa108f3455255e2d4b5a0b0a50a7cba2c4c448b96e0"
+    },
+    "build/nova-female-v2/Nova-male-west-1.png": {
+      "bytes": 2853,
+      "sha256": "4ed07791778f6c2d4709f1871dc1ff8ba99a37860a60a93954fc11dcd2438f47"
+    },
+    "build/nova-female-v2/Nova-male-west-2.png": {
+      "bytes": 2938,
+      "sha256": "42105d57c2247d649b9afce1bb3c4df484052e780045a77904353ee7a50b6997"
+    },
+    "build/nova-female-v2/Nova-male-west-3.png": {
+      "bytes": 2694,
+      "sha256": "1ea1cb835ff582f11aba63278c6d04d3f2abdb93e05dff6c676cf0285e6b5bc1"
+    },
+    "build/nova-female-v2/female-v2-preparation-report.json": {
+      "bytes": 7316,
+      "sha256": "9b831155beb482173815aa4f1db772841f94c8608c94ceba692ef44adac64147"
+    },
+    "build/nova-female-v2/nova.json": {
+      "bytes": 2373,
+      "sha256": "03eb741b5afed38e53290ff0b42ccb701dc1da5d505661eced6146c2b22cc8ef"
+    },
+    "build/nova-sword/Nova-Female-v2-Sword-Atlas.png": {
+      "bytes": 65947,
+      "sha256": "3a50f5f0e1e62d4263c331f423ab3ddafc853a900859a1df10eb5b9483ff7dd9"
+    },
+    "build/nova-sword/Nova-Female-v2-Sword-Contact.png": {
+      "bytes": 84581,
+      "sha256": "078c1ae2efce4c7d6eb65a459614c69f9b50cd9e451374ea7f09ed11d6b1acc3"
+    },
+    "build/nova-sword/Nova-female-v2-attack-east-0.png": {
+      "bytes": 4099,
+      "sha256": "d44beab124693b60e9f36993fe8733ebef8eb7def7f9bb546ac8fd57dfb65ec4"
+    },
+    "build/nova-sword/Nova-female-v2-attack-east-1.png": {
+      "bytes": 4594,
+      "sha256": "b9c455d7144de669acb955cbf3a7966978a572270db864fe178549a8fb6894e6"
+    },
+    "build/nova-sword/Nova-female-v2-attack-east-2.png": {
+      "bytes": 4594,
+      "sha256": "0bc20e3d9839a16cf2e64fe4e41ae8e6c4914dd66f1cadf3124c31645a74c364"
+    },
+    "build/nova-sword/Nova-female-v2-attack-east-3.png": {
+      "bytes": 3786,
+      "sha256": "fbefa3d5aab9490f3be0fabfb9ef0d129bce9430607f9a3a461542999776ecb6"
+    },
+    "build/nova-sword/Nova-female-v2-attack-north-0.png": {
+      "bytes": 3881,
+      "sha256": "689910f2a7b06aa01c21a0f815de0f0d612e61594e45e77e3506389d7046e788"
+    },
+    "build/nova-sword/Nova-female-v2-attack-north-1.png": {
+      "bytes": 4857,
+      "sha256": "45d0bea70eaf57d0f6e9399e7293739c4f79076cf4e8fea4434cd983373cad15"
+    },
+    "build/nova-sword/Nova-female-v2-attack-north-2.png": {
+      "bytes": 4958,
+      "sha256": "58f0f70d9f55d584bac3d2d7be1ac5134eda9a52d4082fd335593aca8b597a40"
+    },
+    "build/nova-sword/Nova-female-v2-attack-north-3.png": {
+      "bytes": 3783,
+      "sha256": "110d76d1896f3d6c8d796c80ec61565e1c1582871a319f824b8c11ec323eec4c"
+    },
+    "build/nova-sword/Nova-female-v2-attack-south-0.png": {
+      "bytes": 4014,
+      "sha256": "81496e4f8c5cadf188fb99f1249956b344ff87a0d5cf1a4f332ab0913da56c31"
+    },
+    "build/nova-sword/Nova-female-v2-attack-south-1.png": {
+      "bytes": 4268,
+      "sha256": "49d900e7ce6cdae3658a9ec6e9a42e3bf1b5ebe3513533d8dddc146df019901d"
+    },
+    "build/nova-sword/Nova-female-v2-attack-south-2.png": {
+      "bytes": 4419,
+      "sha256": "458015170b0d49aaf39d77cedb7c417d9cc9d7569aab32579807bbde0c042b27"
+    },
+    "build/nova-sword/Nova-female-v2-attack-south-3.png": {
+      "bytes": 3716,
+      "sha256": "6282bc1f117bba154fe2f84bde3afb2d8c1f8d95b17029516513dba38297412a"
+    },
+    "build/nova-sword/Nova-female-v2-attack-west-0.png": {
+      "bytes": 4227,
+      "sha256": "6ab622776c992b8443b702c958b661e33287169fea8b89020d122d235de314c7"
+    },
+    "build/nova-sword/Nova-female-v2-attack-west-1.png": {
+      "bytes": 4633,
+      "sha256": "28c441eab8714d103c264afe9286ca4f14cfddfd1700cd00c15138e412edfe75"
+    },
+    "build/nova-sword/Nova-female-v2-attack-west-2.png": {
+      "bytes": 4696,
+      "sha256": "a4590da9266e12e841cdb0e01f9f4c65ceef7f73aed09a641011b37056269b43"
+    },
+    "build/nova-sword/Nova-female-v2-attack-west-3.png": {
+      "bytes": 4017,
+      "sha256": "64ac86e6e68545ae09d50d6fa3cfe953b18bfe344883c814b89cd851f8f857ec"
+    },
+    "build/nova-sword/nova-attack.json": {
+      "bytes": 1221,
+      "sha256": "8644ca19477b816f75c00122628f6cd9ebf28ac65d77a1b6538d8dac4cee6af1"
+    },
+    "build/nova-sword/preparation-report.json": {
+      "bytes": 4740,
+      "sha256": "f94a7d027073ea4c922a9069ce5e89fb8efa49f21fcc4a89f50620aef66b2e93"
+    },
+    "build/oakwood-rest/Nova-female-rest-0.png": {
+      "bytes": 34135,
+      "sha256": "fba2426586738c0a57b366ead4ec0e20f0985f2246a7e1b85b1d80db541f62be"
+    },
+    "build/oakwood-rest/Nova-female-rest-1.png": {
+      "bytes": 34505,
+      "sha256": "9e0fbfb324a5c1a07f7384e8e7eefa9e1752f98a2e9f7a9976b559d0ee44e63b"
+    },
+    "build/oakwood-rest/Nova-male-rest-0.png": {
+      "bytes": 38858,
+      "sha256": "d8cf832fb7fbe1baa086b88756418fd59a906e2fb79a4a9d3f0c30bd80a59a3a"
+    },
+    "build/oakwood-rest/Nova-male-rest-1.png": {
+      "bytes": 38269,
+      "sha256": "671af0398b9dde279b414b1ffe6d7e57976591404075c86f7637eee0be40abe1"
+    },
+    "build/oakwood-rest/Oakwood-Rest-Background.png": {
+      "bytes": 332175,
+      "sha256": "ce4ea4ca67da4da1ad06a9658c4baff77070a6696e1cfa0f0c437fa3ce796a7f"
+    },
+    "build/oakwood-rest/preparation.json": {
+      "bytes": 1511,
+      "sha256": "6f5580baa4eb905ef705a1242d14eb205ff8441b6913ce87e2dd3e38ea39603c"
+    },
+    "build/oakwood-rest/rest.json": {
+      "bytes": 906,
+      "sha256": "fdb7c4c929f45f7aa795ffc056dc871310b99bc308711312cde6f3a0a9714d57"
+    },
+    "build/png-optimized/assets/F001-clearing.png": {
+      "bytes": 1063,
+      "sha256": "ba074fa01dc6ee0b3f5c0c18e22ebbe9754bfcc7d5b8d45c5133e7246bacf476"
+    },
+    "build/png-optimized/assets/F002-east-west.png": {
+      "bytes": 1275,
+      "sha256": "985b1254c4700635896a41df1f5eead6f7a4f0bbfc7ba94df7983c9833572fd0"
+    },
+    "build/png-optimized/assets/F002-north-south.png": {
+      "bytes": 1894,
+      "sha256": "cdd5f53b861a7bf5eb6b58ff0402db7b653baab651e55e19bbc7dcc2b19eb3b8"
+    },
+    "build/png-optimized/assets/F003-pond.png": {
+      "bytes": 1439,
+      "sha256": "fccc1c13c74bf3afd120a930f0f72a9315ea00c66bb2e3e56668992a322b8060"
+    },
+    "build/png-optimized/assets/F004-crossroads.png": {
+      "bytes": 1765,
+      "sha256": "6f405fd72819f06f8ec616c980575592b9b4846b38ee0fedc06f33ea43d43793"
+    },
+    "build/png-optimized/assets/cabin.png": {
+      "bytes": 297,
+      "sha256": "ca1c955ddfc488e505ef68730843789329770a85f6bf9cbb5ec45a47ccb99e1e"
+    },
+    "build/png-optimized/assets/fence.png": {
+      "bytes": 117,
+      "sha256": "f20c9b9920ba525a936dd8033cf265c4e418ff128598c3ba5f281e7ea7930f17"
+    },
+    "build/png-optimized/assets/rock.png": {
+      "bytes": 152,
+      "sha256": "5d3281e56119fdf35a157a268c6aaaca8919a7aed2bb1d8ed4ae9bc3c8b4318e"
+    },
+    "build/png-optimized/assets/tree.png": {
+      "bytes": 318,
+      "sha256": "7f2940da8ec57894d9a32d50bb02becf7ff17e3754c7a21feea49101c75ae7cc"
+    },
+    "build/png-optimized/build/dire-wolf/Dire-Wolf-Atlas.png": {
+      "bytes": 27572,
+      "sha256": "4f212b1ce66b376bcc8669a0a826f3a2d7012d11589eeabb0d45a517f8ea545e"
+    },
+    "build/png-optimized/build/dire-wolf/Dire-Wolf-Contact-4x.png": {
+      "bytes": 31419,
+      "sha256": "ade853a1d87071e978efad0e481532eb31d2fdb5cf7ac1588c14b5a1aa612557"
+    },
+    "build/png-optimized/build/dire-wolf/Dire-Wolf-attack-0.png": {
+      "bytes": 3838,
+      "sha256": "5a63e7b145b8e031b09c1ec896f48c10c06062d3896baf0135a3e75a67e42aad"
+    },
+    "build/png-optimized/build/dire-wolf/Dire-Wolf-attack-1.png": {
+      "bytes": 3625,
+      "sha256": "d8b1f108d743d0861985c1f47a1eb328703b2a3f5c1e6ce7f938869c2945d4d5"
+    },
+    "build/png-optimized/build/dire-wolf/Dire-Wolf-attack-2.png": {
+      "bytes": 3891,
+      "sha256": "78e930135ae0e22e56aef896d1a255dab30f0fa0b7971604b0a5fbcb3a9fb6c5"
+    },
+    "build/png-optimized/build/dire-wolf/Dire-Wolf-block-0.png": {
+      "bytes": 3800,
+      "sha256": "5ed86077c90a3f8308c1bedac110d5252a54261a6e8af05bd205e5d9612b53ea"
+    },
+    "build/png-optimized/build/dire-wolf/Dire-Wolf-defeated-0.png": {
+      "bytes": 2791,
+      "sha256": "b97522f6752cde7017a0c5610b7fabbf2582922fd490c58cd3959d6eb3f76921"
+    },
+    "build/png-optimized/build/dire-wolf/Dire-Wolf-hurt-0.png": {
+      "bytes": 3785,
+      "sha256": "77296aefa27f5f8a90ed9d18c15d885b6368373487de7bfed95eaf2735eefc6b"
+    },
+    "build/png-optimized/build/dire-wolf/Dire-Wolf-idle-0.png": {
+      "bytes": 3875,
+      "sha256": "0a4042d3d632d739c6d2fcc0aa1a6caadbe49ef0583ea008850802ff8c17ebe1"
+    },
+    "build/png-optimized/build/dire-wolf/Dire-Wolf-idle-1.png": {
+      "bytes": 3938,
+      "sha256": "d0c32663c13b3f43306e757d517f82acbe799c24cefabf662647571a3127b759"
+    },
+    "build/png-optimized/build/goblin/Goblin-Atlas.png": {
+      "bytes": 14837,
+      "sha256": "456f1278c07b15a5b4ef8db42b4411aaa85b01e2dbb8963ddde3972b26e34f21"
+    },
+    "build/png-optimized/build/goblin/Goblin-Contact-4x.png": {
+      "bytes": 17363,
+      "sha256": "af7470e9392422ebd804108ebf366e2afa6f1bbc98a7e0d75dd86e58a55975ba"
+    },
+    "build/png-optimized/build/goblin/Goblin-attack-0.png": {
+      "bytes": 2223,
+      "sha256": "2d26dede81ba58805dd566e0cf5b1b891b0d4be3aa30d1ad1fd281ea62dd388c"
+    },
+    "build/png-optimized/build/goblin/Goblin-attack-1.png": {
+      "bytes": 2145,
+      "sha256": "4f913c7467058caed4f0c5b17fa4d4a71fcb8f41fd22d6f5116c941945d22166"
+    },
+    "build/png-optimized/build/goblin/Goblin-attack-2.png": {
+      "bytes": 2070,
+      "sha256": "f87a595a3dccff95647c8d931ca41571091a25eafd14974093583d21e8dc59ae"
+    },
+    "build/png-optimized/build/goblin/Goblin-block-0.png": {
+      "bytes": 1941,
+      "sha256": "540b51bc67caafbbcc171b3845738d490e4a7d66247e29f191a3fe70ddcc7ff7"
+    },
+    "build/png-optimized/build/goblin/Goblin-defeated-0.png": {
+      "bytes": 1615,
+      "sha256": "66cb1784e15f18ebef07dea088ce75d7676a4021e10638338c54618a29655d56"
+    },
+    "build/png-optimized/build/goblin/Goblin-hurt-0.png": {
+      "bytes": 1953,
+      "sha256": "32ca05c47573bc5b828cacbf85ae2e2713cfd8458e40e5c5d95aad454fcb5792"
+    },
+    "build/png-optimized/build/goblin/Goblin-idle-0.png": {
+      "bytes": 2152,
+      "sha256": "ad467d09a529b2f0f3789216bcb060c54620b5fbd1e643f8075533f38f84f116"
+    },
+    "build/png-optimized/build/goblin/Goblin-idle-1.png": {
+      "bytes": 1996,
+      "sha256": "ae0e2728790b8ddfacc754f54a0cfbe1f5b3a2ffbf48c6b53f9b3485e32f9c42"
+    },
+    "build/png-optimized/build/nova-female-v2/Nova-female-v2-contact-review.png": {
+      "bytes": 89469,
+      "sha256": "2b2b95f70bff1dca93aa0914647e96b2e3ff38c59665f9acb950a2cccd25cca5"
+    },
+    "build/png-optimized/build/nova-female-v2/Nova-female-v2-east-idle-0.png": {
+      "bytes": 2665,
+      "sha256": "5ce8a671d0bcd9a654545145043cf4fedce7b2ce049c4c39dc6818db0bd025ea"
+    },
+    "build/png-optimized/build/nova-female-v2/Nova-female-v2-east-idle-1.png": {
+      "bytes": 2626,
+      "sha256": "93bfaca355cdf8716b7ddad4e903104cc678fa9f5fdb0bfa071f5e1e7c9ee871"
+    },
+    "build/png-optimized/build/nova-female-v2/Nova-female-v2-east-idle-2.png": {
+      "bytes": 2651,
+      "sha256": "3693e8e4d14f71a8366de2af2a49cb540e6f01cd3c513adda1f78453727cf123"
+    },
+    "build/png-optimized/build/nova-female-v2/Nova-female-v2-east-idle-3.png": {
+      "bytes": 2683,
+      "sha256": "69e0bddfa5d3b98aa1d228c7e12b38c13758bf751b26c933f87af6a936fd556f"
+    },
+    "build/png-optimized/build/nova-female-v2/Nova-female-v2-east-walk-0.png": {
+      "bytes": 2849,
+      "sha256": "b6e3f520d3e42e39ba75123674947a48f7c4d9efd8b8f3d415770f6a319421d3"
+    },
+    "build/png-optimized/build/nova-female-v2/Nova-female-v2-east-walk-1.png": {
+      "bytes": 2836,
+      "sha256": "c301a00549c03fc30721cfb6fb3ee3820ffe75f7593a3e414f3e7099dfa7844f"
+    },
+    "build/png-optimized/build/nova-female-v2/Nova-female-v2-east-walk-2.png": {
+      "bytes": 2804,
+      "sha256": "f047119871876acd324a9ca9e10c48da1b234679da11b845545e0eda9174916e"
+    },
+    "build/png-optimized/build/nova-female-v2/Nova-female-v2-east-walk-3.png": {
+      "bytes": 2845,
+      "sha256": "5c309e5b924fdf3ea6b4316b184fb6bd2684d247f341f828f0b869242e0b5378"
+    },
+    "build/png-optimized/build/nova-female-v2/Nova-female-v2-north-idle-0.png": {
+      "bytes": 2595,
+      "sha256": "6b23ff57c65939fc5bf9b32923c7117b8fb93170629c5eeeac4db4cfd2466d18"
+    },
+    "build/png-optimized/build/nova-female-v2/Nova-female-v2-north-idle-1.png": {
+      "bytes": 2627,
+      "sha256": "a3832235acaf937afe3a75f5a8e8bb1caf220959a0fc0e887ccd053338330c2e"
+    },
+    "build/png-optimized/build/nova-female-v2/Nova-female-v2-north-idle-2.png": {
+      "bytes": 2627,
+      "sha256": "b572a04513e4dc580ee85189e988baebec878e5b2a9f75d984f3d2b131976ed6"
+    },
+    "build/png-optimized/build/nova-female-v2/Nova-female-v2-north-idle-3.png": {
+      "bytes": 2628,
+      "sha256": "fc1fbbf435c9f6258dbd005bd560019c6aa258eece746ba12747f89bcffea3c0"
+    },
+    "build/png-optimized/build/nova-female-v2/Nova-female-v2-north-walk-0.png": {
+      "bytes": 2728,
+      "sha256": "76ad8eb01fa539be7b681db692c62628a8401a06fb23adb94e82c6d5a96258ca"
+    },
+    "build/png-optimized/build/nova-female-v2/Nova-female-v2-north-walk-1.png": {
+      "bytes": 2722,
+      "sha256": "a7cea7884a55351bb402bfc376bfeabab6ad76e2ab5dd55ccf5e0568e1fac783"
+    },
+    "build/png-optimized/build/nova-female-v2/Nova-female-v2-north-walk-2.png": {
+      "bytes": 2629,
+      "sha256": "306cb03721c546a2a3fac3e4622c1f06530e9a1a7f0631bccc08536c174b6a6a"
+    },
+    "build/png-optimized/build/nova-female-v2/Nova-female-v2-north-walk-3.png": {
+      "bytes": 2612,
+      "sha256": "234c157491af35abf876fa3ebb7fc1bf31ef9e1961332fbd81bea8286cc760d1"
+    },
+    "build/png-optimized/build/nova-female-v2/Nova-female-v2-review-4x.png": {
+      "bytes": 103213,
+      "sha256": "5d3d563698e089b46a6c57f8b6adf6b8817e9ccb071afee2d8cdf311b49ef75d"
+    },
+    "build/png-optimized/build/nova-female-v2/Nova-female-v2-south-idle-0.png": {
+      "bytes": 2811,
+      "sha256": "b4460297771f0345facc0f4abcb6ce8745f7613e85bc477221722e7386326faf"
+    },
+    "build/png-optimized/build/nova-female-v2/Nova-female-v2-south-idle-1.png": {
+      "bytes": 2743,
+      "sha256": "3804802f4dacb3c0801db801da9c98952e457c42680bee9d3c86a5f02df7ee69"
+    },
+    "build/png-optimized/build/nova-female-v2/Nova-female-v2-south-idle-2.png": {
+      "bytes": 2767,
+      "sha256": "84281c84a2ef484d6602a78d0a2b3fd96ad0ca1da0ac25e975e2ecc04d782f60"
+    },
+    "build/png-optimized/build/nova-female-v2/Nova-female-v2-south-idle-3.png": {
+      "bytes": 2768,
+      "sha256": "d5f286725c8e3b1e12857e09e2825038b25dac5adb8a107dd73122503b2fc11f"
+    },
+    "build/png-optimized/build/nova-female-v2/Nova-female-v2-south-walk-0.png": {
+      "bytes": 2829,
+      "sha256": "991dab4d1d34c42ccefab24a7bd7fd81c58a1d56437c1515962f7949c0d284a2"
+    },
+    "build/png-optimized/build/nova-female-v2/Nova-female-v2-south-walk-1.png": {
+      "bytes": 2726,
+      "sha256": "e8cf7b22ff4c8cbe2b96989f9f6efd203331586536d4f6917a6f5e9e0e29041a"
+    },
+    "build/png-optimized/build/nova-female-v2/Nova-female-v2-south-walk-2.png": {
+      "bytes": 2805,
+      "sha256": "62a110cc5790e24c87936d530b60aadb1811e31a2a03dc2363be44bd07cbb4b9"
+    },
+    "build/png-optimized/build/nova-female-v2/Nova-female-v2-south-walk-3.png": {
+      "bytes": 2774,
+      "sha256": "db04500c0977765ac40bedab6ee600da994361107f01f38c02510c3b6bc72f63"
+    },
+    "build/png-optimized/build/nova-female-v2/Nova-female-v2-west-idle-0.png": {
+      "bytes": 2553,
+      "sha256": "5eada83527bff7c85d3ea94f43a3abc2d2cf3273a7591b49e974277857f7c980"
+    },
+    "build/png-optimized/build/nova-female-v2/Nova-female-v2-west-idle-1.png": {
+      "bytes": 2539,
+      "sha256": "b4e9ec3954d51cc5272531fd7ea0d0b3033d047076730f735f782fcdb9ddbf3b"
+    },
+    "build/png-optimized/build/nova-female-v2/Nova-female-v2-west-idle-2.png": {
+      "bytes": 2515,
+      "sha256": "b0a8c0a5fb67fa7ed6b13930d41511b9d0857f45bf7930c3c234dab69afa9d9f"
+    },
+    "build/png-optimized/build/nova-female-v2/Nova-female-v2-west-idle-3.png": {
+      "bytes": 2617,
+      "sha256": "2940782ad58b9883fd136444b02ae53c73ec4187f7a6f6579bff0b4950540dc4"
+    },
+    "build/png-optimized/build/nova-female-v2/Nova-female-v2-west-walk-0.png": {
+      "bytes": 2720,
+      "sha256": "f81871d9a14269d645201cb6032ee773d2dc9b84e18693b09dc0852e9a76c304"
+    },
+    "build/png-optimized/build/nova-female-v2/Nova-female-v2-west-walk-1.png": {
+      "bytes": 2601,
+      "sha256": "5beae4a10f0671c79033f1242e905f5aeb793b24c0b7785a9d2061e72b60a024"
+    },
+    "build/png-optimized/build/nova-female-v2/Nova-female-v2-west-walk-2.png": {
+      "bytes": 2740,
+      "sha256": "233ce50059ca0ba1c3df4e6419e49ecd4c01aa3d1b48243a7c9eaf8fe55d236b"
+    },
+    "build/png-optimized/build/nova-female-v2/Nova-female-v2-west-walk-3.png": {
+      "bytes": 2679,
+      "sha256": "88d909fb347455cdd7224b51e7c97afa6144cebabc96435fd20b164697fdd1a3"
+    },
+    "build/png-optimized/build/nova-female-v2/Nova-male-east-0.png": {
+      "bytes": 2782,
+      "sha256": "2b055402150fbd6bb246209a60562b0fb65225a55dd88272f73b3b3d9a927123"
+    },
+    "build/png-optimized/build/nova-female-v2/Nova-male-east-1.png": {
+      "bytes": 2779,
+      "sha256": "be159585e6d860ba0f14ce8bfd1b3502004415663a0d3638b34d3fc03c5dec8e"
+    },
+    "build/png-optimized/build/nova-female-v2/Nova-male-east-2.png": {
+      "bytes": 2799,
+      "sha256": "c3e9be0981a96a803de08bbda02417569fb185ee9609bad4c02321cb92aa4d22"
+    },
+    "build/png-optimized/build/nova-female-v2/Nova-male-east-3.png": {
+      "bytes": 2641,
+      "sha256": "a639d54c90498899eeaf5853beafd2f562244de5912afb7494513c7a770815ea"
+    },
+    "build/png-optimized/build/nova-female-v2/Nova-male-north-0.png": {
+      "bytes": 2791,
+      "sha256": "117b214935c1ba422d4116831ee8b08b8d04398cd4ff332232fd1a8d150d4572"
+    },
+    "build/png-optimized/build/nova-female-v2/Nova-male-north-1.png": {
+      "bytes": 2743,
+      "sha256": "30cffc49f3ae5a75f84ddd65cd1baef0d5d81bf5ce4243fbae0b9bee140aaef0"
+    },
+    "build/png-optimized/build/nova-female-v2/Nova-male-north-2.png": {
+      "bytes": 2918,
+      "sha256": "e11b612dbfc610500c2ae0148b8bad58e36bd3da6f43241b52f969d04ae688ef"
+    },
+    "build/png-optimized/build/nova-female-v2/Nova-male-north-3.png": {
+      "bytes": 2595,
+      "sha256": "296083b647fc1e361735bb6dc6e2feadaa9e6d1fe0a659d0117e4a93b3d3f076"
+    },
+    "build/png-optimized/build/nova-female-v2/Nova-male-south-0.png": {
+      "bytes": 2808,
+      "sha256": "560653a82f3665bea1e3959618f30bf1b1ba9183044a54b87cd236663b6bc416"
+    },
+    "build/png-optimized/build/nova-female-v2/Nova-male-south-1.png": {
+      "bytes": 2839,
+      "sha256": "4cb93470d26935c7986eb297a310db947a0bb0a104628adec4c3a8214422265f"
+    },
+    "build/png-optimized/build/nova-female-v2/Nova-male-south-2.png": {
+      "bytes": 2895,
+      "sha256": "e7a60e15f9d3cc951a7d45caf059234910b3e646564225639d84b4da16e8d7ff"
+    },
+    "build/png-optimized/build/nova-female-v2/Nova-male-south-3.png": {
+      "bytes": 2842,
+      "sha256": "a208c6a3c5d43513db77e6fdf896a8b07ea23e17a5ee3be4452cbade3ea165ce"
+    },
+    "build/png-optimized/build/nova-female-v2/Nova-male-west-0.png": {
+      "bytes": 2871,
+      "sha256": "8fbd9ee71f898467edbc9d64d7cbad51ddf2e460f1eb55159f8f80b43cd8d7dc"
+    },
+    "build/png-optimized/build/nova-female-v2/Nova-male-west-1.png": {
+      "bytes": 2821,
+      "sha256": "e6248b25143e3676ee9117d98beadd8cc4cdae714ca4ca73e33a5dc7a14b2021"
+    },
+    "build/png-optimized/build/nova-female-v2/Nova-male-west-2.png": {
+      "bytes": 2906,
+      "sha256": "e9c9c0ef3dd78fd131d93b8fa28b56daa00ff6a1416f5ed5e2f3331fdb24c08b"
+    },
+    "build/png-optimized/build/nova-female-v2/Nova-male-west-3.png": {
+      "bytes": 2676,
+      "sha256": "3580f403133f9680924b7f6347c66a74cef215219b4bee51645c90c3d771460f"
+    },
+    "build/png-optimized/build/nova-sword/Nova-Female-v2-Sword-Atlas.png": {
+      "bytes": 64478,
+      "sha256": "3721f1bd961a8b9f5f239b0fd57e3e40fcdf8631e6aa2e117dd02f69bf51b7fc"
+    },
+    "build/png-optimized/build/nova-sword/Nova-Female-v2-Sword-Contact.png": {
+      "bytes": 70438,
+      "sha256": "4f0287d656f3a2377536c9a618614ff3a082899e540b05aba5b47d600a4eff7b"
+    },
+    "build/png-optimized/build/nova-sword/Nova-female-v2-attack-east-0.png": {
+      "bytes": 3932,
+      "sha256": "ab11c4f23fca4b094715ecc35c9c530af0b7d9689aca12214467b83f8bc46a85"
+    },
+    "build/png-optimized/build/nova-sword/Nova-female-v2-attack-east-1.png": {
+      "bytes": 4525,
+      "sha256": "cf3f9915f261769630b1ba6fc886052ad54c6b4dad8242e55217c609ee7f6042"
+    },
+    "build/png-optimized/build/nova-sword/Nova-female-v2-attack-east-2.png": {
+      "bytes": 4454,
+      "sha256": "631673f29befc3e9ee1c40bf0868386bd54d34b15d9acc09945541d20890dd2a"
+    },
+    "build/png-optimized/build/nova-sword/Nova-female-v2-attack-east-3.png": {
+      "bytes": 3633,
+      "sha256": "be6c6d5edbc2eef35527a6ed560b7384b5e55ce5830823e4bd3e855681d8797b"
+    },
+    "build/png-optimized/build/nova-sword/Nova-female-v2-attack-north-0.png": {
+      "bytes": 3815,
+      "sha256": "865a2e4f7656f0c2b16cf4af6f04ff1593cfa5edb5160db6b5f73d48fbfc40c6"
+    },
+    "build/png-optimized/build/nova-sword/Nova-female-v2-attack-north-1.png": {
+      "bytes": 4786,
+      "sha256": "d45506daf63b2cf4f843d0ba2ccb2a32fc183c50c0d2b2e79d610814f3298678"
+    },
+    "build/png-optimized/build/nova-sword/Nova-female-v2-attack-north-2.png": {
+      "bytes": 4855,
+      "sha256": "c4c4719d71a737fb2ef21dbd63b1b6262066a59a2c7e596eb02fb229e65f2493"
+    },
+    "build/png-optimized/build/nova-sword/Nova-female-v2-attack-north-3.png": {
+      "bytes": 3771,
+      "sha256": "d6f7ec6436c61dacd2b047f992572ee0e2a9ca2e636fad2c0eb84d93a7dcbf63"
+    },
+    "build/png-optimized/build/nova-sword/Nova-female-v2-attack-south-0.png": {
+      "bytes": 3825,
+      "sha256": "9265155fe2bda8eaf87e238493e74c2695df5168f6a568d9f3b314868527846d"
+    },
+    "build/png-optimized/build/nova-sword/Nova-female-v2-attack-south-1.png": {
+      "bytes": 4155,
+      "sha256": "50bebd93c810813db1f1d986d54eff273945b06b8d59d7d17620562ed2483c7c"
+    },
+    "build/png-optimized/build/nova-sword/Nova-female-v2-attack-south-2.png": {
+      "bytes": 4282,
+      "sha256": "41ed845c4e540f6107c9a9aff74d8180ef0f4eb923289231470b02ca6cc01936"
+    },
+    "build/png-optimized/build/nova-sword/Nova-female-v2-attack-south-3.png": {
+      "bytes": 3600,
+      "sha256": "11c12c5cfe0edbf8d601a28c3c004090ea72b599b091c0626de40addf6c638cf"
+    },
+    "build/png-optimized/build/nova-sword/Nova-female-v2-attack-west-0.png": {
+      "bytes": 4054,
+      "sha256": "ea774f33b6e95dd5c9aedae0c7fbcce6d4ba7c3c04a1456bf3e3c2c0ce2eed26"
+    },
+    "build/png-optimized/build/nova-sword/Nova-female-v2-attack-west-1.png": {
+      "bytes": 4564,
+      "sha256": "90564acb563c5fdba306f5abc72833a66c77181024b817d3e171c60490a375a2"
+    },
+    "build/png-optimized/build/nova-sword/Nova-female-v2-attack-west-2.png": {
+      "bytes": 4580,
+      "sha256": "0c3e9dd41e96429b5b2d810f85e04fc5a18c51b09290322fc4a3856817139d77"
+    },
+    "build/png-optimized/build/nova-sword/Nova-female-v2-attack-west-3.png": {
+      "bytes": 3871,
+      "sha256": "47c490a1f2d7681ac97a17781de4830ee4b8534d1c75387d0b7a14c3c1dca5a1"
+    },
+    "build/png-optimized/build/oakwood-rest/Nova-female-rest-0.png": {
+      "bytes": 33686,
+      "sha256": "3d4be387b4e7c43c668a177c777a826d221b497b32cc1f61704a564e5c393def"
+    },
+    "build/png-optimized/build/oakwood-rest/Nova-female-rest-1.png": {
+      "bytes": 34104,
+      "sha256": "ffb4b726d869a0de8ded8f8b83c8500e02f5d737abf303d00b6816c2e8d8c0e8"
+    },
+    "build/png-optimized/build/oakwood-rest/Nova-male-rest-0.png": {
+      "bytes": 38447,
+      "sha256": "5ce1fb4f15cff97f8124cd01423873d04e10ebb34d825e8319b58c8a2f2c0e47"
+    },
+    "build/png-optimized/build/oakwood-rest/Nova-male-rest-1.png": {
+      "bytes": 37823,
+      "sha256": "2fd8719f49e2fa4f8d1599d1fb0ffa3e539d4a7f73d3374f405c2ac5c094db56"
+    },
+    "build/png-optimized/build/oakwood-rest/Oakwood-Rest-Background.png": {
+      "bytes": 331931,
+      "sha256": "b983052685ba70a2ae6be16efe106cca59cfde65a77004022caee7cfb0db6469"
+    },
+    "build/png-optimized/build/slime-blue/Slime-Blue-Atlas.png": {
+      "bytes": 12982,
+      "sha256": "f205add8f04082e0ba6a2281e9d9c455f55ef80482079fdfa348dd25ff00bedf"
+    },
+    "build/png-optimized/build/slime-blue/Slime-Blue-Battle-Preview.png": {
+      "bytes": 10807,
+      "sha256": "4e744154aefccb07823093a323b561df5a9664adcede79148eab1b372e882db9"
+    },
+    "build/png-optimized/build/slime-blue/Slime-Blue-Contact-4x.png": {
+      "bytes": 15914,
+      "sha256": "c46f619d3943222502ded90bf177f912e1f69e58cdca37c5209d4a59498be65c"
+    },
+    "build/png-optimized/build/slime-blue/Slime-Blue-attack-0.png": {
+      "bytes": 1960,
+      "sha256": "1a5c8a036a628bca9b6cae9f5c7d67affacd580a6ab74ec655af3a011c40e2d4"
+    },
+    "build/png-optimized/build/slime-blue/Slime-Blue-attack-1.png": {
+      "bytes": 2131,
+      "sha256": "900b022dd713c8fa264bd09f5c421e20f59db8b59a3bfaf380da660f4ac1d281"
+    },
+    "build/png-optimized/build/slime-blue/Slime-Blue-attack-2.png": {
+      "bytes": 1883,
+      "sha256": "c1f8284781e99f269735c9ffd991e90e4b7aae2cc0f81b8032d3c63953044a91"
+    },
+    "build/png-optimized/build/slime-blue/Slime-Blue-block-0.png": {
+      "bytes": 1569,
+      "sha256": "c103d87e71b3dd3fdb0750383812e0a14c8f5b6c98045bbc3637b2d5f97683ca"
+    },
+    "build/png-optimized/build/slime-blue/Slime-Blue-defeated-0.png": {
+      "bytes": 1151,
+      "sha256": "731b5a0ee5fad758ec20bc0b3bd091b7056f60c476ddafbd1a4698a171dc53e2"
+    },
+    "build/png-optimized/build/slime-blue/Slime-Blue-hurt-0.png": {
+      "bytes": 1723,
+      "sha256": "f6933add66470c4dcb42ffe1993f386057275c3c83cd853bf0f277e67dbf48ab"
+    },
+    "build/png-optimized/build/slime-blue/Slime-Blue-idle-0.png": {
+      "bytes": 2051,
+      "sha256": "951b96df732d33a2e23e27ded9c9d93be78418f659d33ceb00a562ef96890d52"
+    },
+    "build/png-optimized/build/slime-blue/Slime-Blue-idle-1.png": {
+      "bytes": 1758,
+      "sha256": "014a7ed079737ed2e5bb3f1bac6e65c622c0742fecbc6576ef44463c856c3908"
+    },
+    "build/png-optimized/build/validated-ground/F002-Sunlit-Forest-Left.png": {
+      "bytes": 331769,
+      "sha256": "8de366bb273a348c557580579079fbcf679bd23a83705297e48addca3c6dfff5"
+    },
+    "build/png-optimized/build/validated-ground/F002-Sunlit-Forest-Right.png": {
+      "bytes": 327036,
+      "sha256": "3a9dbfc77b0b3357e84df309c688b5cdbc2283b8ad0e934b2950998ea66113af"
+    },
+    "build/png-optimized/build/validated-ground/F002-Sunlit-Forest-RoadMask.png": {
+      "bytes": 158,
+      "sha256": "46168eb502a3974a100391f24be1ab76da502abe3fb47470288edf300ee7044c"
+    },
+    "build/png-optimized/build/validated-ground/Sunlit-Tree.png": {
+      "bytes": 28913,
+      "sha256": "8fbc550809be7ce3d1d357a4b7baa568c02cbb65d85faf8602d3f26050c86422"
+    },
+    "build/png-optimized/build/validated-ground/corner-ne.png": {
+      "bytes": 966,
+      "sha256": "e3d0de6cab4eda76f8f2e9354a4961b6774385cecae2c699dc2662c99f840bac"
+    },
+    "build/png-optimized/build/validated-ground/corner-nw.png": {
+      "bytes": 966,
+      "sha256": "e3d0de6cab4eda76f8f2e9354a4961b6774385cecae2c699dc2662c99f840bac"
+    },
+    "build/png-optimized/build/validated-ground/corner-se.png": {
+      "bytes": 966,
+      "sha256": "e3d0de6cab4eda76f8f2e9354a4961b6774385cecae2c699dc2662c99f840bac"
+    },
+    "build/png-optimized/build/validated-ground/corner-sw.png": {
+      "bytes": 966,
+      "sha256": "e3d0de6cab4eda76f8f2e9354a4961b6774385cecae2c699dc2662c99f840bac"
+    },
+    "build/png-optimized/build/validated-ground/meadow-open-v1-east.png": {
+      "bytes": 1165,
+      "sha256": "8fd0bab9b0d2a77f25fbb4d85794ec89329997eff11b60dca179961dc34be68c"
+    },
+    "build/png-optimized/build/validated-ground/meadow-open-v1-north.png": {
+      "bytes": 1085,
+      "sha256": "8b58d26a85da2d7f4c5bbff3c4a4fa3236189f50106bd17191366e5f3e132ac1"
+    },
+    "build/png-optimized/build/validated-ground/meadow-open-v1-south.png": {
+      "bytes": 1085,
+      "sha256": "8b58d26a85da2d7f4c5bbff3c4a4fa3236189f50106bd17191366e5f3e132ac1"
+    },
+    "build/png-optimized/build/validated-ground/meadow-open-v1-west.png": {
+      "bytes": 1165,
+      "sha256": "8fd0bab9b0d2a77f25fbb4d85794ec89329997eff11b60dca179961dc34be68c"
+    },
+    "build/png-optimized/build/validated-ground/meadow-road-v1-east.png": {
+      "bytes": 17160,
+      "sha256": "4269fce68cf7c189f4206c84f0d23f20ec94b9aac76a7cf505b70a7c1a020a0b"
+    },
+    "build/png-optimized/build/validated-ground/meadow-road-v1-north.png": {
+      "bytes": 1985,
+      "sha256": "7bf560242a7d589e3f77eef391e5bf87dd367edb41da35a25d009f90761babeb"
+    },
+    "build/png-optimized/build/validated-ground/meadow-road-v1-south.png": {
+      "bytes": 1985,
+      "sha256": "7bf560242a7d589e3f77eef391e5bf87dd367edb41da35a25d009f90761babeb"
+    },
+    "build/png-optimized/build/validated-ground/meadow-road-v1-west.png": {
+      "bytes": 17323,
+      "sha256": "c36baa311a2c7148967a3a5edb203632c4eec9e73b54c26b626bea4124b56c7d"
+    },
+    "build/png-optimized/manifest.json": {
+      "bytes": 79294,
+      "sha256": "d7f28d1e42243344731a608c14789801fa8b440d1f799ace4eaaa0df50278177"
+    },
+    "build/slime-blue/Slime-Blue-Atlas.png": {
+      "bytes": 13573,
+      "sha256": "8ddcc4cc961f0849e0c65733c4557a17a0a727dbed4001e495218868404b857d"
+    },
+    "build/slime-blue/Slime-Blue-Battle-Preview.png": {
+      "bytes": 13040,
+      "sha256": "684c257f88afe0eeb507058ee6aeb7a06190acd7238fd287bfba78bc91aff883"
+    },
+    "build/slime-blue/Slime-Blue-Contact-4x.png": {
+      "bytes": 19115,
+      "sha256": "552971fbb116181c586959f40e53805d77b6b37b7e75f71a14a55142fdbd9a8a"
+    },
+    "build/slime-blue/Slime-Blue-attack-0.png": {
+      "bytes": 2007,
+      "sha256": "68b015726fa10c9ecf05d8a2459d2373b39e6083d11f0d4f918ad9900de56bed"
+    },
+    "build/slime-blue/Slime-Blue-attack-1.png": {
+      "bytes": 2207,
+      "sha256": "38f05d4602fe69686f7ded9ba9bb383b2c902f1e5fec9328ea8f499ad985c1eb"
+    },
+    "build/slime-blue/Slime-Blue-attack-2.png": {
+      "bytes": 1934,
+      "sha256": "c59d27a7340c28107c2b95e8fd0541e50daf82be2f729d547fc8bbfd4dd8fc7d"
+    },
+    "build/slime-blue/Slime-Blue-block-0.png": {
+      "bytes": 1592,
+      "sha256": "a06ca633fc447646ed8bc94d777d55c7fd8d11efd93cbb3f01ef3a07e70b1e5c"
+    },
+    "build/slime-blue/Slime-Blue-defeated-0.png": {
+      "bytes": 1178,
+      "sha256": "5de454185fc6ac066c9a7e1129a89152e084826d586dd872dc04c948b0e58f00"
+    },
+    "build/slime-blue/Slime-Blue-hurt-0.png": {
+      "bytes": 1779,
+      "sha256": "32d2f58ed98cc8e0c13b43f508071f4237275d3afe418cc9384c3d4f9309782f"
+    },
+    "build/slime-blue/Slime-Blue-idle-0.png": {
+      "bytes": 2072,
+      "sha256": "0bf31740b4acbb8c14f06134af076626fedcc04575a8ea4d73d12b61a7a36804"
+    },
+    "build/slime-blue/Slime-Blue-idle-1.png": {
+      "bytes": 1798,
+      "sha256": "f02e1eb171e5b35694760b2862989f0e3e0e64f181eeb2fdcb4ee3a985a8d54e"
+    },
+    "build/slime-blue/preparation-report.json": {
+      "bytes": 2413,
+      "sha256": "9b2dbb7ac95dd063d60605ea5451204c5e9ee7ec2a1e6d11c26926f9d99a349a"
+    },
+    "build/slime-blue/slime.json": {
+      "bytes": 874,
+      "sha256": "3caa15189bbc5309fbd1f63a95428882d9ebd273bf61039b429d65fc0eb3a861"
+    },
+    "build/validated-ground/F002-Sunlit-Forest-Left-nav.json": {
+      "bytes": 9665,
+      "sha256": "1b40b6f75a848e1233db7d10a6e699a02206266cccb2f11d313445396e9275c7"
+    },
+    "build/validated-ground/F002-Sunlit-Forest-Left.json": {
+      "bytes": 1388,
+      "sha256": "c8bd80b43aa6d043767bda869d4738d026ccbb01865a12f37f9dffad87b699f1"
+    },
+    "build/validated-ground/F002-Sunlit-Forest-Left.png": {
+      "bytes": 379601,
+      "sha256": "801fa83e1dec53c586d3d0410d19e1fb951a839f203c75e62395be4634a7db3e"
+    },
+    "build/validated-ground/F002-Sunlit-Forest-Master.png": {
+      "bytes": 707039,
+      "sha256": "1000560c5ca27da49bb1e2dfe0a971ed7baf56f0e8c33192059adafead1dc154"
+    },
+    "build/validated-ground/F002-Sunlit-Forest-Right-nav.json": {
+      "bytes": 9665,
+      "sha256": "c2c9dcee97199bb5317207528771b123648e11d1d2a20e50168a12d913c854d5"
+    },
+    "build/validated-ground/F002-Sunlit-Forest-Right.json": {
+      "bytes": 1391,
+      "sha256": "420b14266b28b3344ad7cbdd3c90e5dacbd4eedb61d48eeb755d859590addb76"
+    },
+    "build/validated-ground/F002-Sunlit-Forest-Right.png": {
+      "bytes": 374896,
+      "sha256": "067dd7639c3811b0f107c5818c2de5c76f084c5ce44405a8d30f22c3be50e7a8"
+    },
+    "build/validated-ground/F002-Sunlit-Forest-RoadMask.png": {
+      "bytes": 1710,
+      "sha256": "b54364620939589139a384db766f7ba01e15a777dbd0cb19c5a1d6998d6e57bb"
+    },
+    "build/validated-ground/Sunlit-Tree.png": {
+      "bytes": 28913,
+      "sha256": "8fbc550809be7ce3d1d357a4b7baa568c02cbb65d85faf8602d3f26050c86422"
+    },
+    "build/validated-ground/corner-ne.png": {
+      "bytes": 1103,
+      "sha256": "04bb6f8c71168fe3fd634513372c518d7b0b650a78244ddcdd145e1df9110de1"
+    },
+    "build/validated-ground/corner-nw.png": {
+      "bytes": 1103,
+      "sha256": "04bb6f8c71168fe3fd634513372c518d7b0b650a78244ddcdd145e1df9110de1"
+    },
+    "build/validated-ground/corner-se.png": {
+      "bytes": 1103,
+      "sha256": "04bb6f8c71168fe3fd634513372c518d7b0b650a78244ddcdd145e1df9110de1"
+    },
+    "build/validated-ground/corner-sw.png": {
+      "bytes": 1103,
+      "sha256": "04bb6f8c71168fe3fd634513372c518d7b0b650a78244ddcdd145e1df9110de1"
+    },
+    "build/validated-ground/ground-preparation-report.json": {
+      "bytes": 1188,
+      "sha256": "5ea119516aceb404d2b648a0a1ee27185d342c31e02be1d634f4699f956fce2c"
+    },
+    "build/validated-ground/meadow-open-v1-east.png": {
+      "bytes": 1388,
+      "sha256": "7076578c910ab1a341c228fd403c8c5832c048de05813a90d5bf30aafce56ab1"
+    },
+    "build/validated-ground/meadow-open-v1-north.png": {
+      "bytes": 1257,
+      "sha256": "d88cab4cfb4c43874be7ad3a6a312e21091313293c283a3cef468bcd4d2cf406"
+    },
+    "build/validated-ground/meadow-open-v1-south.png": {
+      "bytes": 1257,
+      "sha256": "d88cab4cfb4c43874be7ad3a6a312e21091313293c283a3cef468bcd4d2cf406"
+    },
+    "build/validated-ground/meadow-open-v1-west.png": {
+      "bytes": 1388,
+      "sha256": "7076578c910ab1a341c228fd403c8c5832c048de05813a90d5bf30aafce56ab1"
+    },
+    "build/validated-ground/meadow-road-v1-east.png": {
+      "bytes": 20097,
+      "sha256": "cf44f2f9ce635fa33c6adebd0b0e4a7f057995a12b3613dc93ce9c94a0b1a000"
+    },
+    "build/validated-ground/meadow-road-v1-north.png": {
+      "bytes": 2236,
+      "sha256": "5593092a5c46b95dcc7e65c261e5dc341d75d8e6cd0c65f85e7c9e1d10c33bae"
+    },
+    "build/validated-ground/meadow-road-v1-south.png": {
+      "bytes": 2236,
+      "sha256": "5593092a5c46b95dcc7e65c261e5dc341d75d8e6cd0c65f85e7c9e1d10c33bae"
+    },
+    "build/validated-ground/meadow-road-v1-west.png": {
+      "bytes": 20371,
+      "sha256": "ca847b12779932166c35f281986be9e21c3094c5edd0a71f0655daa1f1cf30c4"
+    },
+    "build/validated-ground/technical-validation.json": {
+      "bytes": 716,
+      "sha256": "59f9d87b11cac8c2eca8ffa0cd534bae1155f4b529daba0d28573096e8a70716"
+    },
+    "build/validated-ground/templates.json": {
+      "bytes": 644,
+      "sha256": "a3d534d16e36406fed111af05b57f8c2aa003754be42cf14b4c56ac31f88aa93"
+    },
+    "build/validated-ground/tree-placement.json": {
+      "bytes": 376,
+      "sha256": "cff18ff1dcee8732a37ff75d5dde706ef8e716178235e5aa780acb074d61be92"
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "id": "F002-Sunlit-Forest-Right",
+  "family": "F002",
+  "biome": "forest",
+  "worldSize": [
+    512,
+    512
+  ],
+  "groundPixels": [
+    512,
+    288
+  ],
+  "projection": {
+    "xScale": 1,
+    "yNumerator": 9,
+    "yDenominator": 16
+  },
+  "ground": "F002-Sunlit-Forest-Right.png",
+  "roadMask": 10,
+  "edges": {
+    "north": "meadow-open-v1",
+    "east": "meadow-road-v1",
+    "south": "meadow-open-v1",
+    "west": "meadow-road-v1"
+  },
+  "corners": [
+    "meadow-corner-v1",
+    "meadow-corner-v1",
+    "meadow-corner-v1",
+    "meadow-corner-v1"
+  ],
+  "navigation": {
+    "cellWorldSize": 16,
+    "width": 32,
+    "height": 32,
+    "source": "F002-Sunlit-Forest-Right-nav.json"
+  },
+  "objects": [
+    {
+      "id": "sunlit-tree",
+      "asset": "Sunlit-Tree.png",
+      "anchor": [
+        128,
+        160
+      ],
+      "pivot": [
+        64,
+        148
+      ],
+      "collision": [
+        [
+          114,
+          146
+        ],
+        [
+          142,
+          146
+        ],
+        [
+          142,
+          174
+        ],
+        [
+          114,
+          174
+        ]
+      ],
+      "renderBounds": [
+        -64,
+        -148,
+        128,
+        160
+      ],
+      "depthRule": "ground-anchor"
+    }
+  ],
+  "spawnAnchors": [
+    {
+      "id": "arrival",
+      "u": 440,
+      "v": 256
+    }
+  ],
+  "buildPads": [],
+  "assetVersion": 1
+}

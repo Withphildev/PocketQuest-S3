@@ -8,6 +8,7 @@
 #include <Game.h>
 #include <Motion.h>
 #include <Save.h>
+#include <RouteTransaction.h>
 #include "Display.h"
 #include "FlashSnapshots.h"
 #include "ScreenFlow.h"
@@ -18,6 +19,9 @@ pq::Game game;
 pq::MotionDetector motion;
 FlashSnapshots flash;
 pq::SaveStore saves(flash);
+pq::RouteTransaction routeTransactions;
+bool storageHalted=false;
+uint32_t routeCommandAt=0;
 QuestDisplay display;
 ScreenFlow screens;
 QuestPortal portal;
@@ -27,6 +31,8 @@ bool storageReady=false, imuReady=false, debugVisible=false, saveError=false;
 bool milestonePending=false;
 const char *saveStatus="NO STORAGE";
 uint64_t savedRevision=0;
+pq::State persistedHero;
+bool hasPersistedHero=false;
 uint32_t lastSave=0, lastFrame=0, lastSample=0, lastDebug=0, bootAt=0, lastAttempt=0;
 
 // Edge-triggered, debounced controls. A long press never also produces a short press.
@@ -57,7 +63,8 @@ void configureMotion() {
     Serial.printf("Motion threshold %.2fg; cooldown %lu ms\n",thresholds[game.state().motionPreset],static_cast<unsigned long>(pq::kAttackCooldownMs));
 }
 void diagnostics() {
-    Serial.printf("PocketQuest v0.1.5 Friendly URL | chip %s rev %u | physical flash %lu bytes\n", ESP.getChipModel(),ESP.getChipRevision(),static_cast<unsigned long>(ESP.getFlashChipSize()));
+    Serial.printf("PocketQuestMini v1.0.0 Public Release | chip %s rev %u | physical flash %lu bytes\n", ESP.getChipModel(),ESP.getChipRevision(),static_cast<unsigned long>(ESP.getFlashChipSize()));
+    Serial.printf("Rules %u | victories %lu | enemy %s tier %u HP %u damage %u\n",game.state().rulesVersion,static_cast<unsigned long>(game.state().victories),pq::enemyName(game.state().enemyKind),static_cast<unsigned>(pq::enemyTier(game.state().victories)+1),pq::enemyMaxHp(game.state().victories,game.state().enemyKind),pq::enemyDamage(game.state().victories,game.state().enemyKind));
     Serial.printf("App image %lu bytes, heap free %lu, internal free/largest %u/%u, PSRAM total/free %lu/%lu\n",
         static_cast<unsigned long>(ESP.getSketchSize()),static_cast<unsigned long>(ESP.getFreeHeap()),
         static_cast<unsigned>(heap_caps_get_free_size(MALLOC_CAP_INTERNAL|MALLOC_CAP_8BIT)),
@@ -78,12 +85,27 @@ bool layoutMatches() {
     return ESP.getFlashChipSize()==0x800000 && s && a && s->address==0x4f0000 && s->size==0x100000 && a->address==0x5f0000 && a->size==0x200000;
 }
 void checkpoint(uint32_t now) {
-    if(!storageReady || !saves.writable()) return;
+    if(!storageReady || !saves.writable() || storageHalted || routeTransactions.halted()) return;
     lastAttempt=now;
     if(saves.save(game.state())) {
+        persistedHero=game.state();hasPersistedHero=true;
         savedRevision=game.state().revision; lastSave=now; milestonePending=false; saveError=false; saveStatus="SAVED";
         Serial.printf("Saved sequence %llu revision %llu\n",static_cast<unsigned long long>(saves.sequence()),static_cast<unsigned long long>(savedRevision));
-    } else { saveError=true; saveStatus="SAVE FAILED"; Serial.println("Save write/readback failed; previous snapshot retained."); }
+    } else { storageHalted=true;saveError=true; saveStatus="RESTART SAVE"; Serial.println("Save uncertain. Writes paused until reboot scans both slots. Do not erase."); }
+}
+int browserCommand(uint64_t base,uint8_t command,uint8_t target){
+    if(!storageReady||!saves.writable()||storageHalted||routeTransactions.halted())return 503;
+    const auto &r=game.state().route;const bool retry=r.lastBase==base&&r.lastCommand==command&&r.lastTarget==target;
+    const auto now=millis();if(!retry&&routeCommandAt&&now-routeCommandAt<350)return 429;
+    const auto result=routeTransactions.apply(game,saves,base,static_cast<pq::RouteCommand>(command),target,gameNow);
+    if(result==pq::RouteCommit::StorageError){saveError=true;saveStatus="RESTART SAVE";return 503;}
+    if(result==pq::RouteCommit::Conflict)return 409;
+    if(result==pq::RouteCommit::Busy)return 423;
+    if(result==pq::RouteCommit::Invalid)return 422;
+    if(result==pq::RouteCommit::Applied){
+        persistedHero=game.state();hasPersistedHero=true;savedRevision=game.state().revision;lastSave=lastAttempt=now;milestonePending=false;saveError=false;saveStatus="SAVED";routeCommandAt=now;
+    }
+    return 200;
 }
 bool important(pq::Phase oldPhase) { return game.state().phase!=oldPhase; }
 }
@@ -104,6 +126,7 @@ void setup() {
         const auto result=saves.load(restored);
         if(result==pq::LoadResult::Loaded) {
             game.restore(restored,millis()); savedRevision=game.state().revision;
+            persistedHero=game.state();hasPersistedHero=true;
             saveStatus=saves.recovered() ? "RECOVERED" : "RESTORED";
         } else if(result==pq::LoadResult::NewGame) {
             checkpoint(millis()); if(!saveError) checkpoint(millis());
@@ -115,14 +138,21 @@ void setup() {
         saveError=true; saveStatus="NO SAVE FS";
         Serial.println("Save filesystem/layout unavailable. No formatting attempted. Session is unsaved.");
     }
+    portal.routeHandlers([](const char *token,const char *error){
+        const bool writable=storageReady&&saves.writable()&&!storageHalted&&!routeTransactions.halted();
+        return pq::routeStatusJson(game.state(),saves.sequence(),token,writable,hasPersistedHero&&savedRevision==game.state().revision,(!writable&&!*error)?"Save unavailable; restart to recover. Do not erase.":error);
+    },browserCommand);
     configureMotion(); portal.begin(); diagnostics(); lastSave=millis();
+    portal.updateHero(game.state(),hasPersistedHero ? &persistedHero : nullptr,saveStatus,storageReady && saves.writable()&&!storageHalted&&!routeTransactions.halted(),saveError,saves.sequence());
     display.updateBattery(); batteryAt=millis();
     gameNow=gameWall=millis(); display.splash(); bootAt=millis(); screens.begin(bootAt);
 }
 void loop() {
     const uint32_t now=millis(); M5.update();
     portal.loop();
-    if(screens.gaming()) gameNow+=now-gameWall;
+    const bool browserBattle=game.state().route.phase==pq::RoutePhase::Battle;
+    const bool locked=storageHalted||routeTransactions.halted();
+    if(screens.gaming()&&!browserBattle&&!locked) gameNow+=now-gameWall;
     gameWall=now;
     const int faceEvent=face.poll(now), m5Event=m5Button.poll(now);
     bool swung=false;
@@ -136,18 +166,20 @@ void loop() {
     bool batteryChanged=false;
     if(now-batteryAt>=5000) { batteryAt=now; batteryChanged=display.updateBattery(); }
     if((screenChanged || batteryChanged) && !screens.gaming() && screens.screen()!=ScreenFlow::Screen::Splash) display.connection(portal.ssid().c_str(),portal.password().c_str(),portal.url().c_str(),portal.qr().c_str(),portal.ready(),screens.screen()==ScreenFlow::Screen::Qr);
-    if(screens.screen()!=ScreenFlow::Screen::Splash && m5Event==2) { game.cycleMotionPreset(); configureMotion(); milestonePending=true; }
+    if(browserBattle&&faceEvent==2&&!locked)browserCommand(game.state().revision,static_cast<uint8_t>(pq::RouteCommand::Camp),0);
+    if(screens.screen()!=ScreenFlow::Screen::Splash && m5Event==2&&!browserBattle&&!locked) { game.cycleMotionPreset(); configureMotion(); milestonePending=true; }
     const auto oldPhase=game.state().phase;
-    if(screens.gaming() && !screenChanged && faceEvent==1) {
+    if(screens.gaming() && !screenChanged && faceEvent==1&&!browserBattle&&!locked) {
         if(game.state().phase==pq::Phase::Battle) { if(game.attack(gameNow)) display.attack(gameNow); }
-        else game.encounter(gameNow);
+        else if(game.encounter(gameNow)) display.encounter();
     }
-    if(screens.gaming() && !screenChanged && swung && game.attack(gameNow)) display.attack(gameNow);
-    if(screens.gaming() && !screenChanged) game.tick(gameNow);
+    if(screens.gaming() && !screenChanged && !browserBattle&&!locked&&swung && game.attack(gameNow)) display.attack(gameNow);
+    if(screens.gaming() && !screenChanged && !browserBattle&&!locked&&game.tick(gameNow)) display.enemyAttack(gameNow);
     milestonePending=milestonePending || important(oldPhase);
     const bool dirty=game.state().revision!=savedRevision;
     if(dirty && !saveError) saveStatus="UNSAVED";
     if(dirty && (milestonePending || now-lastSave>=30000) && now-lastAttempt>=1500) checkpoint(now);
+    portal.updateHero(game.state(),hasPersistedHero ? &persistedHero : nullptr,saveStatus,storageReady && saves.writable()&&!storageHalted&&!routeTransactions.halted(),saveError,saves.sequence());
     if(screens.gaming() && (screenChanged || now-lastFrame>=30)) {
         lastFrame=now; display.frame(game,motion.debug(),imuReady,saveStatus,saveError,saves.sequence(),debugVisible,gameNow);
     }

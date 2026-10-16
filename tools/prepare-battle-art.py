@@ -45,7 +45,8 @@ idle=Image.open(root/'web/build/nova-female-v2/Nova-female-v2-east-idle-0.png')
 sizes={'splash':header('pq_splash',[splash],(0,0)),
        'attack':header('pq_battle_attack',attack,(40,56)),
        'idle':header('pq_battle_idle',[idle],(16,44))}
-report={'sourceDimensions':source.size,'fittedDimensions':fit.size,'canvas':[240,135],
+report={'sourcePath':str(a.splash.resolve().relative_to(root)),
+        'sourceDimensions':source.size,'fittedDimensions':fit.size,'canvas':[240,135],
         'sourceSHA256':hashlib.sha256(a.splash.read_bytes()).hexdigest(),'encodedBytes':sizes,
         'note':'RGB565 plus binary alpha >=128; uniform fit and padding, original preserved.'}
 (out/'preparation.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report,indent=2))

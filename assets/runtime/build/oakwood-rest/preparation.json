@@ -1,0 +1,53 @@
+{
+  "pillow": "12.3.0",
+  "sourceBytes": 5154168,
+  "files": [
+    {
+      "file": "Oakwood-Rest-Background.png",
+      "pixels": [
+        512,
+        288
+      ],
+      "bytes": 332175,
+      "sha256": "ce4ea4ca67da4da1ad06a9658c4baff77070a6696e1cfa0f0c437fa3ce796a7f"
+    },
+    {
+      "file": "Nova-female-rest-0.png",
+      "pixels": [
+        120,
+        164
+      ],
+      "bytes": 34135,
+      "sha256": "fba2426586738c0a57b366ead4ec0e20f0985f2246a7e1b85b1d80db541f62be"
+    },
+    {
+      "file": "Nova-female-rest-1.png",
+      "pixels": [
+        120,
+        164
+      ],
+      "bytes": 34505,
+      "sha256": "9e0fbfb324a5c1a07f7384e8e7eefa9e1752f98a2e9f7a9976b559d0ee44e63b"
+    },
+    {
+      "file": "Nova-male-rest-0.png",
+      "pixels": [
+        128,
+        172
+      ],
+      "bytes": 38858,
+      "sha256": "d8cf832fb7fbe1baa086b88756418fd59a906e2fb79a4a9d3f0c30bd80a59a3a"
+    },
+    {
+      "file": "Nova-male-rest-1.png",
+      "pixels": [
+        128,
+        172
+      ],
+      "bytes": 38269,
+      "sha256": "671af0398b9dde279b414b1ffe6d7e57976591404075c86f7637eee0be40abe1"
+    }
+  ],
+  "pngBytes": 477942,
+  "preparation": "Explicit approved display windows, nearest-neighbor uniform 1/5 sprites; background edge padding then uniform 32/105. Background 1.6x and sprites 2x previous raster dimensions, regenerated from unchanged masters, not upscaled low-resolution exports. PNG encoding lossless relative to exported raster, NOT pixel-identical to high-resolution masters."
+}

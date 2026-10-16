@@ -49,7 +49,7 @@ def main():
     output = (args.output_dir or root / "release").resolve()
     output.mkdir(parents=True, exist_ok=True)
     suffix = "-" + args.feature if args.feature else ""
-    target = output / f"PocketQuest-S3-v{args.version}{suffix}.factory.bin"
+    target = output / f"PocketQuestMini-S3-v{args.version}{suffix}.factory.bin"
     digest = hashlib.sha256(merged).hexdigest()
     # Refuse to silently replace a differently built artifact with the same name.
     require(not target.exists() or target.read_bytes() == merged, "Delivery name already has different contents")

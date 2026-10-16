@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "background": "Oakwood-Rest-Background.png",
+  "size": [
+    512,
+    288
+  ],
+  "seat": [
+    159.0857142857143,
+    183.46666666666667
+  ],
+  "frameMs": 1400,
+  "characters": {
+    "female": {
+      "frames": [
+        {
+          "file": "Nova-female-rest-0.png",
+          "pivot": [
+            59.6,
+            114.0
+          ]
+        },
+        {
+          "file": "Nova-female-rest-1.png",
+          "pivot": [
+            58.4,
+            114.0
+          ]
+        }
+      ],
+      "scale": 1.0034843205574913
+    },
+    "male": {
+      "frames": [
+        {
+          "file": "Nova-male-rest-0.png",
+          "pivot": [
+            64.0,
+            122.0
+          ]
+        },
+        {
+          "file": "Nova-male-rest-1.png",
+          "pivot": [
+            64.6,
+            122.0
+          ]
+        }
+      ],
+      "scale": 0.9568106312292359
+    }
+  }
+}

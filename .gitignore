@@ -78,3 +78,14 @@ serial-captures/
 # Discarded illustration attempts; final spaced sources are retained.
 web/artwork-sources/nova-female-v2/generated.png
 web/artwork-sources/nova-sword/generated.png
+
+# Rebuilt from versioned runtime inputs and the original recording.
+firmware/include/RoutePage.h
+firmware/include/ThemeAudio.h
+firmware/include/HeroPage.h
+
+# Exact source artwork inputs only; generic build/ rule otherwise hides these.
+!assets/runtime/build/
+!assets/runtime/build/**/
+!assets/runtime/build/**/*.png
+!assets/runtime/build/**/*.json

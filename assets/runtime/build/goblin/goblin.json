@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "enemy": "goblin",
+  "facing": "west",
+  "frameSize": [
+    64,
+    48
+  ],
+  "pivot": [
+    32,
+    42
+  ],
+  "frames": [
+    "Goblin-idle-0.png",
+    "Goblin-idle-1.png",
+    "Goblin-block-0.png",
+    "Goblin-attack-0.png",
+    "Goblin-attack-1.png",
+    "Goblin-attack-2.png",
+    "Goblin-hurt-0.png",
+    "Goblin-defeated-0.png"
+  ],
+  "states": {
+    "idle": [
+      0,
+      1
+    ],
+    "block": [
+      2
+    ],
+    "attack": [
+      3,
+      4,
+      5
+    ],
+    "hurt": [
+      6
+    ],
+    "defeated": [
+      7
+    ]
+  }
+}

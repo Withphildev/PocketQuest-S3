@@ -1,0 +1,37 @@
+{
+  "id": "sunlit-tree",
+  "asset": "Sunlit-Tree.png",
+  "anchor": [
+    128,
+    160
+  ],
+  "pivot": [
+    64,
+    148
+  ],
+  "collision": [
+    [
+      114,
+      146
+    ],
+    [
+      142,
+      146
+    ],
+    [
+      142,
+      174
+    ],
+    [
+      114,
+      174
+    ]
+  ],
+  "renderBounds": [
+    -64,
+    -148,
+    128,
+    160
+  ],
+  "depthRule": "ground-anchor"
+}

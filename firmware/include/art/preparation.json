@@ -1,4 +1,5 @@
 {
+  "sourcePath": "firmware/artwork-sources/PocketQuestMini-Splash-Owner.png",
   "sourceDimensions": [
     1672,
     941
@@ -11,7 +12,7 @@
     240,
     135
   ],
-  "sourceSHA256": "a453ae14da4aa6bd43b1cd477df08f71ae9513ee97ee272829a0af9a164e2eef",
+  "sourceSHA256": "2a03bb49a3a7efffe2764f644ff72b0193a7bdf3ea58b6220740903e3660ab08",
   "encodedBytes": {
     "splash": 68850,
     "attack": 43520,

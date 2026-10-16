@@ -1,6 +1,6 @@
 {
   "name": "PocketQuestCore",
-  "version": "0.1.5",
+  "version": "1.0.0",
   "build": {"flags": "-std=gnu++17"},
   "frameworks": "*",
   "platforms": "*"

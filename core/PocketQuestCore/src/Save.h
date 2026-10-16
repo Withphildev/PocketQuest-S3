@@ -4,8 +4,8 @@
 #include <cstdint>
 #include <vector>
 namespace pq {
-constexpr uint16_t kSaveFormat = 1;
-constexpr size_t kSnapshotBytes = 60;
+constexpr uint16_t kSaveFormat = 5;
+constexpr size_t kSnapshotBytes = 98;
 struct Snapshot { State state; uint64_t sequence = 0; };
 enum class DecodeResult { Ok, Invalid, Unsupported };
 uint32_t crc32(const uint8_t *data, size_t size);

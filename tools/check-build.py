@@ -27,7 +27,7 @@ for offset in range(0, len(binary), 32):
 assert parsed == rows, "Generated binary partition table differs from source"
 sizes = {name: (build / name).stat().st_size for name in
          ("bootloader.bin", "partitions.bin", "firmware.bin", "firmware.factory.bin")}
-assert sizes["firmware.bin"] <= 2816 * 1024, "Phase 0 firmware ceiling exceeded"
+assert sizes["firmware.bin"] <= 4608 * 1024, "Owner-approved 4.5 MiB application engineering ceiling exceeded"
 assert sizes["firmware.bin"] <= rows[1]["size"]
 assert sizes["firmware.factory.bin"] < 8_000_000
 print(json.dumps({"partitions": rows, "artifactBytes": sizes,

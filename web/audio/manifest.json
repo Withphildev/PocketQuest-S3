@@ -1,0 +1,8 @@
+{
+  "source": "web/audio/The-Gentle-Glade.mp3",
+  "bytes": 1575723,
+  "sha256": "b43be287312d3c33c9c3a4659dea0c8bc6e2acc353506987955132d46feabc93",
+  "encoding": "original MP3, unchanged",
+  "path": "/audio/the-gentle-glade.mp3",
+  "storage": "application PROGMEM; not asset filesystem"
+}

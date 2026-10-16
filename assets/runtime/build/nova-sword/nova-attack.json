@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "protagonist": "female",
+  "frameSize": [
+    80,
+    64
+  ],
+  "pivot": [
+    40,
+    56
+  ],
+  "bodyFrameSize": [
+    32,
+    48
+  ],
+  "bodyPivot": [
+    16,
+    44
+  ],
+  "directionOrder": [
+    "south",
+    "north",
+    "west",
+    "east"
+  ],
+  "phases": [
+    "wind-up",
+    "swing",
+    "follow-through",
+    "recovery"
+  ],
+  "durationMs": [
+    100,
+    80,
+    100,
+    200
+  ],
+  "hitboxes": null,
+  "directions": {
+    "south": [
+      "Nova-female-v2-attack-south-0.png",
+      "Nova-female-v2-attack-south-1.png",
+      "Nova-female-v2-attack-south-2.png",
+      "Nova-female-v2-attack-south-3.png"
+    ],
+    "north": [
+      "Nova-female-v2-attack-north-0.png",
+      "Nova-female-v2-attack-north-1.png",
+      "Nova-female-v2-attack-north-2.png",
+      "Nova-female-v2-attack-north-3.png"
+    ],
+    "west": [
+      "Nova-female-v2-attack-west-0.png",
+      "Nova-female-v2-attack-west-1.png",
+      "Nova-female-v2-attack-west-2.png",
+      "Nova-female-v2-attack-west-3.png"
+    ],
+    "east": [
+      "Nova-female-v2-attack-east-0.png",
+      "Nova-female-v2-attack-east-1.png",
+      "Nova-female-v2-attack-east-2.png",
+      "Nova-female-v2-attack-east-3.png"
+    ]
+  }
+}

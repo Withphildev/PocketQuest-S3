@@ -1,0 +1,164 @@
+{
+  "sourceSize": [
+    1923,
+    818
+  ],
+  "sourceSHA256": "e8370a338433cb17058254f3e3386f2b1329e8bc9d0d92f4b1e2a78f698d4016",
+  "inverseScale": 9.794117647058824,
+  "frames": [
+    {
+      "name": "idle-0",
+      "sourceRect": [
+        0,
+        0,
+        507,
+        419
+      ],
+      "sourceAnchor": [
+        253.5,
+        389
+      ],
+      "paintBounds": [
+        9,
+        7,
+        56,
+        43
+      ]
+    },
+    {
+      "name": "idle-1",
+      "sourceRect": [
+        507,
+        0,
+        974,
+        419
+      ],
+      "sourceAnchor": [
+        740.5,
+        388
+      ],
+      "paintBounds": [
+        9,
+        5,
+        56,
+        44
+      ]
+    },
+    {
+      "name": "block-0",
+      "sourceRect": [
+        974,
+        0,
+        1444,
+        419
+      ],
+      "sourceAnchor": [
+        1209.0,
+        389
+      ],
+      "paintBounds": [
+        9,
+        10,
+        55,
+        45
+      ]
+    },
+    {
+      "name": "attack-0",
+      "sourceRect": [
+        1444,
+        0,
+        1923,
+        419
+      ],
+      "sourceAnchor": [
+        1683.5,
+        390
+      ],
+      "paintBounds": [
+        8,
+        7,
+        54,
+        45
+      ]
+    },
+    {
+      "name": "attack-1",
+      "sourceRect": [
+        0,
+        419,
+        509,
+        818
+      ],
+      "sourceAnchor": [
+        254.5,
+        744
+      ],
+      "paintBounds": [
+        6,
+        10,
+        58,
+        43
+      ]
+    },
+    {
+      "name": "attack-2",
+      "sourceRect": [
+        509,
+        419,
+        970,
+        818
+      ],
+      "sourceAnchor": [
+        739.5,
+        761
+      ],
+      "paintBounds": [
+        8,
+        7,
+        56,
+        43
+      ]
+    },
+    {
+      "name": "hurt-0",
+      "sourceRect": [
+        970,
+        419,
+        1428,
+        818
+      ],
+      "sourceAnchor": [
+        1199.0,
+        761
+      ],
+      "paintBounds": [
+        9,
+        8,
+        55,
+        44
+      ]
+    },
+    {
+      "name": "defeated-0",
+      "sourceRect": [
+        1428,
+        419,
+        1923,
+        818
+      ],
+      "sourceAnchor": [
+        1675.5,
+        761
+      ],
+      "paintBounds": [
+        7,
+        7,
+        57,
+        46
+      ]
+    }
+  ],
+  "rgbBytes": 49152,
+  "maskBytes": 3072
+}

@@ -1,0 +1,68 @@
+{
+  "status": "calibration-awaiting-owner-review",
+  "sourceSHA256": "4ca78c584c32a61ff80b32ed390c2294760c93559b0d958f49f83b806d0c0ed5",
+  "changedPixels": 76279,
+  "totalPixels": 294912,
+  "resize": false,
+  "treeUnchanged": true,
+  "projectedTerrainEnvelopes": [
+    [
+      [
+        132,
+        18,
+        262,
+        73
+      ],
+      [
+        32,
+        187,
+        150,
+        256
+      ],
+      [
+        336,
+        213,
+        439,
+        269
+      ],
+      [
+        48,
+        254,
+        464,
+        270
+      ]
+    ],
+    [
+      [
+        88,
+        18,
+        189,
+        67
+      ],
+      [
+        161,
+        226,
+        311,
+        269
+      ],
+      [
+        396,
+        247,
+        464,
+        269
+      ],
+      [
+        48,
+        254,
+        464,
+        270
+      ]
+    ]
+  ],
+  "limitations": [
+    "Baked rocks/ledges are conservative blocked terrain, not independent occluders.",
+    "True walk-behind rock occlusion needs new uncovered ground and individual cutouts.",
+    "Interior road mask is hand-authored approximation; connector bands are exact.",
+    "Patch repetition and border blending require owner visual review."
+  ]
+}

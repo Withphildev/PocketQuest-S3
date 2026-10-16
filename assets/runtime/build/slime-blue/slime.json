@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "status": "candidate-owner-review-required",
+  "enemy": "slime-blue",
+  "facing": "west",
+  "frameSize": [
+    48,
+    48
+  ],
+  "pivot": [
+    24,
+    42
+  ],
+  "states": {
+    "idle": [
+      "idle-0",
+      "idle-1"
+    ],
+    "block": [
+      "block-0"
+    ],
+    "attack": [
+      "attack-0",
+      "attack-1",
+      "attack-2"
+    ],
+    "hurt": [
+      "hurt-0"
+    ],
+    "defeated": [
+      "defeated-0"
+    ]
+  },
+  "frames": [
+    "Slime-Blue-idle-0.png",
+    "Slime-Blue-idle-1.png",
+    "Slime-Blue-block-0.png",
+    "Slime-Blue-attack-0.png",
+    "Slime-Blue-attack-1.png",
+    "Slime-Blue-attack-2.png",
+    "Slime-Blue-hurt-0.png",
+    "Slime-Blue-defeated-0.png"
+  ],
+  "previewDurationMs": [
+    300,
+    300,
+    500,
+    100,
+    120,
+    200,
+    500,
+    1000
+  ],
+  "hitboxes": null,
+  "blockingMechanicImplemented": false
+}

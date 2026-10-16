@@ -1,0 +1,165 @@
+{
+  "sourceSize": [
+    1671,
+    941
+  ],
+  "sourceSHA256": "cccd4f148feacab77362e8f82112e6a4d9db3c416e9732bbe75d7260244185db",
+  "inverseScale": 11.25,
+  "frames": [
+    {
+      "name": "idle-0",
+      "sourceRect": [
+        0,
+        0,
+        469,
+        506
+      ],
+      "sourceAnchor": [
+        234.5,
+        459
+      ],
+      "paintBounds": [
+        6,
+        3,
+        45,
+        43
+      ]
+    },
+    {
+      "name": "idle-1",
+      "sourceRect": [
+        469,
+        0,
+        875,
+        506
+      ],
+      "sourceAnchor": [
+        672.0,
+        460
+      ],
+      "paintBounds": [
+        6,
+        7,
+        41,
+        43
+      ]
+    },
+    {
+      "name": "block-0",
+      "sourceRect": [
+        875,
+        0,
+        1270,
+        506
+      ],
+      "sourceAnchor": [
+        1072.5,
+        461
+      ],
+      "paintBounds": [
+        6,
+        8,
+        41,
+        44
+      ]
+    },
+    {
+      "name": "attack-0",
+      "sourceRect": [
+        1270,
+        0,
+        1671,
+        506
+      ],
+      "sourceAnchor": [
+        1470.5,
+        459
+      ],
+      "paintBounds": [
+        6,
+        4,
+        39,
+        43
+      ]
+    },
+    {
+      "name": "attack-1",
+      "sourceRect": [
+        0,
+        506,
+        522,
+        941
+      ],
+      "sourceAnchor": [
+        261.0,
+        888
+      ],
+      "paintBounds": [
+        2,
+        12,
+        44,
+        44
+      ]
+    },
+    {
+      "name": "attack-2",
+      "sourceRect": [
+        522,
+        506,
+        902,
+        941
+      ],
+      "sourceAnchor": [
+        712.0,
+        886
+      ],
+      "paintBounds": [
+        10,
+        12,
+        38,
+        43
+      ]
+    },
+    {
+      "name": "hurt-0",
+      "sourceRect": [
+        902,
+        506,
+        1291,
+        941
+      ],
+      "sourceAnchor": [
+        1096.5,
+        888
+      ],
+      "paintBounds": [
+        9,
+        12,
+        40,
+        42
+      ]
+    },
+    {
+      "name": "defeated-0",
+      "sourceRect": [
+        1291,
+        506,
+        1671,
+        941
+      ],
+      "sourceAnchor": [
+        1481.0,
+        889
+      ],
+      "paintBounds": [
+        7,
+        11,
+        39,
+        42
+      ]
+    }
+  ],
+  "rgbBytes": 36864,
+  "maskBytes": 2304,
+  "note": "Shared uniform nearest-neighbor scale. Cell-center anchors/base inferred from paint require visual review; alpha preserved in PNG."
+}

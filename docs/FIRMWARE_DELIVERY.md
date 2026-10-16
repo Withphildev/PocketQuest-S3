@@ -1,8 +1,10 @@
 # Manual development firmware delivery
 
+For the owner-authorized v1.0.0 public release, see [public installation](PUBLIC_INSTALLATION.md) and [release reproduction](RELEASE_V1_0_0.md). That explicit release authorization permits publishing this milestone only; experimental builds still follow the local/manual workflow below. Current saves are format5/rules4, migrating formats1–4; no downgrade to v0.1.29 or earlier. Older format notes below are historical.
+
 The owner uses ESP Launchpad to download/archive/flash test builds manually, matching the PocketPal-S3 merged-image workflow. Source history lives on GitHub; development binaries are supplied directly in the Codex conversation, not automatically uploaded as GitHub Releases. No automatic hardware flashing is part of a build.
 
-Each delivery uses `PocketQuest-S3-vVERSION[-Feature].factory.bin`, **flash address 0x0000** (not 0x10000), with firmware size, significant changes, automated test results, and any known limitations. The owner manages their own `old` archive folder. Never silently replace an archived name with different contents.
+Each new delivery uses `PocketQuestMini-S3-vVERSION[-Feature].factory.bin`, **flash address 0x0000** (not 0x10000), with firmware size, significant changes, automated test results, and any known limitations. Historical PocketQuest-S3 packages retain their names. The owner manages their own `old` archive folder. Never silently replace an archived name with different contents.
 
 ## Build, test, verify, package
 
@@ -19,6 +21,8 @@ Adjust the read-only framework input path if PlatformIO uses a different core di
 `release/` is ignored by Git. Link the resulting binary directly in the conversation and repeat **flash address 0x0000** with every download. A local build artifact is not an endorsement for another ESP32 board. Target is M5Stack StickS3 only.
 
 ## Save preservation and clean installation
+
+v0.1.22 writes format 4 / rules 4 and reads formats 1/2/3. Do not downgrade to v0.1.21 or earlier after new saves. This is a format migration, not a repartition or reason to erase. See SAVE_FORMAT.md and FIRMWARE_V0_1_22.md.
 
 The normal merged image contains no blank saves or asset filesystem; appending those to every update would erase progression. With the same PocketQuest partition layout and no full-chip erase, the image ends before the saves partition. Existing saves can therefore remain in place, subject to save-format compatibility. Padding does overwrite NVS; this is not a promise to preserve all settings.
 

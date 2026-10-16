@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "enemy": "dire-wolf",
+  "facing": "west",
+  "frameSize": [
+    64,
+    48
+  ],
+  "pivot": [
+    32,
+    42
+  ],
+  "frames": [
+    "Dire-Wolf-idle-0.png",
+    "Dire-Wolf-idle-1.png",
+    "Dire-Wolf-block-0.png",
+    "Dire-Wolf-attack-0.png",
+    "Dire-Wolf-attack-1.png",
+    "Dire-Wolf-attack-2.png",
+    "Dire-Wolf-hurt-0.png",
+    "Dire-Wolf-defeated-0.png"
+  ],
+  "states": {
+    "idle": [
+      0,
+      1
+    ],
+    "block": [
+      2
+    ],
+    "attack": [
+      3,
+      4,
+      5
+    ],
+    "hurt": [
+      6
+    ],
+    "defeated": [
+      7
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "sunlit-ground-validation-v1",
+  "edges": {
+    "meadow-open-v1": {
+      "north": "meadow-open-v1-north.png",
+      "east": "meadow-open-v1-east.png",
+      "south": "meadow-open-v1-south.png",
+      "west": "meadow-open-v1-west.png"
+    },
+    "meadow-road-v1": {
+      "north": "meadow-road-v1-north.png",
+      "east": "meadow-road-v1-east.png",
+      "south": "meadow-road-v1-south.png",
+      "west": "meadow-road-v1-west.png"
+    }
+  },
+  "corners": {
+    "meadow-corner-v1": {
+      "nw": "corner-nw.png",
+      "ne": "corner-ne.png",
+      "se": "corner-se.png",
+      "sw": "corner-sw.png"
+    }
+  }
+}

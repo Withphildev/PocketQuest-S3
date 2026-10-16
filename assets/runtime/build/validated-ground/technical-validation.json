@@ -1,0 +1,19 @@
+{
+  "status": "technical-validation-passed-artistic-review-pending",
+  "failures": [],
+  "checks": [
+    "unchanged scenery validator both blocks",
+    "exact shared registry and corners",
+    "road-mask collar opening",
+    "pixel-exact master reconstruction",
+    "center seam traversal",
+    "rock and tree collision",
+    "tree behind/front depth"
+  ],
+  "limitations": [
+    "Baked rocks/ledges are conservative blocked terrain, not independent occluders.",
+    "True walk-behind rock occlusion needs new uncovered ground and individual cutouts.",
+    "Interior road mask is hand-authored approximation; connector bands are exact.",
+    "Patch repetition and border blending require owner visual review."
+  ]
+}

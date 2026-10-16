@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "frameSize": [
+    32,
+    48
+  ],
+  "pivot": [
+    16,
+    44
+  ],
+  "protagonists": {
+    "female": {
+      "south": [
+        "Nova-female-v2-south-walk-0.png",
+        "Nova-female-v2-south-walk-1.png",
+        "Nova-female-v2-south-walk-2.png",
+        "Nova-female-v2-south-walk-3.png"
+      ],
+      "north": [
+        "Nova-female-v2-north-walk-0.png",
+        "Nova-female-v2-north-walk-1.png",
+        "Nova-female-v2-north-walk-2.png",
+        "Nova-female-v2-north-walk-3.png"
+      ],
+      "west": [
+        "Nova-female-v2-west-walk-0.png",
+        "Nova-female-v2-west-walk-1.png",
+        "Nova-female-v2-west-walk-2.png",
+        "Nova-female-v2-west-walk-3.png"
+      ],
+      "east": [
+        "Nova-female-v2-east-walk-0.png",
+        "Nova-female-v2-east-walk-1.png",
+        "Nova-female-v2-east-walk-2.png",
+        "Nova-female-v2-east-walk-3.png"
+      ]
+    },
+    "male": {
+      "south": [
+        "Nova-male-south-0.png",
+        "Nova-male-south-1.png",
+        "Nova-male-south-2.png",
+        "Nova-male-south-3.png"
+      ],
+      "north": [
+        "Nova-male-north-0.png",
+        "Nova-male-north-1.png",
+        "Nova-male-north-2.png",
+        "Nova-male-north-3.png"
+      ],
+      "west": [
+        "Nova-male-west-0.png",
+        "Nova-male-west-1.png",
+        "Nova-male-west-2.png",
+        "Nova-male-west-3.png"
+      ],
+      "east": [
+        "Nova-male-east-0.png",
+        "Nova-male-east-1.png",
+        "Nova-male-east-2.png",
+        "Nova-male-east-3.png"
+      ]
+    }
+  },
+  "idle": {
+    "female": {
+      "south": [
+        "Nova-female-v2-south-idle-0.png",
+        "Nova-female-v2-south-idle-1.png",
+        "Nova-female-v2-south-idle-2.png",
+        "Nova-female-v2-south-idle-3.png"
+      ],
+      "north": [
+        "Nova-female-v2-north-idle-0.png",
+        "Nova-female-v2-north-idle-1.png",
+        "Nova-female-v2-north-idle-2.png",
+        "Nova-female-v2-north-idle-3.png"
+      ],
+      "west": [
+        "Nova-female-v2-west-idle-0.png",
+        "Nova-female-v2-west-idle-1.png",
+        "Nova-female-v2-west-idle-2.png",
+        "Nova-female-v2-west-idle-3.png"
+      ],
+      "east": [
+        "Nova-female-v2-east-idle-0.png",
+        "Nova-female-v2-east-idle-1.png",
+        "Nova-female-v2-east-idle-2.png",
+        "Nova-female-v2-east-idle-3.png"
+      ]
+    }
+  }
+}

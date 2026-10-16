@@ -1,0 +1,495 @@
+{
+  "status": "owner-review-candidate",
+  "sourceSHA256": "cc503b7c6eb400b15ef6ff6d26f04e659fa63641ca1008052fe01d025336fcf5",
+  "actualSourceDimensions": [
+    1448,
+    1086
+  ],
+  "uniformInverseScale": 5.642857142857143,
+  "pivot": [
+    16,
+    44
+  ],
+  "frames": [
+    {
+      "name": "Nova-female-v2-south-idle-0.png",
+      "sourceCrop": [
+        32,
+        56,
+        185,
+        267
+      ],
+      "paintBounds": [
+        2,
+        7,
+        30,
+        44
+      ]
+    },
+    {
+      "name": "Nova-female-v2-south-idle-1.png",
+      "sourceCrop": [
+        214,
+        56,
+        364,
+        267
+      ],
+      "paintBounds": [
+        3,
+        7,
+        29,
+        44
+      ]
+    },
+    {
+      "name": "Nova-female-v2-south-idle-2.png",
+      "sourceCrop": [
+        389,
+        58,
+        539,
+        267
+      ],
+      "paintBounds": [
+        3,
+        7,
+        29,
+        44
+      ]
+    },
+    {
+      "name": "Nova-female-v2-south-idle-3.png",
+      "sourceCrop": [
+        565,
+        55,
+        717,
+        267
+      ],
+      "paintBounds": [
+        3,
+        6,
+        29,
+        44
+      ]
+    },
+    {
+      "name": "Nova-female-v2-south-walk-0.png",
+      "sourceCrop": [
+        743,
+        56,
+        897,
+        274
+      ],
+      "paintBounds": [
+        2,
+        5,
+        30,
+        44
+      ]
+    },
+    {
+      "name": "Nova-female-v2-south-walk-1.png",
+      "sourceCrop": [
+        918,
+        56,
+        1069,
+        273
+      ],
+      "paintBounds": [
+        3,
+        6,
+        29,
+        44
+      ]
+    },
+    {
+      "name": "Nova-female-v2-south-walk-2.png",
+      "sourceCrop": [
+        1088,
+        55,
+        1246,
+        274
+      ],
+      "paintBounds": [
+        2,
+        5,
+        30,
+        44
+      ]
+    },
+    {
+      "name": "Nova-female-v2-south-walk-3.png",
+      "sourceCrop": [
+        1272,
+        55,
+        1424,
+        274
+      ],
+      "paintBounds": [
+        3,
+        5,
+        29,
+        44
+      ]
+    },
+    {
+      "name": "Nova-female-v2-north-idle-0.png",
+      "sourceCrop": [
+        30,
+        318,
+        178,
+        526
+      ],
+      "paintBounds": [
+        3,
+        7,
+        29,
+        44
+      ]
+    },
+    {
+      "name": "Nova-female-v2-north-idle-1.png",
+      "sourceCrop": [
+        210,
+        318,
+        359,
+        526
+      ],
+      "paintBounds": [
+        3,
+        7,
+        29,
+        44
+      ]
+    },
+    {
+      "name": "Nova-female-v2-north-idle-2.png",
+      "sourceCrop": [
+        391,
+        318,
+        539,
+        526
+      ],
+      "paintBounds": [
+        3,
+        7,
+        29,
+        44
+      ]
+    },
+    {
+      "name": "Nova-female-v2-north-idle-3.png",
+      "sourceCrop": [
+        565,
+        317,
+        715,
+        526
+      ],
+      "paintBounds": [
+        3,
+        7,
+        29,
+        44
+      ]
+    },
+    {
+      "name": "Nova-female-v2-north-walk-0.png",
+      "sourceCrop": [
+        746,
+        319,
+        902,
+        532
+      ],
+      "paintBounds": [
+        2,
+        6,
+        30,
+        44
+      ]
+    },
+    {
+      "name": "Nova-female-v2-north-walk-1.png",
+      "sourceCrop": [
+        921,
+        319,
+        1077,
+        532
+      ],
+      "paintBounds": [
+        2,
+        6,
+        30,
+        44
+      ]
+    },
+    {
+      "name": "Nova-female-v2-north-walk-2.png",
+      "sourceCrop": [
+        1094,
+        319,
+        1246,
+        532
+      ],
+      "paintBounds": [
+        3,
+        6,
+        29,
+        44
+      ]
+    },
+    {
+      "name": "Nova-female-v2-north-walk-3.png",
+      "sourceCrop": [
+        1268,
+        319,
+        1418,
+        532
+      ],
+      "paintBounds": [
+        3,
+        6,
+        29,
+        44
+      ]
+    },
+    {
+      "name": "Nova-female-v2-west-idle-0.png",
+      "sourceCrop": [
+        46,
+        568,
+        190,
+        775
+      ],
+      "paintBounds": [
+        3,
+        7,
+        29,
+        44
+      ]
+    },
+    {
+      "name": "Nova-female-v2-west-idle-1.png",
+      "sourceCrop": [
+        222,
+        569,
+        367,
+        778
+      ],
+      "paintBounds": [
+        3,
+        7,
+        29,
+        44
+      ]
+    },
+    {
+      "name": "Nova-female-v2-west-idle-2.png",
+      "sourceCrop": [
+        399,
+        569,
+        544,
+        778
+      ],
+      "paintBounds": [
+        3,
+        7,
+        29,
+        44
+      ]
+    },
+    {
+      "name": "Nova-female-v2-west-idle-3.png",
+      "sourceCrop": [
+        577,
+        567,
+        730,
+        778
+      ],
+      "paintBounds": [
+        2,
+        7,
+        30,
+        44
+      ]
+    },
+    {
+      "name": "Nova-female-v2-west-walk-0.png",
+      "sourceCrop": [
+        754,
+        569,
+        909,
+        780
+      ],
+      "paintBounds": [
+        2,
+        7,
+        30,
+        44
+      ]
+    },
+    {
+      "name": "Nova-female-v2-west-walk-1.png",
+      "sourceCrop": [
+        932,
+        569,
+        1079,
+        780
+      ],
+      "paintBounds": [
+        3,
+        7,
+        29,
+        44
+      ]
+    },
+    {
+      "name": "Nova-female-v2-west-walk-2.png",
+      "sourceCrop": [
+        1106,
+        569,
+        1258,
+        780
+      ],
+      "paintBounds": [
+        3,
+        7,
+        29,
+        44
+      ]
+    },
+    {
+      "name": "Nova-female-v2-west-walk-3.png",
+      "sourceCrop": [
+        1281,
+        569,
+        1428,
+        780
+      ],
+      "paintBounds": [
+        3,
+        7,
+        29,
+        44
+      ]
+    },
+    {
+      "name": "Nova-female-v2-east-idle-0.png",
+      "sourceCrop": [
+        29,
+        820,
+        179,
+        1035
+      ],
+      "paintBounds": [
+        3,
+        6,
+        29,
+        44
+      ]
+    },
+    {
+      "name": "Nova-female-v2-east-idle-1.png",
+      "sourceCrop": [
+        205,
+        820,
+        355,
+        1035
+      ],
+      "paintBounds": [
+        3,
+        6,
+        29,
+        44
+      ]
+    },
+    {
+      "name": "Nova-female-v2-east-idle-2.png",
+      "sourceCrop": [
+        383,
+        820,
+        531,
+        1035
+      ],
+      "paintBounds": [
+        3,
+        6,
+        29,
+        44
+      ]
+    },
+    {
+      "name": "Nova-female-v2-east-idle-3.png",
+      "sourceCrop": [
+        555,
+        820,
+        707,
+        1035
+      ],
+      "paintBounds": [
+        3,
+        6,
+        29,
+        44
+      ]
+    },
+    {
+      "name": "Nova-female-v2-east-walk-0.png",
+      "sourceCrop": [
+        736,
+        820,
+        892,
+        1038
+      ],
+      "paintBounds": [
+        2,
+        5,
+        30,
+        44
+      ]
+    },
+    {
+      "name": "Nova-female-v2-east-walk-1.png",
+      "sourceCrop": [
+        912,
+        820,
+        1066,
+        1037
+      ],
+      "paintBounds": [
+        2,
+        6,
+        30,
+        44
+      ]
+    },
+    {
+      "name": "Nova-female-v2-east-walk-2.png",
+      "sourceCrop": [
+        1085,
+        820,
+        1237,
+        1037
+      ],
+      "paintBounds": [
+        3,
+        6,
+        29,
+        44
+      ]
+    },
+    {
+      "name": "Nova-female-v2-east-walk-3.png",
+      "sourceCrop": [
+        1251,
+        820,
+        1409,
+        1037
+      ],
+      "paintBounds": [
+        2,
+        6,
+        30,
+        44
+      ]
+    }
+  ]
+}
